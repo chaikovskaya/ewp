@@ -25,7 +25,9 @@
             <div class="header-container">
                 <div class="header-top">
                     <a class="header-logo" href="/"><img src="./images/expansion-logo.png" alt="Экспансия" /></a>
-                    <a class="header-link" href="#">Стать клиентом</a>
+                    <a class="header-link" href="#">
+                        <i class="header-link-icon"></i>Стать клиентом
+                    </a>
                     <div class="header-phone JS-Dropdown" data-dropdown="{'classActive': 'header-phone_active'}">
                         <a class="header-phone-link JS-Dropdown-Switcher" href="javascript:;">
                             <span class="header-phone-label">8 (800) 350-42-28</span>
@@ -66,10 +68,203 @@
                             </div>
                         </div>
                     </div>
+                    <a class="header-menu-switcher-tablet js-menuCall-burger" href="javascript:;">
+                        <i class="mob-menu-switcher-icon"></i>
+                    </a>
+                    <div class="mob-menu JS-MobileMenu" data-mobilemenu="{
+                        'classActive': 'open',
+                        'classShow': 'mob-menu-show',
+                        'classElementActive': 'mob-menu_active'
+                    }">
+                        <a class="mob-menu-switcher JS-MobileMenu-Burger" href="javascript:;">
+                            <i class="mob-menu-switcher-icon"></i>
+                        </a>
+                        <div class="mob-block JS-MobileMenu-Dropdown">
+                            <div class="mob-close-panel">
+                                <a class="mob-header-link" href="#">
+                                    <i class="header-link-icon" aria-hidden="true"></i>Стать клиентом
+                                </a>
+                                <a href="javascript:;" class="mob-close JS-MobileMenu-Close"><i class="mob-close-icon las la-times"></i></a>
+                            </div>
+                            <div class="mob-nav">
+                                <ul class="mob-list">
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">Главная</a>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">О компании<i class="mob-list-icon fa fa-angle-right"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
+                                            </a>
+                                            <span class="mob-list-current">О компании</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">О компании</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Наша команда</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Партнеры</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Отзывы</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Реквизиты</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Вакансии</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">Проекты<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
+                                            </a>
+                                            <span class="mob-list-current">Проекты</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Интернет-магазины</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Корпоративные сайты</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Landing pages</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link" href="#">Еще что-то</a>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">Услуги<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
+                                            </a>
+                                            <span class="mob-list-current">Услуги</span>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Веб-разработка</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">SEO-продвижение</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Контекстная реклама</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Техподдержка</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">YouTuBe</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-child-link" href="#">Готовые решения</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item"><a class="mob-list-link" href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="mob-info">
+                                <ul class="mob-contacts">
+                                    <li class="mob-contacts-item">
+                                        <div class="mob-contacts-block">
+                                            <i class="mob-contacts-icon las la-phone"></i>
+                                            <div>
+                                                <span class="mob-contacts-name">Пенза</span>
+                                                <div class="mob-contacts-description content">
+                                                    <a href="tel:+78412329998">8 (8412) 32-99-98</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mob-contacts-item">
+                                        <div class="menu-list-contacts">
+                                            <i class="mob-contacts-icon las la-phone"></i>
+                                            <div>
+                                                <span class="mob-contacts-name">Для регионов Росии</span>
+                                                <div class="mob-contacts-description content">
+                                                    <a href="tel:+78003504228">8 (800) 350-42-28</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mob-contacts-item">
+                                        <div class="menu-list-contacts">
+                                            <i class="mob-contacts-icon las la-map-marker"></i>
+                                            <div>
+                                                <span class="mob-contacts-name">Центральный офис</span>
+                                                <div class="mob-contacts-description content">Россия, г. Пенза, проезд<br /> Володарского, 6</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mob-contacts-item">
+                                        <div class="menu-list-contacts">
+                                            <i class="mob-contacts-icon las la-envelope"></i>
+                                            <div>
+                                                <span class="mob-contacts-name">E-mail</span>
+                                                <div class="mob-contacts-description content">
+                                                    <a href="mailto:info@ewp.ru">info@ewp.ru</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob-info">
+                                <div class="mob-info-title">Связаться в мессенджер</div>
+                                <ul class="messengers">
+                                    <li class="messengers-item">
+                                        <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-vk"></i></a>
+                                    </li>
+                                    <li class="messengers-item">
+                                        <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-facebook-messenger"></i></a>
+                                    </li>
+                                    <li class="messengers-item">
+                                        <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-whatsapp"></i></a>
+                                    </li>
+                                    <li class="messengers-item">
+                                        <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-telegram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob-info">
+                                <div class="mob-info-title">Мы в соцсетях</div>
+                                <ul class="mob-socials">
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="mob-socials-icon lab la-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="mob-socials-icon lab la-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="mob-socials-item">
+                                        <a class="mob-socials-link" href="#">
+                                            <i class="mob-socials-icon lab la-vk"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                    </div>
                 </div>
                 <div class="header-description">
                     <div class="header-title">Масштабный<br /> веб-продакшн</div>
-                    <div class="header-info">Создаем и продвигаем e-Commerce и B2B проекты</div>
+                    <div class="header-info">Создаем и продвигаем e&#8209;Commerce и&nbsp;B2B проекты</div>
                 </div>
                 <div class="header-panel">
                     <a class="header-more" href="javascript:;">
@@ -83,8 +278,8 @@
                     </nav>
                 </div>
                 <div class="header-actions">
-                    <span class="header-actions-item">
-                        <div class="menu JS-MobileMenu" data-mobilemenu="{
+                    <div class="header-actions-item">
+                        <div class="menu JS-Menu" data-mobilemenu="{
                             'classActive': 'open',
                             'classShow': 'menu-show',
                             'classElementActive': 'menu_active'
@@ -177,7 +372,9 @@
                                                         <i class="menu-list-contacts-icon las la-phone"></i>
                                                         <div>
                                                             <span class="menu-list-region">Пенза</span>
-                                                            <a class="menu-list-contacts-link" href="tel:+78412329998">8 (8412) 32-99-98</a>
+                                                            <div class="menu-list-contacts-description content">
+                                                                <a href="tel:+78412329998">8 (8412) 32-99-98</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -186,7 +383,9 @@
                                                         <i class="menu-list-contacts-icon las la-phone"></i>
                                                         <div>
                                                             <span class="menu-list-region">Для регионов Росии</span>
-                                                            <a class="menu-list-contacts-link" href="tel:+78003504228">8 (800) 350-42-28</a>
+                                                            <div class="menu-list-contacts-description content">
+                                                                <a href="tel:+78003504228">8 (800) 350-42-28</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -195,7 +394,7 @@
                                                         <i class="menu-list-contacts-icon las la-map-marker"></i>
                                                         <div>
                                                             <span class="menu-list-region">Центральный офис</span>
-                                                            Россия, г. Пенза, проезд<br /> Володарского, 6
+                                                            <div class="menu-list-contacts-description content">Россия, г. Пенза, проезд<br /> Володарского, 6</div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -204,7 +403,9 @@
                                                         <i class="menu-list-contacts-icon las la-envelope"></i>
                                                         <div>
                                                             <span class="menu-list-region">E-mail</span>
-                                                            <a class="menu-list-contacts-link" href="mailto:info@ewp.ru">info@ewp.ru</a>
+                                                            <div class="menu-list-contacts-description content">
+                                                                <a href="mailto:info@ewp.ru">info@ewp.ru</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -216,7 +417,7 @@
                             </div>
                             <div class="menu-decor JS-MobileMenu-Close"></div>
                         </div>
-                    </span>
+                    </div>
                     <div class="header-actions-item header-actions-item_socials">
                         <ul class="header-socials">
                             <li>
@@ -237,9 +438,81 @@
                         </ul>
                     </div>
                     <div class="header-actions-item">
-                        <a class="header-actions-link" href="javascript:;">
-                            <i class="header-actions-icon las la-phone-volume"></i>
-                        </a>
+                        <div class="menu JS-MenuContacts" data-mobilemenu="{
+                            'classActive': 'open',
+                            'classShow': 'menu-show',
+                            'classElementActive': 'menu_active'
+                        }">
+                            <a class="header-actions-link JS-MobileMenu-Burger" href="javascript:;">
+                                <i class="header-actions-icon las la-phone-volume"></i>
+                            </a>
+                            <div class="menu-block JS-MobileMenu-Dropdown">
+                                <a href="javascript:;" class="menu-close JS-MobileMenu-Close"><i class="menu-close-icon las la-times"></i></a>
+                                <div class="menu-content js-custom-scroll">
+                                    <ol class="contacts-popup-list">
+                                        <li class="contacts-popup-list-item menu-container">
+                                            <span class="menu-list-count">01</span>
+                                            <span class="menu-list-link">Связаться в мессенджер<span class="menu-list-point">.</span></span>
+                                            <ul class="messengers contacts-popup-info">
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-vk"></i></a>
+                                                </li>
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-facebook-messenger"></i></a>
+                                                </li>
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-whatsapp"></i></a>
+                                                </li>
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-telegram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="contacts-popup-list-item menu-container">
+                                            <span class="menu-list-count">02</span>
+                                            <span class="menu-list-link">Контакты<span class="menu-list-point">.</span></span>
+                                            <ul class="contacts-popup-data contacts-popup-info">
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">Пенза</span>
+                                                        <div class="contacts-popup-data-description content">
+                                                            <a href="tel:+78412329998">8 (8412) 32-99-98</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">Для регионов Росии</span>
+                                                        <div class="contacts-popup-data-description content">
+                                                            <a href="tel:+78003504228">8 (800) 350-42-28</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">Центральный офис</span>
+                                                        <div class="contacts-popup-data-description content">Россия, г. Пенза,<br /> проезд Володарского, 6</div>
+                                                    </div>
+                                                </li>
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">E-mail</span>
+                                                        <div class="contacts-popup-data-description content">
+                                                            <a class="contacts-popup-data-link" href="mailto:info@ewp.ru">info@ewp.ru</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="menu-decor JS-MobileMenu-Close"></div>
+                        </div>
                     </div>
                     <div class="header-actions-item">
                         <a class="header-actions-link header-actions-link_down" href="javascript:;">
@@ -264,10 +537,6 @@
                 Кейсы
             </div>
         </footer>
-
-        <a class="top-button js-scrolltop" data-scrolltop="top-button_active" href="javascript:;">
-            <i class="top-button-icon las la-arrow-up"></i>
-        </a>
 
         <div class="decor-popup"></div>
 
