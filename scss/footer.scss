@@ -1,0 +1,7 @@
+
+.footer {
+    background-color: $color6;
+    &-container {
+        @include container();
+    }
+}
