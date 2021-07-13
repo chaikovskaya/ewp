@@ -1,7 +1,7 @@
 
 $mobile: 720px;
 $tablet: 992px;
-$desktop: 1200px;
+$desktop: 1308px;
 
 $color: #979797;
 $color1: #db352a;
@@ -16,6 +16,9 @@ $color8: #b9b9b9;
 $color9: #7a7a7a;
 $color10: #e5e5e5;
 $color11: #f8f8f8;
+$color12: #cecece;
+$color13: #7b7b7b;
+$color14: #d6d6d6;
 
 * {
     box-sizing: border-box;
@@ -299,13 +302,6 @@ body:not(.main-page) .main-content {
 	margin-bottom: 105px;
 }
 
-@mixin container() {
-	min-width: 320px;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding-right: 15px;
-	padding-left: 15px;
-}
 
 .content {
     b {
@@ -397,15 +393,6 @@ body:not(.main-page) .main-content {
     line-height: 0;
 }
 
-@mixin clearfix() {
-    &:after {
-        content: "";
-        clear: both;
-        display: table;
-        line-height: 0;
-    }
-}
-
 .switcher {
     line-height: 13px;
     text-decoration: none;
@@ -487,6 +474,10 @@ body:not(.main-page) .main-content {
 	font-size: 40px;
 	line-height: 45px;
 	text-align: center;
+}
+
+.svg-box {
+	display: none;
 }
 
 @media screen

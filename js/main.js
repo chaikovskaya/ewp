@@ -113,6 +113,22 @@ function initScroll() {
     });
 }
 
+function initFix() {
+    if (typeof(Fix) === 'undefined' || !jQuery.isFunction(Fix)) {
+        return false;
+    }
+
+    var common = {
+        update: function (){
+        }
+    };
+
+    $('.JS-Fix').not('.JS-Fix-ready').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('fix'));
+        new Fix(this, jQuery.extend({}, common, local));
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -136,4 +152,5 @@ $(document).ready(function () {
     initMenuContacts();
     initMenuCall();
     initScroll();
+    initFix();
 });

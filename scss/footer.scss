@@ -3,5 +3,98 @@
     background-color: $color6;
     &-container {
         @include container();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 70px;
+        padding-top: 23px;
+        padding-bottom: 10px;
+    }
+    &-logo {
+        margin-right: 100px;
+        margin-bottom: 13px;
+    }
+    &-logo-element {
+        max-width: 117px;
+        max-height: 23px;
+        fill:#FFFFFF;
+    }
+    &-nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-bottom: 13px;
+    }
+    &-nav-link {
+        margin-left: 22px;
+        margin-right: 22px;
+        text-decoration: none;
+        font-size: 14px;
+        color: $color12;
+        &:hover {
+            color: #fff;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &-copyright {
+        flex-grow: 1;
+        margin-left: 20px;
+        margin-bottom: 13px;
+        text-align: right;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color13;
+    }
+}
+
+@media screen
+and (max-width: $tablet){
+    .footer {
+        &-logo {
+            margin-right: 25px;
+        }
+        &-nav {
+            margin-right: 0;
+        }
+        &-nav-link {
+            margin-left: 13px;
+            margin-right: 13px;
+        }
+        &-copyright {
+            width: 100%;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .footer {
+        &-container {
+            justify-content: center;
+            padding-top: 26px;
+            padding-bottom: 21px;
+        }
+        &-logo {
+            margin-right: 0;
+        }
+        &-nav {
+            width: 100%;
+            justify-content: center;
+        }
+        &-nav-link {
+            margin-bottom: 6px;
+        }
+        &-copyright {
+            max-width: 200px;
+            margin-left: 0;
+            text-align: center;
+        }
     }
 }

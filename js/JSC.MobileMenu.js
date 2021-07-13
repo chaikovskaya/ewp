@@ -68,11 +68,21 @@
     }
   };
 
+  MobileMenu.prototype._outside = function _outside(e) {
+    if (!this.backgroundDisabled && (this.$element.has(e.target).length === 0)){
+      this._close();
+    }
+  };
+
   MobileMenu.prototype._open = function _open() {
     var _this = this;
     this.$dropdown.addClass(this.classActive);
     this.$document.addClass(this.classShow);
     this.$element.addClass(this.classElementActive);
+
+    this.$document.on('mouseup.JS-MobileMenu', function (e, data) {
+      _this._outside.apply(_this, [e]);
+    });
   };
 
   MobileMenu.prototype._close = function _close() {

@@ -1,0 +1,150 @@
+
+.portfolio-list {
+    @include container();
+    &-item {
+        margin-bottom: 77px;
+    }
+    &-item_simple {}
+    &-content {
+        justify-content: space-between;
+    }
+    &-col {
+        &:nth-child(2) {
+            margin-top: 55px;
+        }
+    }
+    &-link {
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    &-img {
+        display: block;
+        width: 100%;
+        transition: transform  0.4s ease-in-out;
+    }
+    &-link:hover &-img {
+        transform: scale(1.1);
+    }
+    &-tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    &-tags-item {
+        padding-right: 12px;
+        margin-right: 12px;
+        border-right: 1px solid $color14;
+        line-height: 13px;
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            border-right-width: 0;
+        }
+    }
+    &-tags-link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+        color: $color;
+        &:hover {
+            color: $color1;
+        }
+    }
+    &-name {
+        @include point();
+        text-decoration: none;
+        font-size: 25px;
+        line-height: 33px;
+        font-weight: 700;
+        font-family: 'Helvetica';
+        color: $color6;
+        &:hover {
+            text-decoration: underline;
+            color: $color6;
+        }
+    }
+    &-label {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -36px;
+        padding-top: 31px;
+        padding-bottom: 30px;
+        background-color: $color1;
+        border-radius: 50%;
+        width: 116px;
+        height: 116px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+    }
+    &-item_simple &-label {
+        margin-top: 0;
+    }
+    &-label-icon {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    &-link:hover &-label {
+        display: block;
+    }
+    &-informer {
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+        width: calc(100% - 50px);
+        display: flex;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        background-color: #fff;
+    }
+    &-informer-item {
+        width: 33.3%;
+        border-right: 1px dotted $color14;
+        padding-left: 20px;
+        padding-right: 20px;
+        &:last-child {
+            border-right-width: 0;
+        }
+    }
+    &-informer-digit {
+        display: block;
+        margin-bottom: 2px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        color: $color6;
+    }
+    &-informer-label {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    &-informer-symbol {
+        color: $color1;
+    }
+}
+
+@media screen
+and (max-width: $tablet){
+    .portfolio-list {
+        &-col {
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+}
