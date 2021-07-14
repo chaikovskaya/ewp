@@ -1,8 +1,13 @@
 
 .portfolio-list {
-    @include container();
+    margin-bottom: 100px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color7;
+    &-container {
+        @include container();
+    }
     &-item {
-        margin-bottom: 77px;
+        margin-bottom: 75px;
     }
     &-item_simple {}
     &-content {
@@ -30,11 +35,12 @@
     &-tags {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin-bottom: 9px;
     }
     &-tags-item {
-        padding-right: 12px;
         margin-right: 12px;
+        margin-bottom: 6px;
+        padding-right: 12px;
         border-right: 1px solid $color14;
         line-height: 13px;
         &:last-child {
@@ -132,19 +138,82 @@
     &-informer-symbol {
         color: $color1;
     }
+    &-more {
+        top: -57px;
+    }
 }
 
 @media screen
-and (max-width: $tablet){
+and (min-width: $desktop){
     .portfolio-list {
-        &-col {
-            &:nth-child(2) {
-                margin-top: 0;
+        &-item {
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
 }
 
 @media screen
+and (max-width: $tablet){
+    .portfolio-list {
+        margin-bottom: 45px;
+        padding-bottom: 42px;
+        &-col {
+            &:nth-child(2) {
+                margin-top: 0;
+            }
+        }
+        &-link:hover &-label {
+            display: none;
+        }
+        &-more {
+            top: -32px;
+        }
+    }
+}
+
+@media screen
 and (max-width: $mobile){
+    .portfolio-list {
+        &-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &-name {
+            margin-bottom: 9px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &-link {
+            margin-bottom: 15px;
+        }
+        &-tags {
+            order: 1;
+            margin-bottom: 0;
+        }
+        &-informer {
+            bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: calc(100% - 20px);
+        }
+        &-informer-item {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &-informer-digit {
+            font-size: 14px;
+        }
+        &-informer-label {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &-more {
+            top: -15px;
+        }
+    }
 }

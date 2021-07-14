@@ -20,12 +20,12 @@ GLOBAL.parseData = function parseData(data) {
 GLOBAL.owl = GLOBAL.owl || {};
 GLOBAL.owl.common = GLOBAL.owl.common || {};
 GLOBAL.owl.common.loop = true;
-GLOBAL.owl.common.dots = true;
-GLOBAL.owl.common.dotsData = true;
+GLOBAL.owl.common.dots = false;
 GLOBAL.owl.common.margin = 0;
 GLOBAL.owl.common.responsiveClass = true;
 GLOBAL.owl.common.autoHeight = true;
 GLOBAL.owl.common.mouseDrag = true;
+GLOBAL.owl.common.nav = true;
 GLOBAL.owl.common.navClass = ['owl-button owl-button-prev','owl-button owl-button-next'];
 GLOBAL.owl.common.navText = [
     '<i class="owl-button-icon las la-arrow-left"></i>',
@@ -129,6 +129,36 @@ function initFix() {
     });
 }
 
+function initSliderAwards() {
+    $(".js-slider-awards").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $item = $list.find('.js-slider-item');
+
+        if ($item.length > 1) {
+            $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+                autoHeight: false,
+                smartSpeed: 500,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    720: {
+                        items: 2,
+                        mouseDrag: true,
+                    },
+                    992: {
+                        items: 3,
+                        autoWidth: true,
+                    },
+                },
+                navContainer: $buttons,
+            }));
+        }
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -153,4 +183,6 @@ $(document).ready(function () {
     initMenuCall();
     initScroll();
     initFix();
+
+    initSliderAwards();
 });

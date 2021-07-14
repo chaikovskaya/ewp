@@ -1036,6 +1036,7 @@ and (max-width: $tablet){
 @media screen
 and (max-width: $mobile){
     .header {
+        margin-bottom: 50px;
         padding-bottom: 53px;
         &-logo-element {
             max-width: 160px;

@@ -2,6 +2,8 @@
 $mobile: 720px;
 $tablet: 992px;
 $desktop: 1308px;
+$gutters: 30px;
+$gutter: $gutters/2;
 
 $color: #979797;
 $color1: #db352a;
@@ -19,6 +21,8 @@ $color11: #f8f8f8;
 $color12: #cecece;
 $color13: #7b7b7b;
 $color14: #d6d6d6;
+$color15: #ffb9b4;
+$color16: #9a0000;
 
 * {
     box-sizing: border-box;
@@ -47,8 +51,9 @@ body {
 h1,
 .h1 {
     margin: 0 0 33px;
-	font: 700 55px/55px 'Helvetica', sans-serif;
+	font: 900 55px/67px 'Helvetica', sans-serif;
     color: $color6;
+	@include point();
 }
 
 h2,
@@ -56,6 +61,7 @@ h2,
     margin-bottom: 14px;
 	font: 700 35px/35px 'Helvetica', sans-serif;
 	color: $color6;
+	@include point();
 }
 
 h3,
@@ -409,26 +415,20 @@ body:not(.main-page) .main-content {
 }
 
 .owl-nav {
+	display: flex;
+	justify-content: space-between;
 }
 .owl-nav.disabled {
 	display: none;
 }
 
 .owl-button {
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 20px;
 	margin-right: 12px;
-    line-height: 40px;
-	background-color: #fff;
-	border: 2px solid #eaeaea;
-	border-radius: 50%;
-	transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+	background-color: transparent;
 	&:last-child {
 		margin-right: 0;
-	}
-	&:active {
-		background-color: #254585;
-		border-color: #254585;
 	}
 }
 .owl-button-prev {
@@ -480,14 +480,61 @@ body:not(.main-page) .main-content {
 	display: none;
 }
 
+.more-link {
+	position: relative;
+	display: inline-block;
+	padding-left: 24px;
+	padding-right: 19px;
+	text-decoration: none;
+	font-weight: 700;
+	line-height: 49px;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		background-color: $color10;
+		transition: width 0.4s ease-in-out;
+	}
+	&-label {
+		position: relative;
+		z-index: 1;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $color6;
+	}
+	&-icon {
+		position: relative;
+		z-index: 1;
+		vertical-align: middle;
+		margin-left: 2px;
+		font-size: 20px;
+		color: $color6;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+			background-color: $color1;
+		}
+	}
+	&:hover &-label {
+		color: #fff;
+	}
+	&:hover &-icon {
+		color: #fff;
+	}
+	&:active {
+		&:after {
+			background-color: $color3;
+		}
+	}
+}
+
 @media screen
 and (min-width: $desktop){
-	.owl-button {
-        &:hover {
-            background-color: #335aa6;
-            border-color: #335aa6;
-        }
-	}
 	.owl-button:hover .owl-button-icon {
 		color: #fff;
 	}
@@ -495,8 +542,34 @@ and (min-width: $desktop){
 
 @media screen
 and (max-width: $tablet){
+	h1,
+	.h1 {
+		font-size: 35px;
+		line-height: 45px;
+	}
+	.more-link {
+		padding-left: 20px;
+		padding-right: 17px;
+		line-height: 39px;
+		&:after {
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+		}
+		&-label {
+			font-size: 12px;
+		}
+		&-icon {
+			font-size: 16px;
+		}
+	}
 }
 
 @media screen
 and (max-width: $mobile){
+	h1,
+	.h1 {
+		font-size: 28px;
+		line-height: 35px;
+	}
 }
