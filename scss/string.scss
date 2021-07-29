@@ -1,0 +1,53 @@
+
+.string {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.string-1, .string-2 {
+    display: inline-block;
+    margin-bottom: 60px;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 900;
+    font-family: 'Helvetica';
+    white-space: nowrap;
+    background: repeating-linear-gradient(#000, #000 1px, white 1px, white 4px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.string-1 {
+    animation: scroll 10s infinite linear;
+}
+.string-2 {
+    animation: scroll 10s infinite linear 10s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+
+@media screen
+and (max-width: $desktop){
+}
+
+@media screen
+and (max-width: $tablet){
+    .string-1, .string-2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .string-1, .string-2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}

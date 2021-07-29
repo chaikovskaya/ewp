@@ -2,6 +2,7 @@
 .awards {
     @include container();
     margin-top: -216px;
+    margin-bottom: 67px;
     &-container {
         width: 100vw;
         margin-left: 110px;
@@ -13,18 +14,16 @@
     }
     &-title {
         @include point();
+        margin-bottom: 33px;
         color: #fff;
         &:after {
             color: $color15;
         }
     }
     &-list {
-        margin-bottom: 30px;
     }
     &-list-item {
         width: 312px;
-        margin-right: auto;
-        margin-left: auto;
         padding-right: 15px;
         padding-left: 15px;
         text-align: center;
@@ -45,6 +44,16 @@
             background-color: $color1;
             opacity: 0.6;
         }
+    }
+    .owl-loaded &-list-item {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &-button svg {
+        fill: $color15;
+    }
+    &-button:hover svg {
+        fill: #fff;
     }
 
     &-list-link {
@@ -82,6 +91,7 @@
         color: #fff;
     }
     &-nav {
+        margin-top: 30px;
         max-width: calc(1308px - 30px - 110px - 105px);
     }
 }
@@ -95,6 +105,7 @@ and (max-width: $desktop){
 and (max-width: $tablet){
     .awards {
         margin-top: 0;
+        margin-bottom: 45px;
         &-container {
             width: auto;
             margin-right: -$gutter;
@@ -109,6 +120,9 @@ and (max-width: $tablet){
             margin-right: 60px;
             margin-left: 60px;
         }
+        &-nav {
+            display: none;
+        }
         .owl-item {
             &:after {
                 display: block;
@@ -120,6 +134,7 @@ and (max-width: $tablet){
 @media screen
 and (max-width: $mobile){
     .awards {
+        margin-bottom: 52px;
         &-list-item {
             width: auto;
         }

@@ -25,13 +25,7 @@ GLOBAL.owl.common.margin = 0;
 GLOBAL.owl.common.responsiveClass = true;
 GLOBAL.owl.common.autoHeight = true;
 GLOBAL.owl.common.mouseDrag = true;
-GLOBAL.owl.common.nav = true;
-GLOBAL.owl.common.navClass = ['owl-button owl-button-prev','owl-button owl-button-next'];
-GLOBAL.owl.common.navText = [
-    '<i class="owl-button-icon las la-arrow-left"></i>',
-    '<i class="owl-button-icon las la-arrow-right"></i>'
-];
-
+GLOBAL.owl.common.nav = false;
 /*--/global--*/
 
 function isMobile() {
@@ -134,6 +128,8 @@ function initSliderAwards() {
         var $element = $(this),
             $list = $element.find('.js-slider-list'),
             $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
             $item = $list.find('.js-slider-item');
 
         if ($item.length > 1) {
@@ -153,8 +149,53 @@ function initSliderAwards() {
                         autoWidth: true,
                     },
                 },
-                navContainer: $buttons,
             }));
+            $prev.click(function(){
+                $list.trigger("prev.owl.carousel");
+            });
+            $next.click(function(){
+                $list.trigger("next.owl.carousel");
+            });
+        } else {
+            $buttons.remove();
+        }
+    });
+}
+
+function initSliderClients() {
+    $(".js-slider-clients").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        if ($item.length > 1) {
+            $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+                smartSpeed: 500,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    720: {
+                        items: 3,
+                        mouseDrag: true,
+                    },
+                    992: {
+                        items: 4,
+                        slideBy: 4,
+                    },
+                },
+            }));
+            $prev.click(function(){
+                $list.trigger("prev.owl.carousel");
+            });
+            $next.click(function(){
+                $list.trigger("next.owl.carousel");
+            });
+        } else {
+            $buttons.remove();
         }
     });
 }
@@ -185,4 +226,5 @@ $(document).ready(function () {
     initFix();
 
     initSliderAwards();
+    initSliderClients();
 });

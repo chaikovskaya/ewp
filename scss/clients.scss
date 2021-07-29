@@ -1,0 +1,152 @@
+
+.clients {
+    @include container();
+    display: flex;
+    margin-bottom: 31px;
+    &-content {
+        width: 66.6%;
+        padding-right: 30px;
+    }
+    &-side {
+        width: 33.3%;
+    }
+    &-title-label {
+        color: $color1;
+    }
+    &-link {
+        font-weight: 700;
+        font-size: 18px;
+        color: $color1;
+        &:hover {
+            color: $color1;
+            text-decoration: none;
+        }
+    }
+    &-list {
+        overflow: hidden;
+        margin-bottom: 23px;
+    }
+    &-list-item {
+        margin-top: -1px;
+    }
+    &-list-block {
+        padding: 14px 0;
+        margin: 0 14px;
+        border-top: 1px dotted #cbcbcb;
+    }
+    &-list-box {
+        display: flex;
+        min-height: 120px;
+        border-right: 1px dotted #cbcbcb;
+        margin: 0 -14px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    &-list-img {
+        width: 100%;
+        margin: auto;
+        filter: grayscale(100%);
+        opacity: 0.7;
+    }
+    &-list-item:hover &-list-img {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+    &-container {
+        overflow: hidden;
+    }
+    &-nav {}
+
+    .owl-stage {
+        display: flex;
+    }
+    .owl-item:not(.active) {
+        position: relative;
+        &:after {
+            display: none;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - 1px);
+            height: 100%;
+            background-color: #fff;
+            opacity: 0.6;
+        }
+    }
+    .owl-loaded &-list-item {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active &-list-box {
+        border-right-width: 0;
+    }
+}
+
+
+@media screen
+and (min-width: $desktop){
+    .clients {
+        &-list-item:nth-child(4n) &-list-box {
+            border-right-width: 0;
+        }
+    }
+}
+
+@media screen
+and (max-width: $tablet){
+    .clients {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        &-content {
+            width: 100%;
+            padding-right: 0;
+        }
+        &-side {
+            width: 100%;
+            order: -1;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &-container {
+            overflow: visible;
+            margin-right: 45px;
+            margin-left: 45px;
+        }
+        &-list {
+            flex-wrap: nowrap;
+        }
+        &-list-item:first-child ~ &-list-item {
+            display: none;
+        }
+        &-list-block {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        &-list-box {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        &-nav {
+            display: none;
+        }
+        .owl-item:not(.active) {
+            &:after {
+                display: block;
+            }
+        }
+        .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active &-list-box {
+            border-right-width: 1px;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .clients {
+        margin-bottom: 0;
+        &-side {
+            margin-bottom: 22px;
+        }
+    }
+}

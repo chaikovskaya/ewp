@@ -50,7 +50,7 @@ body {
 
 h1,
 .h1 {
-    margin: 0 0 33px;
+    margin: 0 0 26px;
 	font: 900 55px/67px 'Helvetica', sans-serif;
     color: $color6;
 	@include point();
@@ -414,7 +414,7 @@ body:not(.main-page) .main-content {
 	z-index: auto;
 }
 
-.owl-nav {
+.slider-nav {
 	display: flex;
 	justify-content: space-between;
 }
@@ -422,7 +422,7 @@ body:not(.main-page) .main-content {
 	display: none;
 }
 
-.owl-button {
+.slider-button {
 	width: 60px;
 	height: 20px;
 	margin-right: 12px;
@@ -430,7 +430,11 @@ body:not(.main-page) .main-content {
 	&:last-child {
 		margin-right: 0;
 	}
+	&:hover svg {
+		fill: $color1;
+	}
 }
+/*
 .owl-button-prev {
 }
 .owl-button-prev.disabled {
@@ -467,6 +471,7 @@ body:not(.main-page) .main-content {
 }
 .owl-button-next.disabled .owl-button-icon {
 }
+*/
 /* /owl-carousel */
 
 .title {
@@ -535,9 +540,6 @@ body:not(.main-page) .main-content {
 
 @media screen
 and (min-width: $desktop){
-	.owl-button:hover .owl-button-icon {
-		color: #fff;
-	}
 }
 
 @media screen
@@ -569,6 +571,7 @@ and (max-width: $tablet){
 and (max-width: $mobile){
 	h1,
 	.h1 {
+		margin-bottom: 18px;
 		font-size: 28px;
 		line-height: 35px;
 	}
