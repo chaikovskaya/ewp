@@ -1,0 +1,131 @@
+
+.contacts {
+    @include container();
+    &-container {
+        display: flex;
+        padding: 70px 80px;
+        background-color: $color11;
+    }
+    &-title {
+        display: block;
+    }
+    &-title:after {
+        display: none;
+    }
+    &-label {
+        color: $color1;
+    }
+    &-info {
+        margin-bottom: 35px;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 38px;
+    }
+    &-main {
+        width: 70%;
+        margin-right: auto;
+        padding-right: 75px;
+        border-right: 1px solid #e5e5e5;
+    }
+    &-side {
+        width: 19%;
+        padding-top: 30px;
+    }
+    &-list {}
+    &-list-item {
+        margin-bottom: 40px;
+    }
+    &-list-item:last-child {
+        margin-bottom: 0;
+    }
+    &-list-name {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-family: "Helvetica";
+        color: $color1;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &-list-info {
+        font-size: 25px;
+        color: $color6;
+        line-height: 28px;
+        font-weight: 700;
+        a {
+            color: $color6;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen
+and (max-width: $tablet) {
+    .contacts {
+        &-container {
+            padding: 50px 65px 65px;
+        }
+        &-title {
+            margin-bottom: 15px;
+        }
+        &-main {
+            width: 60%;
+            padding-right: 30px;
+        }
+        &-side {
+            width: 35%;
+            padding-top: 25px;
+        }
+        &-info {
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-list-info {
+            font-size: 20px;
+        }
+        &-list-item {
+            margin-bottom: 30px;
+        }
+        &-list-name {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .contacts {
+        &-container {
+            display: block;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        &-main {
+            width: 100%;
+            padding-bottom: 43px;
+            margin-bottom: 40px;
+            padding-right: 0;
+            border-right-width: 0;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        &-side {
+            width: 100%;
+            padding-top: 0;
+        }
+        &-list {
+            text-align: center;
+        }
+        &-list-item {
+            margin-bottom: 32px;
+        }
+        &-messengers {
+            display: inline-block;
+        }
+        &-info {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}

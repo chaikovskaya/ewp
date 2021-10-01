@@ -2,10 +2,10 @@
 .string {
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 68px;
 }
 .string-1, .string-2 {
     display: inline-block;
-    margin-bottom: 60px;
     font-size: 120px;
     line-height: 120px;
     font-weight: 900;
@@ -46,6 +46,9 @@ and (max-width: $tablet){
 
 @media screen
 and (max-width: $mobile){
+    .string {
+        margin-bottom: 45px;
+    }
     .string-1, .string-2 {
         font-size: 50px;
         line-height: 50px;

@@ -120,9 +120,6 @@ and (max-width: $tablet){
             margin-right: 60px;
             margin-left: 60px;
         }
-        &-nav {
-            display: none;
-        }
         .owl-item {
             &:after {
                 display: block;
@@ -137,9 +134,6 @@ and (max-width: $mobile){
         margin-bottom: 52px;
         &-list-item {
             width: auto;
-        }
-        &-nav {
-            display: none;
         }
     }
 }

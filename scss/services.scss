@@ -1,0 +1,222 @@
+
+.services {
+    margin-bottom: 60px;
+    &-list {
+        list-style-type: none;
+    }
+    &-list-item {
+        margin-top: -1px;
+        margin-bottom: -1px;
+    }
+    &-list-item:hover {
+        position: relative;
+        z-index: 1;
+        box-shadow: 0px 0px 40px 0px rgba( 1, 1, 1, 0.06 );
+        background-color: #fff;
+    }
+    &-panel {
+        @include container();
+        margin-bottom: 45px;
+    }
+    &-panel-block {
+        display: flex;
+        padding-top: 60px;
+        border-top: 1px solid #ebebeb;
+    }
+    &-title {
+        margin-right: 53px;
+        margin-bottom: 0;
+        padding-right: 53px;
+        border-right: 1px solid #e5e5e5;
+    }
+    &-info {
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 300;
+    }
+    &-block {
+        @include container();
+        position: relative;
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+    &-block:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        width: calc(100% - 30px);
+        height: 1px;
+        background-color: #ebebeb;
+    }
+    &-list-item:hover &-block:after {
+        display: none;
+    }
+    &-name {
+        max-width: 515px;
+        font-size: 35px;
+        line-height: 43px;
+        font-family: "Helvetica";
+        color: $color6;
+        font-weight: 700;
+        @include point();
+    }
+    &-main {
+        display: flex;
+        align-items: flex-start;
+        margin-top: -2px;
+    }
+    &-detail {}
+    &-number {
+        min-width: 80px;
+        width: 80px;
+        height: 37px;
+        overflow: hidden;
+        margin-right: 27px;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 900;
+        color: $color1;
+        font-family: "Helvetica";
+    }
+    &-links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
+    &-links-item {
+        margin-right: 20px;
+    }
+    &-links-item:last-child {
+        margin-right: 0;
+    }
+    &-links-label {
+        font-size: 14px;
+        color: $color6;
+        &:hover {
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+    &-description {
+        margin-bottom: 30px;
+    }
+    &-actions {
+        display: flex;
+    }
+    &-actions-item {
+        margin-right: 40px;
+    }
+    &-actions-item:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen
+and (max-width: $tablet) {
+    .services {
+        margin-bottom: 55px;
+        &-panel {
+            margin-bottom: 35px;
+        }
+        &-panel-block {
+            padding-top: 55px;
+        }
+        &-title {
+            margin-right: 22px;
+            padding-right: 22px;
+        }
+        &-block {
+            min-width: auto;
+            padding-top: 42px;
+            padding-bottom: 52px;
+        }
+        &-info {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-number {
+            min-width: 40px;
+            width: 40px;
+            height: 20px;
+            margin-right: 20px;
+            font-size: 30px;
+            line-height: 33px;
+        }
+        &-name {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .services {
+        margin-bottom: 45px;
+        &-panel {
+            margin-bottom: 0;
+        }
+        &-panel-block {
+            display: block;
+            padding-top: 42px;
+        }
+        &-info {
+            text-align: center;
+        }
+        &-title {
+            margin-right: 0;
+            padding-right: 0;
+            margin-bottom: 15px;
+            text-align: center;
+            border-right-width: 0;
+        }
+        &-list-item:hover {
+            position: static;
+            box-shadow: none;
+        }
+        &-list-item:hover &-block:after {
+            display: block;
+        }
+        &-info {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &-main {
+            display: block;
+            margin-bottom: 15px;
+        }
+        &-number {
+            display: block;
+            min-width: auto;
+            width: auto;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 7px;
+        }
+        &-name {
+            display: block;
+            max-width: none;
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &-description {
+            text-align: center;
+        }
+        &-links {
+            justify-content: center;
+        }
+        &-links-item {
+            margin-right: 14px;
+        }
+        &-actions {
+            justify-content: center;
+        }
+        &-actions-item {
+            margin-right: 20px;
+        }
+    }
+}
