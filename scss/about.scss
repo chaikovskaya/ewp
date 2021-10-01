@@ -1,8 +1,8 @@
 
 .about {
-    @include container();
     margin-bottom: 75px;
     &-head {
+        @include container();
         display: flex;
         align-items: center;
         margin-bottom: 75px;
@@ -14,6 +14,10 @@
     }
     &-title {
         margin-bottom: 0;
+    }
+    &-list-wrapper {
+        padding-right: $gutter;
+        padding-left: $gutter;
     }
     &-list {
         display: flex;

@@ -2278,13 +2278,13 @@ body.menu-show .header-socials-icon {
     top: -15px; } }
 
 .about {
-  min-width: 320px;
-  max-width: 1308px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-bottom: 75px; }
   .about-head {
+    min-width: 320px;
+    max-width: 1308px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
     display: flex;
     align-items: center;
     margin-bottom: 75px; }
@@ -2294,6 +2294,9 @@ body.menu-show .header-socials-icon {
     border-right: 1px solid #ebebeb; }
   .about-title {
     margin-bottom: 0; }
+  .about-list-wrapper {
+    padding-right: 15px;
+    padding-left: 15px; }
   .about-list {
     display: flex; }
   .about-list-item {
