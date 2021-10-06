@@ -534,10 +534,11 @@
                         </a>
                     </div>
                 </div>
+                <canvas class="header-decor js-mainAnimation"></canvas>
             </div>
         </header>
 
-        <main class="main-content">
+        <main class="main-content js-animate-section js-animate-section-1">
             <div class="portfolio-list">
                 <div class="portfolio-list-container">
                     <div class="portfolio-list-content row">
@@ -664,29 +665,33 @@
                     <img class="about-img" src="./images/about/company-logo.png" alt="" />
                     <h2 class="about-title h1">Экспансия - масштабный веб-продакшн полного цикла</h2>
                 </div>
-                <div class="about-list-wrapper">
-                    <div class="about-list">
-                    <div class="about-list-item">
-                        <span class="about-list-count">01</span>
-                        <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                <div class="about-list-wrapper js-slider-about">
+                    <div class="about-list js-slider-list">
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">01</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">02</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">03</span>
+                            <div class="about-list-description">Выводим бизнес в&nbsp;онлайн.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">04</span>
+                            <div class="about-list-description">Делаем больше, чем просто SEO и&nbsp;разработку.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">05</span>
+                            <div class="about-list-description">Даем гарантию на все виды работ.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">06</span>
+                            <div class="about-list-description">Даем гарантию на все виды работ.</div>
+                        </div>
                     </div>
-                    <div class="about-list-item">
-                        <span class="about-list-count">02</span>
-                        <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
-                    </div>
-                    <div class="about-list-item">
-                        <span class="about-list-count">03</span>
-                        <div class="about-list-description">Выводим бизнес в онлайн.</div>
-                    </div>
-                    <div class="about-list-item">
-                        <span class="about-list-count">04</span>
-                        <div class="about-list-description">Делаем больше, чем просто SEO и разработку.</div>
-                    </div>
-                    <div class="about-list-item">
-                        <span class="about-list-count">05</span>
-                        <div class="about-list-description">Даем гарантию на все виды работ.</div>
-                    </div>
-                </div>
                 </div>
             </section>
 
@@ -703,7 +708,7 @@
                 </div>
             </section>
 
-            <section class="awards">
+            <section class="awards js-animate-section js-animate-section-2">
                 <div class="awards-container js-slider-awards">
                     <h2 class="awards-title h1">Награды</h2>
                     <div class="awards-list js-slider-list">
@@ -1217,7 +1222,7 @@
                 </div>
             </section>
 
-            <div class="contacts">
+            <div class="contacts js-animate-contacts">
                 <div class="contacts-container">
                     <div class="contacts-main">
                         <span class="contacts-title h1">Мы хотим стать надежным партнером<span class="contacts-label">!</span></span>
@@ -1363,11 +1368,14 @@
     <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="./libs/validate/jquery.validate.min.js"></script>
     <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script src="./libs/wow/wow.min.js"></script>
+    <script src="./libs/mousewheel/jquery.mousewheel.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
     <script src="./js/JSC.Fix.js"></script>
 
     <script src="./js/main.js"></script>
+    <script src="./js/animation.js"></script>
 
 </body>
 </html>

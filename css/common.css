@@ -357,7 +357,8 @@ blockquote {
   overflow: hidden; }
 
 .main-content {
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  padding-top: 80px; }
 
 body:not(.main-page) .main-content {
   margin-bottom: 105px; }
@@ -575,7 +576,9 @@ body:not(.main-page) .main-content {
   .h1 {
     margin-bottom: 18px;
     font-size: 28px;
-    line-height: 35px; } }
+    line-height: 35px; }
+  .main-content {
+    padding-top: 50px; } }
 
 /* Fancybox */
 .fancybox-bg {
@@ -1101,7 +1104,6 @@ label.form-error {
 .header {
   position: relative;
   height: 100vh;
-  margin-bottom: 80px;
   padding-top: 45px;
   padding-bottom: 40px;
   background-color: #124375;
@@ -1114,6 +1116,8 @@ label.form-error {
     flex-direction: column;
     height: 100%; }
   .header-top {
+    position: relative;
+    z-index: 1;
     min-height: 40px;
     margin-bottom: 30px; }
   .header-top-container {
@@ -1248,6 +1252,8 @@ label.form-error {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    position: relative;
+    z-index: 1;
     max-width: 950px;
     margin-top: auto;
     margin-bottom: auto; }
@@ -1268,6 +1274,8 @@ label.form-error {
     font-weight: 300;
     line-height: 35px; }
   .header-panel {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1322,7 +1330,8 @@ label.form-error {
     flex-direction: column;
     width: 69px;
     height: 100%;
-    border-left: 1px solid rgba(255, 255, 255, 0.2); }
+    border: solid rgba(255, 255, 255, 0.2);
+    border-width: 0 0 0 1px; }
   .header-actions-item {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
@@ -1361,6 +1370,25 @@ label.form-error {
     color: #fff; }
   .header-menu-switcher-tablet {
     display: none; }
+  .header-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.main-content-animate .header-actions {
+  border-color: #ebebeb;
+  background-color: #fff; }
+
+.main-content-animate .header-actions-item {
+  border-bottom-color: #ebebeb; }
+
+.main-content-animate .header-actions-icon {
+  color: #222; }
+
+.main-content-animate .header-socials-icon {
+  color: #b9b9b9; }
 
 .menu-switcher {
   display: block; }
@@ -1977,12 +2005,13 @@ body.menu-show .header-socials-icon {
 @media screen and (max-width: 992px) {
   .header-info-label {
     display: none; }
+  .header-decor {
+    display: none; }
   .menu-block {
     max-width: none; } }
 
 @media screen and (max-width: 720px) {
   .header {
-    margin-bottom: 50px;
     padding-bottom: 53px; }
     .header-logo-element {
       max-width: 160px; }
@@ -2297,10 +2326,6 @@ body.menu-show .header-socials-icon {
   .about-list-wrapper {
     padding-right: 15px;
     padding-left: 15px; }
-  .about-list {
-    display: flex; }
-  .about-list-item {
-    width: 33.3%; }
   .about-list-count {
     font-size: 60px;
     font-weight: 900;
@@ -2314,6 +2339,8 @@ body.menu-show .header-socials-icon {
     font-weight: 300;
     line-height: 50px;
     background-color: #fff; }
+  .about .owl-stage {
+    display: flex; }
 
 .company {
   padding-top: 80px;
@@ -2350,6 +2377,21 @@ body.menu-show .header-socials-icon {
       margin-top: -13px;
       font-size: 30px;
       line-height: 40px; }
+    .about-list {
+      width: auto;
+      margin-right: 60px;
+      margin-left: 60px; }
+    .about .owl-item:not(.active) {
+      position: relative; }
+      .about .owl-item:not(.active):after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.7; }
   .company {
     padding-top: 70px;
     padding-bottom: 70px; }
@@ -2377,6 +2419,9 @@ body.menu-show .header-socials-icon {
       border-right-width: 0; }
     .about-title {
       text-align: center; }
+    .about-list {
+      margin-right: 40px;
+      margin-left: 40px; }
     .about-list-description {
       font-size: 18px;
       line-height: 24px; }
@@ -2408,12 +2453,13 @@ body.menu-show .header-socials-icon {
   margin-bottom: 67px; }
   .awards-container {
     width: 100vw;
-    margin-left: 110px;
+    margin-left: 100vw;
     padding-top: 65px;
     padding-bottom: 60px;
     padding-left: 105px;
     background-color: #db352a;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: margin-left 1s ease-in-out 0s; }
   .awards-title {
     margin-bottom: 33px;
     color: #fff; }
@@ -2479,6 +2525,10 @@ body.menu-show .header-socials-icon {
   .awards-nav {
     margin-top: 30px;
     max-width: calc(1308px - 30px - 110px - 105px); }
+
+@media screen and (min-width: 992px) {
+  .awards.animated .awards-container {
+    margin-left: 100px; } }
 
 @media screen and (max-width: 992px) {
   .awards {

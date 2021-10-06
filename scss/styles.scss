@@ -303,6 +303,7 @@ blockquote {
 
 .main-content {
 	margin-bottom: 90px;
+	padding-top: 80px;
 }
 body:not(.main-page) .main-content {
 	margin-bottom: 105px;
@@ -570,5 +571,8 @@ and (max-width: $mobile){
 		margin-bottom: 18px;
 		font-size: 28px;
 		line-height: 35px;
+	}
+	.main-content {
+		padding-top: 50px;
 	}
 }

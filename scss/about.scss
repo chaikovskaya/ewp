@@ -20,10 +20,8 @@
         padding-left: $gutter;
     }
     &-list {
-        display: flex;
     }
     &-list-item {
-        width: 33.3%;
     }
     &-list-count {
         font-size: 60px;
@@ -39,6 +37,10 @@
         font-weight: 300;
         line-height: 50px;
         background-color: #fff;
+    }
+
+    .owl-stage {
+        display: flex;
     }
 }
 
@@ -87,6 +89,24 @@ and (max-width: $tablet){
             font-size: 30px;
             line-height: 40px;
         }
+        &-list {
+            width: auto;
+            margin-right: 60px;
+            margin-left: 60px;
+        }
+        .owl-item:not(.active) {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                opacity: 0.7;
+            }
+        }
     }
     .company {
         padding-top: 70px;
@@ -122,6 +142,10 @@ and (max-width: $mobile){
         }
         &-title {
             text-align: center;
+        }
+        &-list {
+            margin-right: 40px;
+            margin-left: 40px;
         }
         &-list-description {
             font-size: 18px;

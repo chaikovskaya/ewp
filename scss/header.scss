@@ -2,7 +2,6 @@
 .header {
     position: relative;
     height: 100vh;
-    margin-bottom: 80px;
     padding-top: 45px;
     padding-bottom: 40px;
     background-color: #124375;
@@ -17,6 +16,8 @@
         height: 100%;
     }
     &-top {
+        position: relative;
+        z-index: 1;
         min-height: 40px;
         margin-bottom: 30px;
     }
@@ -175,6 +176,8 @@
 
     &-description {
         @include container();
+        position: relative;
+        z-index: 1;
         max-width: 950px;
         margin-top: auto;
         margin-bottom: auto;
@@ -198,6 +201,8 @@
         line-height: 35px;
     }
     &-panel {
+        position: relative;
+        z-index: 1;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -262,7 +267,8 @@
         flex-direction: column;
         width: 69px;
         height: 100%;
-        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        border: solid rgba(255, 255, 255, 0.2);
+        border-width: 0 0 0 1px;
     }
     &-actions-item {
         display: block;
@@ -312,6 +318,29 @@
     }
     &-menu-switcher-tablet {
         display: none;
+    }
+    &-decor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main-content-animate .header {
+    &-actions {
+        border-color: #ebebeb;
+        background-color: #fff;
+    }
+    &-actions-item {
+        border-bottom-color: #ebebeb;
+    }
+    &-actions-icon {
+        color: #222;
+    }
+    &-socials-icon {
+        color: #b9b9b9;
     }
 }
 
@@ -1024,6 +1053,9 @@ and (max-width: $tablet){
         &-info-label {
             display: none;
         }
+        &-decor {
+            display: none;
+        }
     }
 
     .menu {
@@ -1036,7 +1068,6 @@ and (max-width: $tablet){
 @media screen
 and (max-width: $mobile){
     .header {
-        margin-bottom: 50px;
         padding-bottom: 53px;
         &-logo-element {
             max-width: 160px;

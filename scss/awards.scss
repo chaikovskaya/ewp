@@ -5,12 +5,13 @@
     margin-bottom: 67px;
     &-container {
         width: 100vw;
-        margin-left: 110px;
+        margin-left: 100vw;
         padding-top: 65px;
         padding-bottom: 60px;
         padding-left: 105px;
         background-color: $color1;
         overflow: hidden;
+        transition: margin-left 1s ease-in-out 0s;
     }
     &-title {
         @include point();
@@ -94,11 +95,22 @@
         margin-top: 30px;
         max-width: calc(1308px - 30px - 110px - 105px);
     }
+
+
 }
 
 
 @media screen
 and (max-width: $desktop){
+}
+
+@media screen
+and (min-width: $tablet){
+    .awards {
+        &.animated &-container {
+            margin-left: 100px;
+        }
+    }
 }
 
 @media screen
