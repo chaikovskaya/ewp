@@ -77,17 +77,10 @@ input.form-error {
     }
 }
 label.form-error {
-    visibility: hidden;
     display: block;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 2px 10px;
-    color: #949391;
+    color: $color1;
     font-size: 12px;
-    background-color: #fff;
-    white-space: nowrap;
+    line-height: 20px;
 }
 
 .checkbox {
@@ -310,7 +303,7 @@ label.form-error {
         opacity: 0;
     }
     &-checkbox:checked + &-decor {
-        background-color: #124375;
+        background-color: $color1;
     }
     &-checkbox:checked + &-decor &-icon {
         left: 20px;

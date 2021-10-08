@@ -256,7 +256,7 @@ function initSliderAbout() {
         var isStart = $item.length > 1 ? true : false;
 
         $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
-            loop: false,
+            loop: isStart,
             mouseDrag: isStart,
             touchDrag: isStart,
             autoHeight: false,

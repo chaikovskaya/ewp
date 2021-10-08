@@ -303,6 +303,9 @@ blockquote {
 
 .main-content {
 	margin-bottom: 90px;
+	padding-top: 45px;
+}
+.main-page .main-content {
 	padding-top: 80px;
 }
 body:not(.main-page) .main-content {
@@ -435,44 +438,6 @@ body:not(.main-page) .main-content {
 		fill: $color1;
 	}
 }
-/*
-.owl-button-prev {
-}
-.owl-button-prev.disabled {
-	cursor: default;
-}
-.owl-button-next {
-}
-.owl-button-next.disabled {
-	cursor: default;
-}
-
-.owl-button-icon {
-	display: block;
-	margin-top: -1px;
-	line-height: 0;
-	font-size: 18px;
-	color: #2a364d;
-}
-.disabled .owl-button-icon {
-	color: #c4c4c4;
-}
-.owl-button:active .owl-button-icon {
-	color: #fff;
-}
-
-.owl-button-prev .owl-button-icon {
-}
-.owl-button-next .owl-button-icon {
-}
-.owl-button-prev:hover .owl-button-icon {}
-.owl-button-next:hover .owl-button-icon {}
-.owl-button-prev.disabled .owl-button-icon {
-
-}
-.owl-button-next.disabled .owl-button-icon {
-}
-*/
 /* /owl-carousel */
 
 .svg-box {
@@ -532,6 +497,40 @@ body:not(.main-page) .main-content {
 	}
 }
 
+.head-panel {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.main-title {
+	margin-bottom: 0;
+}
+
+.breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	&-item {
+		margin-right: 10px;
+		font-size: 14px;
+		color: #b5b5b5;
+	}
+	&-link {
+		text-decoration: none;
+		color:#747474;
+	}
+	&-link:hover {
+		text-decoration: underline;
+		color:#747474;
+	}
+	&-icon {
+		margin-left: 10px;
+		color:#747474;
+	}
+}
+
 @media screen
 and (min-width: $desktop){
 }
@@ -562,6 +561,12 @@ and (max-width: $tablet){
 	.slider-nav {
 		display: none;
 	}
+	.main-content {
+		padding-top: 40px;
+	}
+	.head-panel {
+		margin-bottom: 25px;
+	}
 }
 
 @media screen
@@ -571,8 +576,20 @@ and (max-width: $mobile){
 		margin-bottom: 18px;
 		font-size: 28px;
 		line-height: 35px;
+		text-align: center;
 	}
 	.main-content {
+		padding-top: 25px;
+	}
+	.main-page .main-content {
 		padding-top: 50px;
+	}
+	.head-panel {
+		flex-direction: column;
+	}
+	.breadcrumbs {
+		order: -1;
+		margin-left: 0;
+		margin-bottom: 20px;
 	}
 }

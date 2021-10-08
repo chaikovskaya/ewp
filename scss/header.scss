@@ -1,15 +1,14 @@
 
 .header {
     position: relative;
-    height: 100vh;
-    padding-top: 45px;
-    padding-bottom: 40px;
+    padding-top: 14px;
+    padding-bottom: 12px;
     background-color: #124375;
     background-image: url("../images/header/stars-bgr.png"),
-    url("../images/header/header-main-bgr.jpg");
-    background-repeat: repeat-x, no-repeat;
+    url("../images/header/header-bgr.png");
+    background-repeat: repeat-x, repeat;
     background-position: center top, center top;
-    background-size: auto auto, auto 100%;
+    background-size: auto auto, auto auto;
     &-container {
         display: flex;
         flex-direction: column;
@@ -122,7 +121,7 @@
     &-phone-dropdown {
         display: none;
         position: absolute;
-        top: calc(100% + 14px);
+        top: calc(100% + 15px);
         left: 50%;
         transform: translateX(-50%);
         width: 250px;
@@ -363,6 +362,15 @@
 }
 
 .main-page .header {
+    height: 100vh;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    background-image: url("../images/header/stars-bgr.png"),
+    url("../images/header/header-bgr.png"),
+    url("../images/header/header-main-bgr.jpg");
+    background-position: center top, center top, center center;
+    background-repeat: repeat-x, repeat, no-repeat;
+    background-size: auto auto, auto auto, auto 100%;
     &-actions-link_down {
         display: flex;
     }
@@ -404,6 +412,9 @@
     &-actions-link_up {
         background-color: $color5;
     }
+}
+.main-content-animate.main-page .header-socials-link:hover .header-socials-icon {
+    color: $color1;
 }
 
 .menu {
@@ -568,6 +579,9 @@ body.menu-show .header {
     &-socials-icon {
         color: $color8;
     }
+}
+body.menu-show .header-socials-link:hover .header-socials-icon {
+    color: $color1;
 }
 
 
@@ -1151,10 +1165,6 @@ and (max-width: $tablet){
         &-decor {
             display: none;
         }
-        &-container {
-            background: url("../images/header/decor-bgr-tablet.png") no-repeat center center;
-            background-size: contain;
-        }
     }
 
     .menu {
@@ -1168,11 +1178,6 @@ and (max-width: $tablet){
 and (max-width: $mobile){
     .header {
         padding-bottom: 53px;
-        &-container {
-            background-image: url("../images/header/decor-bgr-mob.png");
-            background-position: center calc(50% - 16px);
-            background-size: auto;
-        }
         &-logo-element {
             max-width: 160px;
         }

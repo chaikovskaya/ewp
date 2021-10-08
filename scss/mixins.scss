@@ -16,11 +16,7 @@
   padding-left: 15px;
 }
 .container {
-  min-width: 320px;
-  max-width: 1308px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  @include container();
 }
 
 @mixin point() {
