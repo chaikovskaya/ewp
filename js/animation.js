@@ -1,11 +1,11 @@
 
 (() => {
     const config = {
-        dotMinRad  : 4,
+        dotMinRad  : 3,
         dotMaxRad  : 2,
         sphereRad  : 350,
         bigDotRad  : 8,
-        mouseSize  : 40,
+        mouseSize  : 70,
         massFactor : 0.002,
         defColor   : `rgba(250, 10, 30, 0.9)`,
         smooth     : 0.85,

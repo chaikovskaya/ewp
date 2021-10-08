@@ -1175,8 +1175,7 @@ label.form-error {
   .header-top {
     position: relative;
     z-index: 900;
-    min-height: 40px;
-    margin-bottom: 30px; }
+    min-height: 40px; }
   .header-top-container {
     min-width: 320px;
     max-width: 1308px;
@@ -1400,10 +1399,29 @@ label.form-error {
     height: 68px;
     background-color: #db352a; }
   .header-burger-icon {
+    position: relative;
     display: inline-block;
     width: 27px;
-    height: 9px;
-    background: url("../images/header/burger-icon.png") no-repeat 0 0; }
+    height: 9px; }
+  .header-burger-icon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 2px;
+    background-color: #fff;
+    transition: width  0.3s ease-in-out; }
+  .header-burger-icon:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; }
+  .header-burger:hover .header-burger-icon:before {
+    width: 100%; }
   .header-actions-item_socials {
     margin-top: auto; }
   .header-socials {
@@ -1434,8 +1452,9 @@ label.form-error {
     color: #222; }
   .header-menu-switcher-tablet {
     display: none; }
+  .header-menu-switcher-tablet:hover .header-menu-switcher-tablet-icon:before {
+    width: 100%; }
   .header-decor {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -1601,7 +1620,11 @@ label.form-error {
   color: #fff;
   display: block;
   overflow: hidden;
-  clip-path: polygon(0 10%, 100% 100%, 100% 0); }
+  clip-path: polygon(100% 0, 100% 100%, 95% 100%, 0 5%, 0 0);
+  transition: clip-path 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.menu-close:hover .menu-close-icon {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%, 0 0); }
 
 .menu-header-link {
   display: inline-block;
@@ -1659,10 +1682,32 @@ body.menu-show .header-socials-icon {
   padding-bottom: 4px; }
 
 .mob-menu-switcher-icon {
+  position: relative;
   display: block;
   width: 27px;
-  height: 9px;
-  background: url("../images/header/burger-icon.png") no-repeat 0 0; }
+  height: 9px; }
+
+.mob-menu-switcher-icon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 2px;
+  background-color: #fff;
+  transition: width  0.2s ease-in-out; }
+
+.mob-menu-switcher-icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff; }
+
+.mob-menu-switcher:hover .mob-menu-switcher-icon:before {
+  width: 100%; }
 
 .mob-close-panel {
   position: absolute;
@@ -1694,7 +1739,11 @@ body.menu-show .header-socials-icon {
 .mob-close-icon {
   font-size: 32px;
   color: #db352a;
-  clip-path: polygon(100% 0, 100% 100%, 94% 100%, 0 6%, 0 0); }
+  clip-path: polygon(100% 0, 100% 100%, 94% 100%, 0 6%, 0 0);
+  transition: clip-path 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.mob-close:hover .mob-close-icon {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 6%, 0 0); }
 
 .mob-block {
   position: fixed;
@@ -1788,7 +1837,8 @@ body.menu-show .header-socials-icon {
   border: solid #ebebeb;
   border-width: 1px 0; }
   .mob-list-link_back:hover {
-    background-color: transparent; }
+    background-color: transparent;
+    color: #222; }
 
 .mob-list-item_profile {
   display: none;
@@ -1859,7 +1909,7 @@ body.menu-show .header-socials-icon {
   margin-right: 15px; }
 
 .mob-list-link:hover .mob-list-icon {
-  color: #335aa6; }
+  color: #fff; }
 
 .mob-list-link:hover .mob-user-icon {
   fill: #335aa6; }
@@ -2084,8 +2134,10 @@ body.menu-show .header-socials-icon {
     top: calc(100% + 11px); }
   .header-top-block_fix .header-link {
     color: #222; }
-  .header-top-block_fix .mob-menu-switcher-icon {
-    background-image: url("../images/header/burger-icon-dark.png"); }
+  .header-top-block_fix .mob-menu-switcher-icon:before {
+    background-color: #db352a; }
+  .header-top-block_fix .mob-menu-switcher-icon:after {
+    background-color: #db352a; }
   body.menu-show .header-actions {
     visibility: visible; }
   .menu-list-item_link {
@@ -2096,12 +2148,19 @@ body.menu-show .header-socials-icon {
     display: none; }
   .header-decor {
     display: none; }
+  .header-container {
+    background: url("../images/header/decor-bgr-tablet.png") no-repeat center center;
+    background-size: contain; }
   .menu-block {
     max-width: none; } }
 
 @media screen and (max-width: 720px) {
   .header {
     padding-bottom: 53px; }
+    .header-container {
+      background-image: url("../images/header/decor-bgr-mob.png");
+      background-position: center calc(50% - 16px);
+      background-size: auto; }
     .header-logo-element {
       max-width: 160px; }
     .header-phone {
