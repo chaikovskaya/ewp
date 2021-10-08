@@ -17,7 +17,7 @@
     }
     &-top {
         position: relative;
-        z-index: 1;
+        z-index: 900;
         min-height: 40px;
         margin-bottom: 30px;
     }
@@ -267,12 +267,13 @@
         flex-direction: column;
         width: 69px;
         height: 100%;
-        border: solid rgba(255, 255, 255, 0.2);
+        border: solid #ebebeb;
         border-width: 0 0 0 1px;
+        background-color: #fff;
     }
     &-actions-item {
         display: block;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid #ebebeb;
     }
     &-burger {
         display: flex;
@@ -302,7 +303,7 @@
     }
     &-socials-icon {
         font-size: 22px;
-        color: $color4;
+        color: #b9b9b9;
     }
     &-actions-link {
         display: flex;
@@ -311,15 +312,24 @@
         text-decoration: none;
         height: 68px;
     }
-    &-actions-link_down {}
+    &-actions-link_down {
+        display: none;
+    }
+    &-actions-link_up {
+        display: none;
+    }
+    &-actions-link_up_active {
+        display: flex;
+    }
     &-actions-icon {
         font-size: 22px;
-        color: #fff;
+        color: #222;
     }
     &-menu-switcher-tablet {
         display: none;
     }
     &-decor {
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -328,7 +338,29 @@
     }
 }
 
-.main-content-animate .header {
+.main-page .header {
+    &-actions-link_down {
+        display: flex;
+    }
+    &-actions {
+        border-color: rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+    }
+    &-actions-item {
+        border-bottom-color: rgba(255, 255, 255, 0.2);
+    }
+    &-actions-icon {
+        color: #fff;
+    }
+    &-socials-icon {
+        color: $color4;
+    }
+    &-actions-link_up {
+        background-color: $color5;
+    }
+}
+
+.main-content-animate.main-page .header {
     &-actions {
         border-color: #ebebeb;
         background-color: #fff;
@@ -341,6 +373,12 @@
     }
     &-socials-icon {
         color: #b9b9b9;
+    }
+    &-actions-link_down {
+        display: none;
+    }
+    &-actions-link_up {
+        background-color: $color5;
     }
 }
 
@@ -1003,7 +1041,6 @@ and (max-width: 1600px){
         }
         &-top-block_fix {
             position: fixed;
-            z-index: 900;
             top: 0;
             width: 100%;
             background-color: #fff;

@@ -175,7 +175,7 @@
   }
 }
 
-.mob-form {
+.form-popup {
   &-switcher {
     display: block;
   }
@@ -186,6 +186,7 @@
     fill: #727272;
   }
   &-close-panel {
+    @include form-popup-container();
     position: absolute;
     top: 0;
     left: 0;
@@ -194,7 +195,7 @@
     justify-content: space-between;
     background-color: #fff;
     width: 100%;
-    min-height: 79px;
+    min-height: 67px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ebebeb;
@@ -203,14 +204,12 @@
     position: relative;
     z-index: 3;
     display: block;
-    width: 20px;
-    height: 20px;
     background-color: #fff;
   }
   &-close-icon {
-    font-size: 24px;
-    color: #727272;
-    line-height: 0;
+    font-size: 32px;
+    color: #db352a;
+    clip-path: polygon(100% 0, 100% 100%, 94% 100%, 0 6%, 0 0);
   }
   &-block {
     position: fixed;
@@ -218,9 +217,9 @@
     right: 0;
     z-index: 1000;
     width: 100%;
-    max-width: 573px;
+    max-width: 545px;
     height: 100%;
-    padding-top: 78px;
+    padding-top: 67px;
     padding-bottom: 15px;
     background-color: #fff;
     border: solid #eaeaea;
@@ -253,10 +252,10 @@
     display: block;
   }
   &-close-title {
-    font-size: 14px;
-    color: #2a364d;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-size: 20px;
+    color: $color6;
+    font-weight: 700;
+    font-family: 'Helvetica';
   }
   &-container {
     padding-left: 30px;
@@ -266,13 +265,10 @@
     height: 100%;
   }
   &-content {
+    @include form-popup-container();
     height: 100%;
     overflow-y: auto;
     margin-top: 16px;
-  }
-  &-content_complex {
-    height: calc(100% - 133px);
-    margin-bottom: 40px;
   }
   &-body {
     padding-bottom: 45px;
@@ -294,11 +290,8 @@
       text-decoration: none;
     }
   }
-  .simplebar-content {
-    margin-right: 22px;
-  }
   .simplebar-track {
-    right: 18px;
+    right: 10px;
   }
   &-help {
     margin-top: 7px;
@@ -318,10 +311,10 @@
   }
 }
 
-body.mob-form-show {
+body.form-popup-show {
   overflow: hidden;
 }
-body.mob-form-show .wrapper {
+body.form-popup-show .wrapper {
   overflow-y: scroll;
 }
 
@@ -333,6 +326,11 @@ and (max-width: $tablet){
 		top: -32px;
 		right: 0;
 	}
+  .form-popup {
+      &-close-title {
+        font-size: 18px;
+      }
+  }
 }
 
 @media screen

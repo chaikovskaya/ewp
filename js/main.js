@@ -320,12 +320,12 @@ function initAnimateSection() {
     wow.init();
 }
 
-function initScrollTop() {
+function initScrollUp() {
     $(window).scroll(function(){
-        var scrolltop = $(window).scrollTop(),
-            scrolltop1 = $('.js-animate-section-1').scrollTop();
+        var position = $(window).scrollTop(),
+            positionBlock = $('.js-main-content').scrollTop();
 
-        if (scrolltop > scrolltop1) {
+        if (position > positionBlock) {
             $('body').addClass('main-content-animate');
         } else {
             $('body').removeClass('main-content-animate');
@@ -359,6 +359,114 @@ function initAnimateContacts() {
     })
 }
 
+function initFieldText() {
+    if (typeof(FieldText) === 'undefined' || !jQuery.isFunction(FieldText)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-FieldText').not('.JS-FieldText-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('fieldtext'));
+        new FieldText(this, jQuery.extend({}, common, local));
+    });
+}
+
+function initValidate($element) {
+    if (typeof($element) == 'undefined') {
+        $element = $('.js-form-validate');
+    }
+
+    $element.each(function() {
+        var $element = jQuery(this),
+            validator;
+
+        validator = $element.validate({
+            errorClass: 'form-error',
+            validClass: 'form-success',
+        });
+
+        $.validator.messages.required = GLOBAL.FORMERROR.REQUIRED;
+        $.validator.messages.email = GLOBAL.FORMERROR.EMAIL;
+    });
+}
+
+function initMask() {
+    $('.js-phone').mask('+7 (999) 999-99-99');
+}
+
+function initTextareaSize() {
+    $('.js-textarea-size').on('input', function (e) {
+        e.target.style.innerHeight = 'auto';
+        e.target.style.height = e.target.scrollHeight + "px";
+    });
+}
+
+function initPopupForm() {
+    if (typeof(MobileMenu) === 'undefined' || !jQuery.isFunction(MobileMenu)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-PopupForm').not('.JS-MobileMenu-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('popupform'));
+        new MobileMenu(this, jQuery.extend({}, common, local));
+    });
+}
+
+function initScrollTop() {
+    var $scrolltop = $('.js-scrolltop'),
+        scrolltopActiveClass = $scrolltop.data('scrolltop');
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1) {
+            $scrolltop.addClass(scrolltopActiveClass);
+        } else {
+            $scrolltop.removeClass(scrolltopActiveClass);
+        }
+    });
+    $scrolltop.click(function(){
+        $('html, body').animate({scrollTop: '0px'}, 500);
+        return false;
+    });
+}
+
+function initPopupFeedback() {
+    $('.js-popup-feedback').each(function() {
+        $(this).on('click',function(e) {
+            e.preventDefault();
+            var url = $(this).data('src');
+
+            $('.js-preloader').removeClass('g-hidden');
+
+            $.ajax({
+                url: url,
+                type: "get",
+                dataType: "html",
+                success: function (data) {
+                    $('.js-form-popup').html(data);
+                    initFieldText();
+                    initValidate();
+                    initMask();
+                    initTextareaSize();
+                    initScroll();
+
+                    function initSetDelay() {
+                        var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
+                        new MobileMenu('.JS-PopupForm', local)._open();
+                    }
+                    setTimeout(initSetDelay, 10);
+
+                    $('.js-preloader').addClass('g-hidden');
+                },
+                error: function(data) {
+                }
+            });
+        });
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -388,8 +496,14 @@ $(document).ready(function () {
     initSliderAwards();
     initSliderClients();
     initSliderBlog();
-    initAnimateSection();
-    initScrollTop();
-
     initSliderAbout();
+    initAnimateSection();
+    initScrollUp();
+    initFieldText();
+    initValidate();
+    initMask();
+    initTextareaSize();
+    initPopupFeedback();
+    initPopupForm();
+    initScrollTop();
 });

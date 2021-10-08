@@ -274,7 +274,7 @@
                 </div>
                 <div class="container">
                     <div class="header-panel">
-                    <a class="header-more" href="javascript:;">
+                    <a class="header-more" href="#main-content">
                         <i class="header-more-icon las la-long-arrow-alt-down"></i>
                         <span class="header-more-label">Expansion web production</span>
                     </a>
@@ -529,8 +529,11 @@
                         </div>
                     </div>
                     <div class="header-actions-item">
-                        <a class="header-actions-link header-actions-link_down" href="javascript:;">
+                        <a class="header-actions-link header-actions-link_down" href="#main-content">
                             <i class="header-actions-icon las la-long-arrow-alt-down"></i>
+                        </a>
+                        <a class="header-actions-link header-actions-link_up js-scrolltop" href="javascript:;" data-scrolltop="header-actions-link_up_active">
+                            <i class="header-actions-icon las la-long-arrow-alt-up"></i>
                         </a>
                     </div>
                 </div>
@@ -538,7 +541,7 @@
             </div>
         </header>
 
-        <main class="main-content js-animate-section js-animate-section-1">
+        <main id="main-content" class="main-content js-main-content">
             <div class="portfolio-list">
                 <div class="portfolio-list-container">
                     <div class="portfolio-list-content row">
@@ -708,7 +711,7 @@
                 </div>
             </section>
 
-            <section class="awards js-animate-section js-animate-section-2">
+            <section class="awards js-animate-section">
                 <div class="awards-container js-slider-awards">
                     <h2 class="awards-title h1">Награды</h2>
                     <div class="awards-list js-slider-list">
@@ -1227,7 +1230,7 @@
                     <div class="contacts-main">
                         <span class="contacts-title h1">Мы хотим стать надежным партнером<span class="contacts-label">!</span></span>
                         <div class="contacts-info">Помочь вам в развитии продукта компании с&nbsp;помощью digital инструментов</div>
-                        <a class="more-link" href="#">
+                        <a class="more-link js-popup-feedback" href="javascript:;" data-src="./ajax/feedback.html">
                             <span class="more-link-label">Отправить заявку</span>
                             <i class="more-link-icon las la-long-arrow-alt-right"></i>
                         </a>
@@ -1370,12 +1373,16 @@
     <script src="./libs/simplebar/simplebar.min.js"></script>
     <script src="./libs/wow/wow.min.js"></script>
     <script src="./libs/mousewheel/jquery.mousewheel.js"></script>
+    <script src="./libs/mask/jquery.mask.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
     <script src="./js/JSC.Fix.js"></script>
+    <script src="./js/JSC.FieldText.js"></script>
 
     <script src="./js/main.js"></script>
+    <!-- Подключить на главной странице -->
     <script src="./js/animation.js"></script>
+    <!-- /Подключить на главной странице -->
 
 </body>
 </html>

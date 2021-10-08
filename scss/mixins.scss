@@ -30,3 +30,8 @@
     color: $color1;
   }
 }
+
+@mixin form-popup-container() {
+  padding-right: 30px;
+  padding-left: 30px;
+}
