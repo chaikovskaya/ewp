@@ -406,7 +406,7 @@ body:not(.main-page) .main-content {
 .switcher {
     line-height: 13px;
     text-decoration: none;
-    border-bottom: 1px dashed;
+    border-bottom: 1px dotted;
     &:hover {
         border-bottom-color: transparent;
     }
@@ -530,6 +530,96 @@ body:not(.main-page) .main-content {
 		color:#747474;
 	}
 }
+
+@keyframes preloader-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.load-more {
+	margin-bottom: 20px;
+	padding-bottom: 55px;
+	text-align: center;
+	border-bottom: 1px solid $color7;
+	&-label {}
+	&_active {}
+	&-icon {
+		display: inline-block;
+		vertical-align: middle;
+		width: 14px;
+		height: 14px;
+		margin-left: 5px;
+		color: $color6;
+	}
+	&-link {
+		text-decoration: none;
+	}
+	&-switcher {
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 11px;
+		color: $color6;
+	}
+	&_active &-label {
+		display: none;
+	}
+	&_active &-icon {
+		animation: preloader-rotate 2s infinite linear;
+	}
+}
+
+/* pager */
+.pager {
+	list-style-type: none;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	&-item {
+		margin-right: 16px;
+		font-size: 15px; }
+	&-item:last-child {
+		margin-right: 0; }
+	&-item_first {
+		margin-right: auto;
+	}
+	&-item_last {
+		margin-left: auto;
+	}
+	&-link {
+		display: inline-block;
+		padding-right: 4px;
+		padding-left: 4px;
+		text-decoration: none;
+		font-size: 16px;
+		color: $color6;
+		font-weight: 700;
+		&:hover {
+			color: $color1;
+		}
+	}
+	&-link_last {}
+	&-icon {
+		display: block;
+	}
+	&-link:hover &-icon {
+		fill: $color1;
+	}
+	&-item_active &-link {
+		color: $color1;
+		border-bottom: 2px solid $color1;
+	}
+	&-item_active &-link:hover {
+		color: $color1;
+	}
+	&-item_default &-icon {
+		color: #bec0c5;
+	}
+}
+/* /pager */
+
 
 @media screen
 and (min-width: $desktop){

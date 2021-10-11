@@ -1177,7 +1177,6 @@ and (max-width: $tablet){
 @media screen
 and (max-width: $mobile){
     .header {
-        padding-bottom: 53px;
         &-logo-element {
             max-width: 160px;
         }
@@ -1217,6 +1216,9 @@ and (max-width: $mobile){
         &-top-block_fix &-logo-element {
             width: 126px;
         }
+    }
+    .main-page .header {
+        padding-bottom: 53px;
     }
     .mob {
         &-menu-switcher {

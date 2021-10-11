@@ -535,26 +535,36 @@
                 </div>
 
                 <div class="portfolio-actions">
-                    <ul class="portfolio-menu">
-                        <li class="portfolio-menu-item">
-                            <a class="portfolio-menu-link" href="#">Все</a>
-                        </li>
-                        <li class="portfolio-menu-item">
-                            <a class="portfolio-menu-link" href="#">Разработка</a>
-                        </li>
-                        <li class="portfolio-menu-item">
-                            <a class="portfolio-menu-link" href="#">SEO</a>
-                        </li>
-                        <li class="portfolio-menu-item portfolio-menu-item_active">
-                            <a class="portfolio-menu-link" href="#">Контекстная реклама</a>
-                        </li>
-                        <li class="portfolio-menu-item">
-                            <a class="portfolio-menu-link" href="#">YouTube</a>
-                        </li>
-                        <li class="portfolio-menu-item">
-                            <a class="portfolio-menu-link" href="#">Техподдержка</a>
-                        </li>
-                    </ul>
+                    <div class="portfolio-menu-wrapper js-expand" data-expand="{
+                    'classActive': 'portfolio-menu-wrapper_active',
+                    'classShow': 'portfolio-menu-wrapper_show'
+                    }">
+                        <ul class="portfolio-menu js-expand-block">
+                            <li class="portfolio-menu-item">
+                                <a class="portfolio-menu-link" href="#">Все</a>
+                            </li>
+                            <li class="portfolio-menu-item">
+                                <a class="portfolio-menu-link" href="#">Разработка</a>
+                            </li>
+                            <li class="portfolio-menu-item">
+                                <a class="portfolio-menu-link" href="#">SEO</a>
+                            </li>
+                            <li class="portfolio-menu-item portfolio-menu-item_active">
+                                <a class="portfolio-menu-link" href="#">Контекстная реклама</a>
+                            </li>
+                            <li class="portfolio-menu-item">
+                                <a class="portfolio-menu-link" href="#">YouTube</a>
+                            </li>
+                            <li class="portfolio-menu-item">
+                                <a class="portfolio-menu-link" href="#">Техподдержка</a>
+                            </li>
+                            <li class="portfolio-menu-item portfolio-menu-item_more">
+                                <a class="portfolio-menu-link js-expand-link" href="javascript:;">
+                                    <i class="portfolio-menu-icon fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                     <div class="portfolio-filter">
                         <a class="portfolio-filter-link" href="#">
@@ -570,6 +580,182 @@
                     <a class="filter-tag" href="#">Сантехника<i class="filter-tag-icon las la-times"></i></a>
                     <a class="filter-tag" href="#">Освещение<i class="filter-tag-icon las la-times"></i></a>
                     <a class="filter-reset switcher" href="#">Сбросить</a>
+                </div>
+
+                <div class="portfolio-banner">
+                    <a class="portfolio-banner-link" href="#">
+                        <span class="portfolio-banner-img">
+                            <img src="./images/portfolio/portfolio-banner-img.png" alt="Showreel" />
+                        </span>
+                    </a>
+                </div>
+
+                <div class="portfolio-content JS-AjaxMore" data-ajaxmore="{'classLoad':'load-more_active'}">
+                    <div class="portfolio-content-block">
+                        <div class="portfolio-list-content row JS-AjaxMore-Content">
+                            <div class="portfolio-list-col col-lg-6">
+                                <div class="portfolio-list-item portfolio-list-item_simple">
+                                    <a class="portfolio-list-link" href="#">
+                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-1.jpg" alt="" />
+                                        <span class="portfolio-list-label">
+                                    <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                </span>
+                                    </a>
+                                    <ul class="portfolio-list-tags tags">
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># Разработка</a>
+                                        </li>
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># eCommerce</a>
+                                        </li>
+                                    </ul>
+                                    <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
+                                </div>
+                                <div class="portfolio-list-item">
+                                    <a class="portfolio-list-link" href="#">
+                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-2.jpg" alt="" />
+                                        <span class="portfolio-list-label">
+                                    <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                </span>
+                                        <span class="portfolio-list-informer">
+                                    <span class="portfolio-list-informer-item">
+                                        <span class="portfolio-list-informer-digit">
+                                            <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1 100%
+                                        </span>
+                                        <span class="portfolio-list-informer-label">рост<br /> трафика</span>
+                                    </span>
+                                    <span class="portfolio-list-informer-item">
+                                        <span class="portfolio-list-informer-digit">1 567</span>
+                                        <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
+                                    </span>
+                                    <span class="portfolio-list-informer-item">
+                                        <span class="portfolio-list-informer-digit">97</span>
+                                        <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
+                                    </span>
+                                </span>
+                                    </a>
+                                    <ul class="portfolio-list-tags tags">
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># Разработка</a>
+                                        </li>
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># eCommerce</a>
+                                        </li>
+                                    </ul>
+                                    <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
+                                </div>
+                                <div class="portfolio-list-item">
+                                    <div class="portfolio-list-banner">
+                                        <div class="portfolio-list-banner-info">С 2018 года мы запустили более 100 проектов.</div>
+                                        <div class="portfolio-list-banner-detail">Только часть из них попали на эту страницу.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-list-col col-lg-5">
+                                <div class="portfolio-list-item">
+                                    <a class="portfolio-list-link" href="#">
+                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-3.jpg" alt="" />
+                                        <span class="portfolio-list-label">
+                                    <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                </span>
+                                        <span class="portfolio-list-informer">
+                                    <span class="portfolio-list-informer-item">
+                                        <span class="portfolio-list-informer-digit">
+                                            <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1&nbsp;100%
+                                        </span>
+                                        <span class="portfolio-list-informer-label">рост<br /> трафика</span>
+                                    </span>
+                                    <span class="portfolio-list-informer-item">
+                                        <span class="portfolio-list-informer-digit">1 567</span>
+                                        <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
+                                    </span>
+                                    <span class="portfolio-list-informer-item">
+                                        <span class="portfolio-list-informer-digit">97</span>
+                                        <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
+                                    </span>
+                                </span>
+                                    </a>
+                                    <ul class="portfolio-list-tags tags">
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                        </li>
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># B2C</a>
+                                        </li>
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># eCommerce</a>
+                                        </li>
+                                    </ul>
+                                    <a class="portfolio-list-name" href="#">Продвижение инженерного центра “ГазТеплоВода”</a>
+                                </div>
+                                <div class="portfolio-list-item portfolio-list-item_simple">
+                                    <a class="portfolio-list-link" href="#">
+                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-4.jpg" alt="" />
+                                        <span class="portfolio-list-label">
+                                    <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                </span>
+                                    </a>
+                                    <ul class="portfolio-list-tags tags">
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                        </li>
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># B2C</a>
+                                        </li>
+                                        <li class="tags-item">
+                                            <a class="tags-link" href="#"># eCommerce</a>
+                                        </li>
+                                    </ul>
+                                    <a class="portfolio-list-name" href="#">Оптимизация канала “Prof-Medicina”</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-more">
+                        <a class="load-more-link JS-AjaxMore-Link" href="javascript:;">
+                            <span class="load-more-switcher switcher">Показать еще</span>
+                            <i class="load-more-icon las la-redo-alt"></i>
+                        </a>
+                    </div>
+                    <ul class="pager JS-AjaxMore-Pager">
+                        <li class="pager-item pager-item_side pager-item_first">
+                            <a class="pager-link" href="#">
+                                <i class="pager-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                        <path d="M5.8,0.2l0.9,0.9L2.4,5.4H52v1.3H2.4l4.3,4.3l-0.9,0.9L0.4,6.5L0,6l0.4-0.5L5.8,0.2z"/>
+                                    </svg>
+                                </i>
+                            </a>
+                        </li>
+                        <!-- Добавить класс pager-item_default, если страницы пролистаны
+                        <li class="pager-item pager-item_side pager-item_first pager-item_default">
+                            <span class="pager-link">
+                                <i class="pager-icon"></i>
+                            </span>
+                        </li>
+                        <!-- //Добавить класс pager-item_default, если страницы пролистаны -->
+                        <li class="pager-item"><a class="pager-link" href="#">1</a></li>
+                        <li class="pager-item pager-item_active"><a class="pager-link" href="#">2</a></li>
+                        <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                        <li class="pager-item"><a class="pager-link" href="#">...</a></li>
+                        <li class="pager-item"><a class="pager-link" href="#">48</a></li>
+                        <li class="pager-item pager-item_side pager-item_last">
+                            <a class="pager-link pager-link_last JS-AjaxMore-Next" href="#?PAGEN_2=2">
+                                <i class="pager-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                        <path d="M51.6,5.5L52,6l-0.4,0.5l-5.3,5.3l-0.9-0.9l4.3-4.3H0V5.4h49.6l-4.3-4.3l0.9-0.9L51.6,5.5z"/>
+                                    </svg>
+                                </i>
+                            </a>
+                        </li>
+                        <!-- Добавить класс pager-item_default, если страницы пролистаны
+                        <li class="pager-item pager-item_side pager-item_last pager-item_default">
+                            <span class="pager-link pager-link_last">
+                                <i class="pager-icon"></i>
+                            </span>
+                        </li>
+                        <!-- //Добавить класс pager-item_default, если страницы пролистаны -->
+                    </ul>
                 </div>
 
             </div>

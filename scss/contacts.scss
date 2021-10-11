@@ -1,6 +1,7 @@
 
 .contacts {
     @include container();
+    transform: scale(0.8);
     &-container {
         display: flex;
         padding: 70px 80px;
