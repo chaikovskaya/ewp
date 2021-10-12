@@ -335,7 +335,8 @@ function initScrollUp() {
 
 function initAnimateContacts() {
     var $element = document.querySelector('.js-animate-contacts'),
-        speed = 80;
+        speed = 56,
+        positionTopElem = $($element).offset().top;
 
     var animate = function(type, name, obj){
         var obj = obj || window;
@@ -353,9 +354,18 @@ function initAnimateContacts() {
 
     animate("scroll", "optimizedScroll");
 
+    var i = 0.6;
 
     window.addEventListener("optimizedScroll", function(){
-        $element.style.transform = "scale(" + (window.pageYOffset / (speed +3)) / speed + ")";
+        console.log((window.pageYOffset + 350) + ' ' + positionTopElem);
+        if ((window.pageYOffset + 350) > positionTopElem) {
+            i = i + 0.15;
+            $element.style.transform = "scale(" + i + ")";
+        } else {
+            i = Math.abs(i - 0.15);
+            $element.style.transform = "scale(" + i + ")";
+        }
+        //$element.style.transform = "scale(" + ( window.pageYOffset/(speed +3) ) / speed + ")";
     })
 }
 

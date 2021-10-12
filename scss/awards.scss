@@ -11,7 +11,7 @@
         padding-left: 105px;
         background-color: $color1;
         overflow: hidden;
-        transition: margin-left 1s ease-in-out 0s;
+        transition: margin-left 1s ease-in-out 0.1s;
     }
     &-title {
         @include point();

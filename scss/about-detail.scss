@@ -1,0 +1,23 @@
+
+.about-detail-slider {
+    .owl-stage {
+        display: flex;
+    }
+    &-list {
+    }
+    &-link {
+        display: block;
+    }
+    &-img {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen
+and (max-width: $tablet){
+}
+
+@media screen
+and (max-width: $mobile){
+}
