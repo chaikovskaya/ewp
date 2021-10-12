@@ -1,7 +1,6 @@
 
 .blog {
     @include container();
-    margin-bottom: 70px;
     &-title {}
     .owl-stage {
         display: flex;
@@ -95,9 +94,9 @@
 @media screen
 and (max-width: $tablet) {
     .blog {
-        margin-bottom: 90px;
         &-list {
             overflow: visible;
+            margin-bottom: 0;
             margin-right: 60px;
             margin-left: 60px;
         }
@@ -111,7 +110,6 @@ and (max-width: $tablet) {
 @media screen
 and (max-width: $mobile){
     .blog {
-        margin-bottom: 60px;
         &-title {
             text-align: center;
         }

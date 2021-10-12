@@ -1,7 +1,8 @@
 
 .contacts {
     @include container();
-    transform: scale(0.8);
+    /*transform: scale(0.8);*/
+    margin-bottom: 90px;
     &-container {
         display: flex;
         padding: 70px 80px;
@@ -97,6 +98,7 @@ and (max-width: $tablet) {
 @media screen
 and (max-width: $mobile){
     .contacts {
+        margin-bottom: 75px;
         &-container {
             display: block;
             padding-right: 20px;

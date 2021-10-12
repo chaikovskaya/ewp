@@ -302,16 +302,13 @@ blockquote {
 }
 
 .main-content {
-	margin-bottom: 90px;
+	margin-bottom: 80px;
 	padding-top: 45px;
 }
 .main-page .main-content {
 	padding-top: 80px;
+	margin-bottom: 72px;
 }
-body:not(.main-page) .main-content {
-	margin-bottom: 105px;
-}
-
 
 .content {
     b {
@@ -664,6 +661,7 @@ and (max-width: $tablet){
 		display: none;
 	}
 	.main-content {
+		margin-bottom: 55px;
 		padding-top: 40px;
 	}
 	.head-panel {
@@ -681,6 +679,7 @@ and (max-width: $mobile){
 		text-align: center;
 	}
 	.main-content {
+		margin-bottom: 60px;
 		padding-top: 25px;
 	}
 	.main-page .main-content {

@@ -15,7 +15,7 @@
     }
     &-col {
         &:nth-child(2) {
-            margin-top: 55px;
+           margin-top: 55px;
         }
     }
     &-link {
@@ -161,7 +161,7 @@
 
 @media screen
 and (min-width: $desktop){
-    .portfolio-list {
+    .main-page .portfolio-list {
         &-item {
             &:last-child {
                 margin-bottom: 0;

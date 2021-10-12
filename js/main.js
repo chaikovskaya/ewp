@@ -505,6 +505,40 @@ function initPopupFilter() {
     });
 }
 
+function initAjaxMore() {
+    if (typeof(AjaxMore) === 'undefined' || !jQuery.isFunction(AjaxMore)) {
+        return false;
+    }
+
+    var common = {
+        success: function () {
+        }
+    };
+
+    $('.JS-AjaxMore').not('.JS-AjaxMore-ready').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('ajaxmore'));
+        new AjaxMore(this, jQuery.extend({}, common, local));
+    });
+}
+/*
+function initColumns() {
+    if (typeof(Columns) === 'undefined' || !jQuery.isFunction(Columns)) {
+        return false;
+    }
+
+    var common = {
+        'update': function() {
+        }
+    };
+
+    jQuery('.JS-Columns').not('.JS-Columns-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('columns'));
+        new Columns(this, jQuery.extend({}, common, local));
+    });
+}
+ */
+
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -513,7 +547,7 @@ function initResizeWindow() {
         GLOBAL.widthWindow = 'isTablet';
     } else {
         GLOBAL.widthWindow = '';
-        initAnimateContacts();
+        //initAnimateContacts();
     }
 }
 
@@ -546,4 +580,6 @@ $(document).ready(function () {
     initScrollTop();
     initExpand();
     initPopupFilter();
+    initAjaxMore();
+    //initColumns();
 });
