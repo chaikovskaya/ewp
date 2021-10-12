@@ -325,6 +325,9 @@
         font-size: 22px;
         color: #b9b9b9;
     }
+    &-socials-link:hover &-socials-icon {
+        color: $color1;
+    }
     &-actions-link {
         display: flex;
         align-items: center;
@@ -391,6 +394,9 @@
         background-color: $color5;
     }
 }
+.main-page .header-socials-link:hover .header-socials-icon {
+    color: $color4;
+}
 
 .main-content-animate.main-page .header {
     &-actions {
@@ -413,7 +419,7 @@
         background-color: $color5;
     }
 }
-.main-content-animate.main-page .header-socials-link:hover .header-socials-icon {
+.main-content-animate .header-socials-link:hover .header-socials-icon {
     color: $color1;
 }
 

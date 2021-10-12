@@ -584,6 +584,7 @@ body:not(.main-page) .main-content {
 		margin-right: 0; }
 	&-item_first {
 		margin-right: auto;
+		padding-right: 16px;
 	}
 	&-item_last {
 		margin-left: auto;
@@ -615,7 +616,18 @@ body:not(.main-page) .main-content {
 		color: $color1;
 	}
 	&-item_default &-icon {
-		color: #bec0c5;
+		fill: $color;
+	}
+	&-item_side {
+		align-self: flex-end;
+	}
+	&-item_side &-link {
+		margin-top: 13px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	&-item_side &-icon {
+
 	}
 }
 /* /pager */

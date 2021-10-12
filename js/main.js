@@ -492,6 +492,19 @@ function initExpand() {
     });
 }
 
+function initPopupFilter() {
+    if (typeof(MobileMenu) === 'undefined' || !jQuery.isFunction(MobileMenu)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-PopupFilter').not('.JS-MobileMenu-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('mobilemenu'));
+        new MobileMenu(this, jQuery.extend({}, common, local));
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -532,4 +545,5 @@ $(document).ready(function () {
     initPopupForm();
     initScrollTop();
     initExpand();
+    initPopupFilter();
 });

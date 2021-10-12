@@ -191,6 +191,13 @@
     &-reset:hover {
         color: $color6;
     }
+    &-form-list {}
+    &-form-list-item {
+        margin-bottom: 14px;
+    }
+    &-form-list-item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media screen

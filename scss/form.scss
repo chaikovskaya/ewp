@@ -101,27 +101,25 @@ label.form-error {
         height: 18px;
         margin-right: 8px;
         background-color: #fff;
-        border: 1px solid #e6e6e6;
-        border-radius: 2px;
+        border: 1px solid #dedede;
         line-height: 16px;
         font-size: 10px;
         color: transparent;
         text-align: center;
         &:hover {
             cursor: pointer;
+            border-color: $color1;
         }
     }
     &-label {
-        color: #8e8e8e;
+        font-size: 15px;
+        color: $color;
         cursor: pointer;
     }
     &-input:checked + &-check {
-        background-color: #335aa6;
-        border-color: #335aa6;
+        background-color: $color1;
+        border-color: $color1;
         color: #fff;
-    }
-    &-input:checked ~ &-label {
-        color: #335aa6;
     }
 }
 
@@ -166,10 +164,18 @@ label.form-error {
         line-height: 34px;
         border-radius: 17px;
     }
+    &_light {
+        background-color: $color10;
+        color: $color6;
+        &:hover {
+            background-color: $color10;
+            color: $color6;
+        }
+    }
 }
 
 .button-icon {
-    margin-left: 5px;
+    margin-left: 7px;
     vertical-align: middle;
     font-size: 15px;
 }
