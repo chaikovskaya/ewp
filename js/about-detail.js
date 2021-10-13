@@ -15,7 +15,6 @@ function initSliderCompany() {
             autoHeight: false,
             smartSpeed: 500,
             margin: 30,
-            center: true,
             responsive: {
                 0: {
                     items: 1,
@@ -27,7 +26,7 @@ function initSliderCompany() {
                 },
                 992: {
                     items: 2,
-
+                    center: true,
                 },
             },
         }));

@@ -59,7 +59,7 @@ h1,
 h2,
 .h2 {
     margin-bottom: 14px;
-	font: 700 35px/35px 'Helvetica', sans-serif;
+	font: 700 35px/40px 'Helvetica', sans-serif;
 	color: $color6;
 	@include point();
 }
@@ -641,6 +641,11 @@ and (max-width: $tablet){
 	.h1 {
 		font-size: 35px;
 		line-height: 45px;
+	}
+	h2,
+	.h2 {
+		font-size: 22px;
+		line-height: 30px;
 	}
 	.more-link {
 		padding-left: 20px;

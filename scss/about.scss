@@ -4,16 +4,29 @@
     &-head {
         @include container();
         display: flex;
-        align-items: center;
+
         margin-bottom: 75px;
     }
     &-img {
-        margin-right: 102px;
-        padding-right: 106px;
+        width: 33.3%;
+    }
+    &-img-block {
+        width: 80%;
+        height: 100%;
+        padding-right: 20px;
         border-right: 1px solid $color7;
+    }
+    &-description {
+        width: 66.7%;
     }
     &-title {
         margin-bottom: 0;
+    }
+    &-info {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 38px;
     }
     &-list-wrapper {
         padding-right: $gutter;
@@ -76,10 +89,9 @@ and (max-width: $desktop){
 and (max-width: $tablet){
     .about {
         margin-bottom: 60px;
-        &-img {
-            width: 177px;
-            margin-right: 60px;
-            padding-right: 24px;
+        &-info {
+            font-size: 20px;
+            line-height: 30px;
         }
         &-list-count {
             font-size: 30px;
@@ -134,11 +146,25 @@ and (max-width: $mobile){
             margin-bottom: 43px;
         }
         &-img {
-            width: 155px;
-            margin-right: 0;
+            width: auto;
             margin-bottom: 35px;
+        }
+        &-img-block {
+            width: 100%;
             padding-right: 0;
             border-right-width: 0;
+            text-align: center;
+        }
+        &-img-element {
+            max-width: 155px;
+        }
+        &-description {
+            width: auto;
+        }
+        &-info {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
         }
         &-title {
             text-align: center;

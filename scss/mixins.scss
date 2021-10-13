@@ -22,7 +22,7 @@
 @mixin point() {
   &:after {
     content: '.';
-    margin-left: 2px;
+    margin-left: 1px;
     color: $color1;
   }
 }
@@ -30,4 +30,20 @@
 @mixin form-popup-container() {
   padding-right: 30px;
   padding-left: 30px;
+}
+
+@mixin number() {
+  display: block;
+  height: 37px;
+  overflow: hidden;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 900;
+  color: $color1;
+  font-family: "Helvetica";
+  @media screen and (max-width: $tablet) {
+      height: 20px;
+      font-size: 30px;
+      line-height: 33px;
+  }
 }
