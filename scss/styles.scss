@@ -165,26 +165,22 @@ textarea {
 :-ms-input-placeholder { color: #9b9b9b;font-size:13px;}
 
 blockquote {
-	margin-top: 15px;
-	margin-bottom: 20px;
-	border-left: 2px solid #335aa6;
-	padding-left: 45px;
+	padding-left: 90px;
 	position: relative;
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 18px;
 	font-style: italic;
 	line-height: 26px;
-	color: #2a364d;
 	&:after {
-		content: "\f10d";
+		content: "“";
 		position: absolute;
 		top: 0;
-		left: 10px;
-		font-weight: 700;
-		font-size: 25px;
-		font-family: "Line Awesome Free";
+		left: 0;
+		font-weight: 900;
+		font-size: 100px;
+		line-height: 85px;
 		font-style: normal;
-		color: #335aa6;
+		color: $color1;
+		font-family: 'Helvetica';
 	}
 }
 
@@ -647,6 +643,13 @@ and (max-width: $tablet){
 		font-size: 22px;
 		line-height: 30px;
 	}
+	blockquote {
+		padding-left: 60px;
+		&:after {
+			font-size: 70px;
+			line-height: 70px;
+		}
+	}
 	.more-link {
 		padding-left: 20px;
 		padding-right: 17px;
@@ -698,5 +701,13 @@ and (max-width: $mobile){
 		order: -1;
 		margin-left: 0;
 		margin-bottom: 20px;
+	}
+	blockquote {
+		font-size: 15px;
+		line-height: 23px;
+		&:after {
+			font-size: 40px;
+			line-height: 40px;
+		}
 	}
 }

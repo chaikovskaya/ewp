@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5045a60c-445e-4073-b3ad-bfcdb7ba8c59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/about-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/about-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/about-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/about-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jquery/jquery-3.5.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/about-detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/about-detail.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/styles.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zAX4HH7aYnawxC11fUnPE9lQaP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/../../node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="default" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.default" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5045a60c-445e-4073-b3ad-bfcdb7ba8c59" name="Default Changelist" comment="" />
+      <created>1633591673931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633591673931</updated>
+      <workItem from="1633591675554" duration="19943000" />
+      <workItem from="1633674726758" duration="23733000" />
+      <workItem from="1633934230224" duration="24347000" />
+      <workItem from="1634019812986" duration="26151000" />
+      <workItem from="1634106311676" duration="25325000" />
+      <workItem from="1634193001258" duration="26748000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="827" y="112" key="#Deployment" timestamp="1634046070645">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="827" y="112" key="#Deployment/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634046070645" />
+    <state x="1038" y="216" key="#SCSS" timestamp="1633695384615">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1038" y="216" key="#SCSS/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1633695384615" />
+    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1634046550587">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1060" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634046550587" />
+    <state width="1258" height="2" key="GridCell.Tab.0.bottom" timestamp="1634224035167">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1258" height="2" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634224035167" />
+    <state width="1637" height="62" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.0.1280.984@0.0.1680.1010" timestamp="1633616092933" />
+    <state width="1258" height="2" key="GridCell.Tab.0.center" timestamp="1634224035167">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1258" height="2" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634224035167" />
+    <state width="1637" height="62" key="GridCell.Tab.0.center/0.0.1680.1010/1680.0.1280.984@0.0.1680.1010" timestamp="1633616092933" />
+    <state width="1258" height="2" key="GridCell.Tab.0.left" timestamp="1634224035167">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1258" height="2" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634224035167" />
+    <state width="1637" height="62" key="GridCell.Tab.0.left/0.0.1680.1010/1680.0.1280.984@0.0.1680.1010" timestamp="1633616092933" />
+    <state width="1258" height="2" key="GridCell.Tab.0.right" timestamp="1634224035167">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1258" height="2" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634224035167" />
+    <state width="1637" height="62" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1280.984@0.0.1680.1010" timestamp="1633616092933" />
+    <state x="1097" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634206427335">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1097" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634206427335" />
+    <state x="834" y="107" width="892" height="825" key="find.popup" timestamp="1634216581463">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="834" y="107" width="892" height="825" key="find.popup/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634216581463" />
+    <state x="547" y="104" width="585" height="801" key="find.popup/0.0.1680.1010/1680.0.1280.984@0.0.1680.1010" timestamp="1633615596313" />
+    <state x="936" y="240" key="run.anything.popup" timestamp="1634199827481">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="936" y="240" key="run.anything.popup/-1920.0.1536.832/0.0.2560.1040@0.0.2560.1040" timestamp="1634199827481" />
+  </component>
+</project>
