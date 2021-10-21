@@ -47,3 +47,12 @@
       line-height: 33px;
   }
 }
+
+@mixin close() {
+  clip-path: polygon(100% 0, 100% 100%, 95% 100%, 0 5%, 0 0);
+  transition: clip-path 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@mixin close-hover() {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%, 0 0);
+}

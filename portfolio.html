@@ -101,7 +101,7 @@
                                                 <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
                                                     <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
                                                 </a>
-                                                <span class="mob-list-current">О компании</span>
+                                                <a class="mob-list-current" href="#">О компании</a>
                                                 <ul class="mob-list mob-list-child">
                                                     <li class="mob-list-item">
                                                         <a class="mob-list-child-link" href="#">О компании</a>
@@ -130,7 +130,7 @@
                                                 <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
                                                     <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
                                                 </a>
-                                                <span class="mob-list-current">Проекты</span>
+                                                <a class="mob-list-current" href="#">Проекты</a>
                                                 <ul class="mob-list mob-list-child">
                                                     <li class="mob-list-item">
                                                         <a class="mob-list-child-link" href="#">Интернет-магазины</a>
@@ -153,7 +153,7 @@
                                                 <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
                                                     <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
                                                 </a>
-                                                <span class="mob-list-current">Услуги</span>
+                                                <a class="mob-list-current" href="#">Услуги</a>
                                                 <ul class="mob-list mob-list-child">
                                                     <li class="mob-list-item">
                                                         <a class="mob-list-child-link" href="#">Веб-разработка</a>
@@ -759,34 +759,74 @@
                     </a>
                 </div>
 
-                <div class="portfolio-content JS-AjaxMore" data-ajaxmore="{'classLoad':'load-more_active'}">
-                    <div class="portfolio-content-block">
-                        <div class="portfolio-list-content row JS-AjaxMore-Content">
-                            <div class="portfolio-list-col col-lg-6">
-                                <div class="portfolio-list-item portfolio-list-item_simple">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-1.jpg" alt="" />
-                                        <span class="portfolio-list-label">
+                <div class="portfolio-content JS-AjaxMore-Portfolio" data-ajaxmore="{'classLoad':'load-more_active'}">
+                    <div class="portfolio-content-block JS-Columns" data-columns="{'number': 2}">
+                        <div class="portfolio-list-content row">
+                            <div class="portfolio-list-col col-lg-6 JS-Columns-End"></div>
+                            <div class="portfolio-list-col col-lg-5 JS-Columns-End"></div>
+                        </div>
+
+                        <div class="portfolio-list-main JS-Columns-Start-List JS-AjaxMore-Content">
+                            <div class="portfolio-list-item portfolio-list-item_simple JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-1.jpg" alt="" />
+                                    <span class="portfolio-list-label">
                                         <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
                                     </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Разработка</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
-                                </div>
-                                <div class="portfolio-list-item">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-2.jpg" alt="" />
-                                        <span class="portfolio-list-label">
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Разработка</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
+                            </div>
+                            <div class="portfolio-list-item JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-3.jpg" alt="" />
+                                    <span class="portfolio-list-label">
                                         <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
                                     </span>
-                                        <span class="portfolio-list-informer">
+                                    <span class="portfolio-list-informer">
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">
+                                                <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1&nbsp;100%
+                                            </span>
+                                            <span class="portfolio-list-informer-label">рост<br /> трафика</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">1 567</span>
+                                            <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">97</span>
+                                            <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># B2C</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Продвижение инженерного центра “ГазТеплоВода”</a>
+                            </div>
+                            <div class="portfolio-list-item JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-2.jpg" alt="" />
+                                    <span class="portfolio-list-label">
+                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                    </span>
+                                    <span class="portfolio-list-informer">
                                         <span class="portfolio-list-informer-item">
                                             <span class="portfolio-list-informer-digit">
                                                 <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1 100%
@@ -802,41 +842,97 @@
                                             <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
                                         </span>
                                     </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Разработка</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
-                                </div>
-                                <div class="portfolio-list-item portfolio-list-item_simple">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-5.jpg" alt="" />
-                                        <span class="portfolio-list-label">
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Разработка</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
+                            </div>
+                            <div class="portfolio-list-item portfolio-list-item_simple JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-4.jpg" alt="" />
+                                    <span class="portfolio-list-label">
+                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                    </span>
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># B2C</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Оптимизация канала “Prof-Medicina”</a>
+                            </div>
+                            <div class="portfolio-list-item portfolio-list-item_simple JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-5.jpg" alt="" />
+                                    <span class="portfolio-list-label">
                                             <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
                                         </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Разработка</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
-                                </div>
-                                <div class="portfolio-list-item">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-6.jpg" alt="" />
-                                        <span class="portfolio-list-label">
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Разработка</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
+                            </div>
+                            <div class="portfolio-list-item JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-7.jpg" alt="" />
+                                    <span class="portfolio-list-label">
                                         <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
                                     </span>
-                                        <span class="portfolio-list-informer">
+                                    <span class="portfolio-list-informer">
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">
+                                                <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1&nbsp;100%
+                                            </span>
+                                            <span class="portfolio-list-informer-label">рост<br /> трафика</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">1 567</span>
+                                            <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">97</span>
+                                            <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># B2C</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Продвижение инженерного центра “ГазТеплоВода”</a>
+                            </div>
+                            <div class="portfolio-list-item JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-6.jpg" alt="" />
+                                    <span class="portfolio-list-label">
+                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                    </span>
+                                    <span class="portfolio-list-informer">
                                         <span class="portfolio-list-informer-item">
                                             <span class="portfolio-list-informer-digit">
                                                 <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1 100%
@@ -852,136 +948,41 @@
                                             <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
                                         </span>
                                     </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Разработка</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
-                                </div>
-                                <div class="portfolio-list-item">
-                                    <div class="portfolio-list-banner">
-                                        <div class="portfolio-list-banner-info">С 2018 года мы запустили более 100 проектов.</div>
-                                        <div class="portfolio-list-banner-detail">Только часть из них попали на эту страницу.</div>
-                                    </div>
-                                </div>
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Разработка</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
                             </div>
-                            <div class="portfolio-list-col col-lg-5">
-                                <div class="portfolio-list-item">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-3.jpg" alt="" />
-                                        <span class="portfolio-list-label">
+                            <div class="portfolio-list-item portfolio-list-item_simple JS-Columns-Start">
+                                <a class="portfolio-list-link" href="#">
+                                    <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-8.jpg" alt="" />
+                                    <span class="portfolio-list-label">
                                         <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
                                     </span>
-                                        <span class="portfolio-list-informer">
-                                        <span class="portfolio-list-informer-item">
-                                            <span class="portfolio-list-informer-digit">
-                                                <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1&nbsp;100%
-                                            </span>
-                                            <span class="portfolio-list-informer-label">рост<br /> трафика</span>
-                                        </span>
-                                        <span class="portfolio-list-informer-item">
-                                            <span class="portfolio-list-informer-digit">1 567</span>
-                                            <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
-                                        </span>
-                                        <span class="portfolio-list-informer-item">
-                                            <span class="portfolio-list-informer-digit">97</span>
-                                            <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
-                                        </span>
-                                    </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Поисковое продвижение</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># B2C</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Продвижение инженерного центра “ГазТеплоВода”</a>
-                                </div>
-                                <div class="portfolio-list-item portfolio-list-item_simple">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-4.jpg" alt="" />
-                                        <span class="portfolio-list-label">
-                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
-                                    </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Поисковое продвижение</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># B2C</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Оптимизация канала “Prof-Medicina”</a>
-                                </div>
-                                <div class="portfolio-list-item">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-7.jpg" alt="" />
-                                        <span class="portfolio-list-label">
-                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
-                                    </span>
-                                        <span class="portfolio-list-informer">
-                                        <span class="portfolio-list-informer-item">
-                                            <span class="portfolio-list-informer-digit">
-                                                <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1&nbsp;100%
-                                            </span>
-                                            <span class="portfolio-list-informer-label">рост<br /> трафика</span>
-                                        </span>
-                                        <span class="portfolio-list-informer-item">
-                                            <span class="portfolio-list-informer-digit">1 567</span>
-                                            <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
-                                        </span>
-                                        <span class="portfolio-list-informer-item">
-                                            <span class="portfolio-list-informer-digit">97</span>
-                                            <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
-                                        </span>
-                                    </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Поисковое продвижение</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># B2C</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Продвижение инженерного центра “ГазТеплоВода”</a>
-                                </div>
-                                <div class="portfolio-list-item portfolio-list-item_simple">
-                                    <a class="portfolio-list-link" href="#">
-                                        <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-8.jpg" alt="" />
-                                        <span class="portfolio-list-label">
-                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
-                                    </span>
-                                    </a>
-                                    <ul class="portfolio-list-tags tags">
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># Поисковое продвижение</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># B2C</a>
-                                        </li>
-                                        <li class="tags-item">
-                                            <a class="tags-link" href="#"># eCommerce</a>
-                                        </li>
-                                    </ul>
-                                    <a class="portfolio-list-name" href="#">Оптимизация канала “Prof-Medicina”</a>
+                                </a>
+                                <ul class="portfolio-list-tags tags">
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># B2C</a>
+                                    </li>
+                                    <li class="tags-item">
+                                        <a class="tags-link" href="#"># eCommerce</a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-list-name" href="#">Оптимизация канала “Prof-Medicina”</a>
+                            </div>
+                            <div class="portfolio-list-item JS-Columns-Start">
+                                <div class="portfolio-list-banner">
+                                    <div class="portfolio-list-banner-info">С 2018 года мы запустили более 100 проектов.</div>
+                                    <div class="portfolio-list-banner-detail">Только часть из них попали на эту страницу.</div>
                                 </div>
                             </div>
                         </div>
@@ -1195,6 +1196,7 @@
     <script src="./js/JSC.Fix.js"></script>
     <script src="./js/JSC.FieldText.js"></script>
     <script src="./js/JSC.AjaxMore.js"></script>
+    <script src="./js/JSC.Columns.js"></script>
 
     <script src="./js/main.js"></script>
 

@@ -45,7 +45,13 @@
     };
 
     Columns.prototype._build = function( ){
-        for (let i = 0; i < this.$itemStart.length; i++) {
+        let i = 0;
+
+        if (GLOBAL.columnsStartLength != 0) {
+            i = GLOBAL.columnsStartLength;
+        }
+
+        for (i; i < this.$itemStart.length; i++) {
             var heightsMas = [],
                 height,
                 indexMas;
@@ -63,6 +69,10 @@
             var $targetCol = this.$itemEnd.eq(indexMas);
 
             $clone.appendTo($targetCol);
+
+            if (i == (this.$itemStart.length - 1)) {
+                GLOBAL.columnsStartLength = i + 1;
+            }
         }
 
         this.update();

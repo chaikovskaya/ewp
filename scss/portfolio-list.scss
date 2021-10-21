@@ -6,12 +6,16 @@
     &-container {
         @include container();
     }
+    &-main {
+        display: none;
+    }
     &-item {
         margin-bottom: 75px;
     }
     &-item_simple {}
     &-content {
         justify-content: space-between;
+        align-items: flex-start;
     }
     &-col {
         &:nth-child(2) {
@@ -47,6 +51,7 @@
     }
     &-name {
         @include point();
+        display: block;
         text-decoration: none;
         font-size: 25px;
         line-height: 33px;
@@ -130,6 +135,14 @@
     &-more {
         top: -57px;
     }
+    &-col:nth-child(2) &-banner {
+        padding-left: 100px;
+        padding-right: 0;
+        &:after {
+            right: auto;
+            left: 100%;
+        }
+    }
 }
 
 .tags {
@@ -185,6 +198,14 @@ and (max-width: $tablet){
         }
         &-more {
             top: -32px;
+        }
+        &-content {
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+        }
+        &-main {
+            display: block;
         }
     }
 }
