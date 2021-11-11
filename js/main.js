@@ -172,32 +172,36 @@ function initSliderClients() {
             $next = $element.find('.js-slider-next'),
             $item = $list.find('.js-slider-item');
 
-        if ($item.length > 1) {
-            $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
-                smartSpeed: 500,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    720: {
-                        items: 3,
-                        mouseDrag: true,
-                    },
-                    992: {
-                        items: 4,
-                        slideBy: 4,
-                    },
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isStart,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 1,
                 },
-            }));
-            $prev.click(function(){
-                $list.trigger("prev.owl.carousel");
-            });
-            $next.click(function(){
-                $list.trigger("next.owl.carousel");
-            });
-        } else {
+                720: {
+                    items: 3,
+                    mouseDrag: true,
+                },
+                992: {
+                    items: 4,
+                    slideBy: 4,
+                },
+            },
+        }));
+        if (!isStart) {
             $buttons.remove();
         }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
     });
 }
 
@@ -246,60 +250,30 @@ function initSliderBlog() {
 }
 
 function initSliderAbout() {
-    $(".js-slider-about").each(function(){
-        var $element = $(this),
-            $list = $element.find('.js-slider-list'),
-            $buttons = $element.find('.js-slider-buttons'),
-            $prev = $element.find('.js-slider-prev'),
-            $next = $element.find('.js-slider-next'),
-            $item = $list.find('.js-slider-item');
-
-        var isStart = $item.length > 1 ? true : false;
-
-        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
-            loop: isStart,
-            mouseDrag: isStart,
-            touchDrag: isStart,
-            autoHeight: false,
-            smartSpeed: 500,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1,
-                    margin: 10,
-                },
-                720: {
-                    items: 2,
-                    mouseDrag: true,
-                },
-                992: {
-                    items: 3,
-                },
-                1308: {
-                    items: 4,
-                },
-                1600: {
-                    items: 5,
-                },
+    var swiper = new Swiper(".js-slider-about", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
             },
-        }));
-        if (!isStart) {
-            $buttons.remove();
-        }
-        $prev.click(function(){
-            $list.trigger("prev.owl.carousel");
-        });
-        $next.click(function(){
-            $list.trigger("next.owl.carousel");
-        });
-        $list.on('mousewheel', '.owl-stage', function (e) {
-            if (e.deltaY>0) {
-                $list.trigger('next.owl');
-            } else {
-                $list.trigger('prev.owl');
-            }
-            e.preventDefault();
-        });
+            720: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1308: {
+                slidesPerView: 4,
+            },
+            1600: {
+                slidesPerView: 5,
+            },
+        },
     });
 }
 
@@ -462,6 +436,7 @@ function initPopupFeedback() {
                     initMask();
                     initTextareaSize();
                     initScroll();
+                    initForm();
 
                     function initSetDelay() {
                         var local = GLOBAL.parseData(jQuery('.JS-PopupForm').data('popupform'));
@@ -549,6 +524,62 @@ function initAjaxMorePortfolio() {
     });
 }
 
+function initForm() {
+    jQuery('.js-form').each(function() {
+        var $checkbox = $(this).find('.js-form-checkbox'),
+            $button = $(this).find('.js-form-button'),
+            classDisabled = $(this).data('form-disabled');
+
+        if ($checkbox.is(':checked')) {
+            $button.removeClass(classDisabled);
+        } else {
+            $button.addClass(classDisabled);
+        }
+
+        $checkbox.on("change", function(e) {
+            e.stopPropagation();
+            if ($checkbox.is(':checked')) {
+                $button.prop("disabled", false);
+                $button.removeClass(classDisabled);
+            } else {
+                $button.prop("disabled", true);
+                $button.addClass(classDisabled);
+            }
+        });
+    });
+}
+
+function initPopupImg() {
+    $(".js-popup-img").fancybox({
+        loop: true,
+        infobar: false,
+        toolbar  : false,
+        smallBtn : true,
+        arrows : false,
+        animationEffect: "fade",
+        btnTpl: {
+            smallBtn:
+                '<span data-fancybox-close class="fancybox-close fancybox-close_simple">' +
+                '<i class="fancybox-close-icon las la-times"></i>' +
+                "</span>",
+        },
+        beforeClose: function (instance) {
+        },
+        afterLoad: function(instance, current) {
+            if ( instance.group.length > 1 && current.$content ) {
+                current.$content.append('' +
+                    '<div class="fancybox-nav-block">' +
+                    '<button class="fancybox-button fancybox-button--arrow_left prev" data-fancybox-prev>' +
+                    '<i class="fancybox-button-icon fancybox-button-icon_left las la-arrow-left"></i></button>' +
+                    '<button class="fancybox-button fancybox-button--arrow_right next" data-fancybox-next>' +
+                    '<i class="fancybox-button-icon fancybox-button-icon_right las la-arrow-right"></i></button>' +
+                    '</div>'
+                );
+            }
+        }
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -592,4 +623,6 @@ $(document).ready(function () {
     initPopupFilter();
     initAjaxMorePortfolio();
     initColumns();
+    initForm();
+    initPopupImg();
 });

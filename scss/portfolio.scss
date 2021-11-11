@@ -85,6 +85,7 @@
         margin-bottom: 58px;
     }
     &-banner-link {
+        position: relative;
         display: block;
         height: 91px;
         background:  url("../images/portfolio/portfolio-banner.png") repeat-x center 0,
@@ -99,6 +100,7 @@
         margin-bottom: -17px;
         margin-left: 157px;
         left: 50%;
+        transition: transform 0.2s ease-in-out;
     }
     &-banner-img:after {
         content: '';
@@ -107,9 +109,15 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 29px;
-        height: 36px;
+        height: 45px;
         background: url("../images/portfolio/portfolio-banner-play.png") no-repeat 0 0;
         background-size: 100% auto;
+    }
+    &-banner-link:hover {
+        background-color: #f3f3f3;
+    }
+    &-banner-link:hover &-banner-img {
+        transform: scale(1.2);
     }
     &-menu-wrapper_active &-menu-item_more {
         display: inline-block;
@@ -165,13 +173,14 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 57px;
+        margin-bottom: 37px;
     }
     &-tag {
         display: inline-block;
         min-height: 28px;
         text-decoration: none;
         margin-right: 17px;
+        margin-bottom: 20px;
         padding-right: 11px;
         padding-left: 11px;
         font-size: 14px;
@@ -185,6 +194,7 @@
         margin-left: 5px;
     }
     &-reset {
+        margin-bottom: 20px;
         font-size: 14px;
         color: $color6;
     }
@@ -258,6 +268,12 @@ and (max-width: $mobile){
             background: url("../images/portfolio/portfolio-banner-name.png") no-repeat 0 0;
             transform: translateX(-50%);
         }
+        &-banner-link:hover {
+            background-color: transparent;
+        }
+        &-banner-link:hover &-banner-img {
+            transform: none;
+        }
         &-filter-link {
             width: 100%;
             border-radius: 50%;
@@ -274,6 +290,7 @@ and (max-width: $mobile){
         }
         &-actions {
             flex-direction: column;
+            padding-bottom: 40px;
         }
         &-filter {
             margin-left: 0;
@@ -300,6 +317,11 @@ and (max-width: $mobile){
             text-align: center;
             font-size: 18px;
             line-height: 24px;
+        }
+    }
+    .filter {
+        &-tags {
+            justify-content: center;
         }
     }
 }

@@ -12,6 +12,10 @@ function initSliderCompany() {
             loop: isStart,
             mouseDrag: isStart,
             touchDrag: isStart,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 600,
+            autoplayHoverPause: true,
             autoHeight: false,
             smartSpeed: 500,
             margin: 30,
@@ -19,10 +23,12 @@ function initSliderCompany() {
                 0: {
                     items: 1,
                     margin: 10,
+                    autoplay: false,
                 },
                 720: {
                     items: 2,
                     mouseDrag: true,
+                    autoplay: false,
                 },
                 992: {
                     items: 2,

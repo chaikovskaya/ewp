@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
 
@@ -537,7 +538,9 @@
                         </a>
                     </div>
                 </div>
-                <canvas class="header-decor js-mainAnimation"></canvas>
+                <div class="header-decor">
+                    <div class="header-decor-1"></div>
+                </div>
             </div>
         </header>
 
@@ -676,6 +679,8 @@
                         <h2 class="about-title h1">Экспансия - масштабный веб-продакшн полного цикла</h2>
                     </div>
                 </div>
+
+                <!--
                 <div class="about-list-wrapper js-slider-about">
                     <div class="about-list js-slider-list">
                         <div class="about-list-item js-slider-item">
@@ -700,6 +705,34 @@
                         </div>
                     </div>
                 </div>
+                -->
+
+                <div class="about-list-wrapper js-slider-about">
+                    <div class="about-list swiper-wrapper">
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">01</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">02</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">03</span>
+                            <div class="about-list-description">Выводим бизнес в&nbsp;онлайн.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">04</span>
+                            <div class="about-list-description">Делаем больше, чем просто SEO и&nbsp;разработку.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">05</span>
+                            <div class="about-list-description">Даем гарантию на все виды работ.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
             </section>
 
             <section class="company">
@@ -1382,8 +1415,8 @@
     <script src="./libs/validate/jquery.validate.min.js"></script>
     <script src="./libs/simplebar/simplebar.min.js"></script>
     <script src="./libs/wow/wow.min.js"></script>
-    <script src="./libs/mousewheel/jquery.mousewheel.js"></script>
     <script src="./libs/mask/jquery.mask.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
     <script src="./js/JSC.Fix.js"></script>

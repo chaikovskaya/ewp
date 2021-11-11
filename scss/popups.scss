@@ -133,6 +133,16 @@
   }
 }
 
+.popup-button_simple {
+  &:after {
+    content: "\f30b";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    margin-left: 7px;
+    vertical-align: middle;
+  }
+}
+
 
 .decor-popup {
   display: none;

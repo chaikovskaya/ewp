@@ -125,9 +125,15 @@
     }
     &-informer-label {
         display: block;
+        max-width: 80px;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         font-size: 15px;
         line-height: 21px;
+    }
+    &-informer-item:last-child &-informer-label {
+        max-width: 109px;
     }
     &-informer-symbol {
         color: $color1;
@@ -251,6 +257,12 @@ and (max-width: $mobile){
         }
         &-more {
             top: -15px;
+        }
+        &-informer-label {
+            max-width: 64px;
+        }
+        &-informer-item:last-child &-informer-label {
+            max-width: 93px;
         }
     }
 }

@@ -25,9 +25,9 @@
 }
 
 .about-detail-service {
-    margin-bottom: -76px;
+    position: relative;
+    margin-bottom: 80px;
     &-container {
-        position: relative;
         margin-left: 34%;
         padding: 57px 0 37px 109px;
         background-color: $color1;
@@ -98,7 +98,7 @@
     &-title {
         position: absolute;
         top: 52px;
-        left: -432px;
+        left: 0;
         width: 332px;
         transition: top 0.2s ease-in-out;
     }
@@ -126,7 +126,7 @@
 
 .principles {
     margin-bottom: 65px;
-    padding-top: 144px;
+    padding-top: 70px;
     padding-bottom: 70px;
     background-color: $color11;
     &-block {
@@ -267,6 +267,7 @@
 }
 
 .rating {
+    &_active {}
     &-title {
         padding-top: 60px;
         border-top: 1px solid $color7;
@@ -297,6 +298,7 @@
         padding: 10px 0;
         border: solid $color7;
         border-width: 1px 0;
+        text-decoration: none;
     }
     &-table-row:hover &-table-container {
         border-color: transparent;
@@ -386,6 +388,18 @@
 }
 
 @media screen
+and (max-width: $desktop){
+    .about-detail-service {
+        &-item {
+            &:after {
+                left: -139px;
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media screen
 and (max-width: $tablet){
     .about-detail-slider {
         margin-bottom: 50px;
@@ -400,7 +414,7 @@ and (max-width: $tablet){
         }
     }
     .about-detail-service {
-        margin-bottom: -60px;
+        margin-bottom: 50px;
         &-container {
             padding-top: 47px;
             padding-left: 60px;
@@ -428,7 +442,6 @@ and (max-width: $tablet){
         }
         &-title {
             top: 45px;
-            left: -240px;
             width: 190px;
         }
         &-item:nth-child(2):hover ~ &-title {
@@ -451,7 +464,7 @@ and (max-width: $tablet){
         }
     }
     .principles {
-        padding-top: 105px;
+        padding-top: 45px;
         padding-bottom: 45px;
         margin-bottom: 50px;
         &-title {
@@ -479,7 +492,7 @@ and (max-width: $tablet){
         }
     }
     .rating {
-        &-table-mob {
+        &-table ~ &-table {
             display: none;
         }
         &-title {
@@ -487,6 +500,12 @@ and (max-width: $tablet){
             text-align: center;
         }
         &-load-more {
+            display: block;
+        }
+        &_active &-load-more {
+            display: none;
+        }
+        &_active &-table {
             display: block;
         }
     }
