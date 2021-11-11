@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Главная. Ewp</title>
+
+    <link rel="stylesheet" href="./libs/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./libs/line-awesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
+ </head>
+
+<body class="main-page" style="/*background: #000;*/">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-top JS-Fix" data-fix="{'classActive': 'header-top-block_fix'}">
+                    <div class="header-top-block JS-Fix-Item">
+                        <div class="header-top-container">
+                        <a class="header-logo" href="/">
+                            <svg class="header-logo-element"><use xlink:href="#logo"></use></svg>
+                        </a>
+                        <a class="header-link" href="#">
+                            <i class="header-link-icon"></i>Стать клиентом
+                        </a>
+                        <div class="header-phone JS-Dropdown" data-dropdown="{'classActive': 'header-phone_active'}">
+                            <a class="header-phone-link JS-Dropdown-Switcher" href="javascript:;">
+                                <span class="header-phone-label">8 (800) 350-42-28</span>
+                                <i class="header-phone-icon fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="header-phone-dropdown JS-Dropdown-Menu">
+                                <ul class="header-phone-list">
+                                    <li class="header-phone-list-item">
+                                        <span class="header-phone-region">Пенза</span>
+                                        <a class="header-phone-number" href="tel:+78003504228">
+                                            <i class="header-phone-list-icon las la-phone"></i>8 (800) 350-42-28
+                                        </a>
+                                        <span class="header-phone-hours">
+                                            <i class="header-phone-list-icon las la-clock"></i>с 9:00 до 18:00
+                                        </span>
+                                    </li>
+                                    <li class="header-phone-list-item">
+                                        <span class="header-phone-region">Для регионов Росии</span>
+                                        <a class="header-phone-number" href="tel:+78003504228">
+                                            <i class="header-phone-list-icon las la-phone"></i>8 (800) 350-42-28
+                                        </a>
+                                        <span class="header-phone-hours">
+                                            <i class="header-phone-list-icon las la-clock"></i>с 9:00 до 18:00
+                                        </span>
+                                    </li>
+                                    <li class="header-phone-list-item">
+                                        <span class="header-phone-region">Москва</span>
+                                        <a class="header-phone-number" href="tel:+78003504228">
+                                            <i class="header-phone-list-icon las la-phone"></i>8 (800) 350-42-28
+                                        </a>
+                                        <span class="header-phone-hours">
+                                            <i class="header-phone-list-icon las la-clock"></i>с 9:00 до 18:00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="header-phone-panel">
+                                    <a class="button button_simple" href="javascript:;">Заказать звонок<i class="button-icon las la-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="header-menu-switcher-tablet js-menuCall-burger" href="javascript:;">
+                            <i class="header-menu-switcher-tablet-icon mob-menu-switcher-icon"></i>
+                        </a>
+                        <div class="mob-menu JS-MobileMenu" data-mobilemenu="{
+                            'classActive': 'open',
+                            'classShow': 'mob-menu-show',
+                            'classElementActive': 'mob-menu_active'
+                        }">
+                            <a class="mob-menu-switcher JS-MobileMenu-Burger" href="javascript:;">
+                                <i class="mob-menu-switcher-icon"></i>
+                            </a>
+                            <div class="mob-block JS-MobileMenu-Dropdown">
+                                <div class="mob-close-panel">
+                                    <a class="mob-header-link" href="#">
+                                        <i class="header-link-icon" aria-hidden="true"></i>Стать клиентом
+                                    </a>
+                                    <a href="javascript:;" class="mob-close JS-MobileMenu-Close"><i class="mob-close-icon las la-times"></i></a>
+                                </div>
+                                <div class="mob-nav">
+                                    <ul class="mob-list">
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link JS-MobileMenu-Parent" href="#">Главная</a>
+                                        </li>
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link JS-MobileMenu-Parent" href="#">О компании<i class="mob-list-icon fa fa-angle-right"></i></a>
+                                            <div class="mob-child JS-MobileMenu-Child">
+                                                <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                    <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
+                                                </a>
+                                                <a class="mob-list-current" href="#">О компании</a>
+                                                <ul class="mob-list mob-list-child">
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">О компании</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Наша команда</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Партнеры</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Отзывы</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Реквизиты</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Вакансии</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link JS-MobileMenu-Parent" href="#">Проекты<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <div class="mob-child JS-MobileMenu-Child">
+                                                <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                    <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
+                                                </a>
+                                                <a class="mob-list-current" href="#">Проекты</a>
+                                                <ul class="mob-list mob-list-child">
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Интернет-магазины</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Корпоративные сайты</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Landing pages</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link" href="#">Еще что-то</a>
+                                        </li>
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link JS-MobileMenu-Parent" href="#">Услуги<i class="mob-list-icon fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <div class="mob-child JS-MobileMenu-Child">
+                                                <a class="mob-list-link mob-list-link_back JS-MobileMenu-Back" href="javascript:;">
+                                                    <i class="mob-back-icon las la-long-arrow-alt-left"></i>Назад
+                                                </a>
+                                                <a class="mob-list-current" href="#">Услуги</a>
+                                                <ul class="mob-list mob-list-child">
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Веб-разработка</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">SEO-продвижение</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Контекстная реклама</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Техподдержка</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">YouTuBe</a>
+                                                    </li>
+                                                    <li class="mob-list-item">
+                                                        <a class="mob-list-child-link" href="#">Готовые решения</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mob-list-item"><a class="mob-list-link" href="#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mob-info">
+                                    <ul class="mob-contacts">
+                                        <li class="mob-contacts-item">
+                                            <div class="mob-contacts-block">
+                                                <i class="mob-contacts-icon las la-phone"></i>
+                                                <div>
+                                                    <span class="mob-contacts-name">Пенза</span>
+                                                    <div class="mob-contacts-description content">
+                                                        <a href="tel:+78412329998">8 (8412) 32-99-98</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mob-contacts-item">
+                                            <div class="menu-list-contacts">
+                                                <i class="mob-contacts-icon las la-phone"></i>
+                                                <div>
+                                                    <span class="mob-contacts-name">Для регионов Росии</span>
+                                                    <div class="mob-contacts-description content">
+                                                        <a href="tel:+78003504228">8 (800) 350-42-28</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mob-contacts-item">
+                                            <div class="menu-list-contacts">
+                                                <i class="mob-contacts-icon las la-map-marker"></i>
+                                                <div>
+                                                    <span class="mob-contacts-name">Центральный офис</span>
+                                                    <div class="mob-contacts-description content">Россия, г. Пенза, проезд<br /> Володарского, 6</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mob-contacts-item">
+                                            <div class="menu-list-contacts">
+                                                <i class="mob-contacts-icon las la-envelope"></i>
+                                                <div>
+                                                    <span class="mob-contacts-name">E-mail</span>
+                                                    <div class="mob-contacts-description content">
+                                                        <a href="mailto:info@ewp.ru">info@ewp.ru</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mob-info">
+                                    <div class="mob-info-title">Связаться в мессенджер</div>
+                                    <ul class="messengers">
+                                        <li class="messengers-item">
+                                            <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-vk"></i></a>
+                                        </li>
+                                        <li class="messengers-item">
+                                            <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-facebook-messenger"></i></a>
+                                        </li>
+                                        <li class="messengers-item">
+                                            <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-whatsapp"></i></a>
+                                        </li>
+                                        <li class="messengers-item">
+                                            <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-telegram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mob-info">
+                                    <div class="mob-info-title">Мы в соцсетях</div>
+                                    <ul class="mob-socials">
+                                        <li class="mob-socials-item">
+                                            <a class="mob-socials-link" href="#">
+                                                <i class="mob-socials-icon lab la-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mob-socials-item">
+                                            <a class="mob-socials-link" href="#">
+                                                <i class="mob-socials-icon lab la-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="mob-socials-item">
+                                            <a class="mob-socials-link" href="#">
+                                                <i class="mob-socials-icon lab la-vk"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="header-description">
+                    <div class="header-title">Масштабный<br /> веб-продакшн</div>
+                    <div class="header-info">Создаем и продвигаем e&#8209;Commerce и&nbsp;B2B <span class="header-info-label">проекты</span></div>
+                </div>
+                <div class="container">
+                    <div class="header-panel">
+                    <a class="header-more" href="#main-content">
+                        <i class="header-more-icon las la-long-arrow-alt-down"></i>
+                        <span class="header-more-label">Expansion web production</span>
+                    </a>
+                    <nav class="header-nav">
+                        <a class="header-nav-link" href="#">Разрабока</a>
+                        <a class="header-nav-link" href="#">SEO</a>
+                        <a class="header-nav-link" href="#">Кейсы</a>
+                    </nav>
+                </div>
+                </div>
+                <div class="header-actions">
+                    <div class="header-actions-item">
+                        <div class="menu JS-Menu" data-mobilemenu="{
+                            'classActive': 'open',
+                            'classShow': 'menu-show',
+                            'classElementActive': 'menu_active'
+                        }">
+                            <a class="header-burger JS-MobileMenu-Burger" href="javascript:;">
+                                <i class="header-burger-icon"></i>
+                            </a>
+                            <div class="menu-block JS-MobileMenu-Dropdown">
+                                <a href="javascript:;" class="menu-close JS-MobileMenu-Close"><i class="menu-close-icon las la-times"></i></a>
+                                <div class="menu-container">
+                                    <div class="menu-content js-custom-scroll">
+                                        <ol class="menu-list">
+                                            <li class="menu-list-item">
+                                                <span class="menu-list-count">01</span>
+                                                <a class="menu-list-link" href="/">Главная<span class="menu-list-point">.</span></a>
+                                            </li>
+                                            <li class="menu-list-item">
+                                                <span class="menu-list-count">02</span>
+                                                <a class="menu-list-link" href="#">О компании<span class="menu-list-point">.</span></a>
+                                                <ul class="submenu-list">
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">О компании</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Наша команда</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Партнеры</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Отзывы</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Реквизиты</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Вакансии</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-list-item">
+                                                <span class="menu-list-count">03</span>
+                                                <a class="menu-list-link" href="#">Проекты<span class="menu-list-point">.</span></a>
+                                                <ul class="submenu-list">
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Интернет-магазины</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Корпоративные сайты</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Landing pages</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-list-item">
+                                                <span class="menu-list-count">04</span>
+                                                <a class="menu-list-link" href="#">Еще что-то<span class="menu-list-point">.</span></a>
+                                            </li>
+                                            <li class="menu-list-item">
+                                                <span class="menu-list-count">05</span>
+                                                <a class="menu-list-link" href="#">Услуги<span class="menu-list-point">.</span></a>
+                                                <ul class="submenu-list">
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Веб-разработка</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">SEO-продвижение</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Контекстная реклама</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Техподдержка</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">YouTuBe</a>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <a class="submenu-list-link" href="#">Готовые решения</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-list-item">
+                                                <span class="menu-list-count">06</span>
+                                                <a class="menu-list-link" href="#">Контакты<span class="menu-list-point">.</span></a>
+                                                <ul class="submenu-list">
+                                                    <li class="submenu-list-item">
+                                                        <div class="menu-list-contacts">
+                                                            <i class="menu-list-contacts-icon las la-phone"></i>
+                                                            <div>
+                                                                <span class="menu-list-region">Пенза</span>
+                                                                <div class="menu-list-contacts-description content">
+                                                                    <a href="tel:+78412329998">8 (8412) 32-99-98</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <div class="menu-list-contacts">
+                                                            <i class="menu-list-contacts-icon las la-phone"></i>
+                                                            <div>
+                                                                <span class="menu-list-region">Для регионов Росии</span>
+                                                                <div class="menu-list-contacts-description content">
+                                                                    <a href="tel:+78003504228">8 (800) 350-42-28</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <div class="menu-list-contacts">
+                                                            <i class="menu-list-contacts-icon las la-map-marker"></i>
+                                                            <div>
+                                                                <span class="menu-list-region">Центральный офис</span>
+                                                                <div class="menu-list-contacts-description content">Россия, г. Пенза, проезд<br /> Володарского, 6</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="submenu-list-item">
+                                                        <div class="menu-list-contacts">
+                                                            <i class="menu-list-contacts-icon las la-envelope"></i>
+                                                            <div>
+                                                                <span class="menu-list-region">E-mail</span>
+                                                                <div class="menu-list-contacts-description content">
+                                                                    <a href="mailto:info@ewp.ru">info@ewp.ru</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-list-item menu-list-item_link">
+                                                <a class="menu-header-link" href="#">
+                                                    <i class="header-link-icon"></i>Стать клиентом
+                                                </a>
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-decor JS-MobileMenu-Close"></div>
+                        </div>
+                    </div>
+                    <div class="header-actions-item header-actions-item_socials">
+                        <ul class="header-socials">
+                            <li>
+                                <a class="header-socials-link" href="javascript:;">
+                                    <i class="header-socials-icon lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header-socials-link" href="javascript:;">
+                                    <i class="header-socials-icon lab la-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header-socials-link" href="javascript:;">
+                                    <i class="header-socials-icon lab la-vk"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-actions-item">
+                        <div class="menu JS-MenuContacts" data-mobilemenu="{
+                            'classActive': 'open',
+                            'classShow': 'menu-show',
+                            'classElementActive': 'menu_active'
+                        }">
+                            <a class="header-actions-link JS-MobileMenu-Burger" href="javascript:;">
+                                <i class="header-actions-icon las la-phone-volume"></i>
+                            </a>
+                            <div class="menu-block JS-MobileMenu-Dropdown">
+                                <a href="javascript:;" class="menu-close JS-MobileMenu-Close"><i class="menu-close-icon las la-times"></i></a>
+                                <div class="menu-content js-custom-scroll">
+                                    <ol class="contacts-popup-list">
+                                        <li class="contacts-popup-list-item menu-container">
+                                            <span class="menu-list-count">01</span>
+                                            <span class="menu-list-link">Связаться в мессенджер<span class="menu-list-point">.</span></span>
+                                            <ul class="messengers contacts-popup-info">
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-vk"></i></a>
+                                                </li>
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-facebook-messenger"></i></a>
+                                                </li>
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-whatsapp"></i></a>
+                                                </li>
+                                                <li class="messengers-item">
+                                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-telegram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="contacts-popup-list-item menu-container">
+                                            <span class="menu-list-count">02</span>
+                                            <span class="menu-list-link">Контакты<span class="menu-list-point">.</span></span>
+                                            <ul class="contacts-popup-data contacts-popup-info">
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">Пенза</span>
+                                                        <div class="contacts-popup-data-description content">
+                                                            <a href="tel:+78412329998">8 (8412) 32-99-98</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">Для регионов Росии</span>
+                                                        <div class="contacts-popup-data-description content">
+                                                            <a href="tel:+78003504228">8 (800) 350-42-28</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">Центральный офис</span>
+                                                        <div class="contacts-popup-data-description content">Россия, г. Пенза,<br /> проезд Володарского, 6</div>
+                                                    </div>
+                                                </li>
+                                                <li class="contacts-popup-data-item">
+                                                    <i class="contacts-popup-data-icon las la-phone"></i>
+                                                    <div>
+                                                        <span class="contacts-popup-data-name">E-mail</span>
+                                                        <div class="contacts-popup-data-description content">
+                                                            <a class="contacts-popup-data-link" href="mailto:info@ewp.ru">info@ewp.ru</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="menu-decor JS-MobileMenu-Close"></div>
+                        </div>
+                    </div>
+                    <div class="header-actions-item">
+                        <a class="header-actions-link header-actions-link_down" href="#main-content">
+                            <i class="header-actions-icon las la-long-arrow-alt-down"></i>
+                        </a>
+                        <a class="header-actions-link header-actions-link_up js-scrolltop" href="javascript:;" data-scrolltop="header-actions-link_up_active">
+                            <i class="header-actions-icon las la-long-arrow-alt-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-decor">
+                    <div class="header-decor-1"></div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content" class="main-content js-main-content">
+            <div class="portfolio-list">
+                <div class="portfolio-list-container JS-Columns" data-columns="{'number': 2}">
+                    <div class="portfolio-list-content row">
+                        <div class="portfolio-list-col col-lg-6 JS-Columns-End"></div>
+                        <div class="portfolio-list-col col-lg-5 JS-Columns-End"></div>
+                    </div>
+
+                    <div class="portfolio-list-main JS-Columns-Start-List JS-AjaxMore-Content">
+                        <div class="portfolio-list-item portfolio-list-item_simple JS-Columns-Start">
+                            <a class="portfolio-list-link" href="#">
+                                <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-1.jpg" alt="" />
+                                <span class="portfolio-list-label">
+                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                    </span>
+                            </a>
+                            <ul class="portfolio-list-tags tags">
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># Разработка</a>
+                                </li>
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># eCommerce</a>
+                                </li>
+                            </ul>
+                            <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
+                        </div>
+                        <div class="portfolio-list-item JS-Columns-Start">
+                            <a class="portfolio-list-link" href="#">
+                                <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-3.jpg" alt="" />
+                                <span class="portfolio-list-label">
+                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                    </span>
+                                <span class="portfolio-list-informer">
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">
+                                                <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1&nbsp;100%
+                                            </span>
+                                            <span class="portfolio-list-informer-label">рост<br /> трафика</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">1 567</span>
+                                            <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">97</span>
+                                            <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
+                                        </span>
+                                    </span>
+                            </a>
+                            <ul class="portfolio-list-tags tags">
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                </li>
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># B2C</a>
+                                </li>
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># eCommerce</a>
+                                </li>
+                            </ul>
+                            <a class="portfolio-list-name" href="#">Продвижение инженерного центра “ГазТеплоВода”</a>
+                        </div>
+                        <div class="portfolio-list-item JS-Columns-Start">
+                            <a class="portfolio-list-link" href="#">
+                                <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-2.jpg" alt="" />
+                                <span class="portfolio-list-label">
+                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                    </span>
+                                <span class="portfolio-list-informer">
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">
+                                                <span  class="portfolio-list-informer-symbol">+</span>&nbsp;1 100%
+                                            </span>
+                                            <span class="portfolio-list-informer-label">рост<br /> трафика</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">1 567</span>
+                                            <span class="portfolio-list-informer-label">запросов<br /> в&nbsp;ТОП-10</span>
+                                        </span>
+                                        <span class="portfolio-list-informer-item">
+                                            <span class="portfolio-list-informer-digit">97</span>
+                                            <span class="portfolio-list-informer-label">заявок с&nbsp;сайта<br /> в&nbsp;месяц</span>
+                                        </span>
+                                    </span>
+                            </a>
+                            <ul class="portfolio-list-tags tags">
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># Разработка</a>
+                                </li>
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># eCommerce</a>
+                                </li>
+                            </ul>
+                            <a class="portfolio-list-name" href="#">Сайт для компании ГК “Спецобъединение”</a>
+                        </div>
+                        <div class="portfolio-list-item portfolio-list-item_simple JS-Columns-Start">
+                            <a class="portfolio-list-link" href="#">
+                                <img class="portfolio-list-img" src="./images/portfolio/portfolio-img-4.jpg" alt="" />
+                                <span class="portfolio-list-label">
+                                        <i class="portfolio-list-label-icon las la-long-arrow-alt-right"></i>Смотреть
+                                    </span>
+                            </a>
+                            <ul class="portfolio-list-tags tags">
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># Поисковое продвижение</a>
+                                </li>
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># B2C</a>
+                                </li>
+                                <li class="tags-item">
+                                    <a class="tags-link" href="#"># eCommerce</a>
+                                </li>
+                            </ul>
+                            <a class="portfolio-list-name" href="#">Оптимизация канала “Prof-Medicina”</a>
+                        </div>
+                    </div>
+
+                    <a class="portfolio-list-more more-link" href="#">
+                        <span class="more-link-label">Все работы</span>
+                        <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <section class="about">
+                <div class="about-head">
+                    <div class="about-img">
+                        <div class="about-img-block">
+                            <img class="about-img-element" src="./images/about/company-logo.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <h2 class="about-title h1">Экспансия - масштабный веб-продакшн полного цикла</h2>
+                    </div>
+                </div>
+
+                <!--
+                <div class="about-list-wrapper js-slider-about">
+                    <div class="about-list js-slider-list">
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">01</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">02</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">03</span>
+                            <div class="about-list-description">Выводим бизнес в&nbsp;онлайн.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">04</span>
+                            <div class="about-list-description">Делаем больше, чем просто SEO и&nbsp;разработку.</div>
+                        </div>
+                        <div class="about-list-item js-slider-item">
+                            <span class="about-list-count">05</span>
+                            <div class="about-list-description">Даем гарантию на все виды работ.</div>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <div class="about-list-wrapper js-slider-about">
+                    <div class="about-list swiper-wrapper">
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">01</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">02</span>
+                            <div class="about-list-description">Заменяем целый отдел штатных сотрудников.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">03</span>
+                            <div class="about-list-description">Выводим бизнес в&nbsp;онлайн.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">04</span>
+                            <div class="about-list-description">Делаем больше, чем просто SEO и&nbsp;разработку.</div>
+                        </div>
+                        <div class="swiper-slide about-list-item js-slider-item">
+                            <span class="about-list-count">05</span>
+                            <div class="about-list-description">Даем гарантию на все виды работ.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section>
+
+            <section class="company">
+                <div class="company-container">
+                    <h2 class="company-title h1">Мы помогаем масштабировать бизнес через Интернет</h2>
+                    <div class="company-info">
+                        <div class="company-description">Создаем удобные сайты на платформе 1С&#8209;Битрикс, оказываем техническую поддержку и продвигаем веб-проекты в поисковых системах Яндекс и Google по всей России.</div>
+                        <a class="more-link" href="#">
+                            <span class="more-link-label">о компании</span>
+                            <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="awards js-animate-section">
+                <div class="awards-container js-slider-awards">
+                    <h2 class="awards-title h1">Награды</h2>
+                    <div class="awards-list js-slider-list">
+                        <div class="awards-list-item js-slider-item">
+                            <a class="awards-list-link" href="#">
+                                <span class="awards-position-label">место</span>
+                                <span class="awards-position">4</span>
+                                <span class="awards-description">Рейтинг веб-студий  Пензы, Рейтинг Рунета, 2019<i class="awards-description-icon las la-long-arrow-alt-right"></i></span>
+                            </a>
+                        </div>
+                        <div class="awards-list-item js-slider-item">
+                            <a class="awards-list-link" href="#">
+                                <span class="awards-position-label">место</span>
+                                <span class="awards-position">4</span>
+                                <span class="awards-description">Рейтинг ведущих seo-компаний Пензы, Рейтинг Рунета, 2019<i class="awards-description-icon las la-long-arrow-alt-right"></i></span>
+                            </a>
+                        </div>
+                        <div class="awards-list-item js-slider-item">
+                            <a class="awards-list-link" href="#">
+                                <span class="awards-position-label">место</span>
+                                <span class="awards-position">50</span>
+                                <span class="awards-description">Рейтинг разработчиков интернет-магазинов на 1С-Битрикс в Среднем ценовом сегменте Росии, Рейтинг Рунета, 2019<i class="awards-description-icon las la-long-arrow-alt-right"></i></span>
+                            </a>
+                        </div>
+                        <div class="awards-list-item js-slider-item">
+                            <a class="awards-list-link" href="#">
+                                <span class="awards-position-label">место</span>
+                                <span class="awards-position">1</span>
+                                <span class="awards-description">Рейтинг веб-студий  Пензы, Рейтинг Рунета, 2019<i class="awards-description-icon las la-long-arrow-alt-right"></i></span>
+                            </a>
+                        </div>
+                        <div class="awards-list-item js-slider-item">
+                            <a class="awards-list-link" href="#">
+                                <span class="awards-position-label">место</span>
+                                <span class="awards-position">4</span>
+                                <span class="awards-description">Рейтинг ведущих seo-компаний Пензы, Рейтинг Рунета, 2019<i class="awards-description-icon las la-long-arrow-alt-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="awards-nav slider-nav js-slider-buttons">
+                        <button class="awards-button slider-button js-slider-prev">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M5.8,0.2l0.9,0.9L2.4,5.4H52v1.3H2.4l4.3,4.3l-0.9,0.9L0.4,6.5L0,6l0.4-0.5L5.8,0.2z"/>
+                            </svg>
+                        </button>
+                        <button class="awards-button slider-button js-slider-next">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M51.6,5.5L52,6l-0.4,0.5l-5.3,5.3l-0.9-0.9l4.3-4.3H0V5.4h49.6l-4.3-4.3l0.9-0.9L51.6,5.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clients">
+                <div class="clients-content js-slider-clients">
+                    <div class="clients-container js-slider-list">
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-1.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-2.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-3.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-4.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-5.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-6.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-7.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-8.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-9.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-10.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-11.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-12.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-1.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-2.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-3.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-4.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-5.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-6.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-7.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-8.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-9.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-list js-slider-item">
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-10.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-11.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clients-list-item">
+                                <div class="clients-list-block">
+                                    <div class="clients-list-box">
+                                        <img class="clients-list-img" src="./images/clients/clients-img-12.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients-nav slider-nav js-slider-buttons">
+                        <button class="slider-button js-slider-prev">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M5.8,0.2l0.9,0.9L2.4,5.4H52v1.3H2.4l4.3,4.3l-0.9,0.9L0.4,6.5L0,6l0.4-0.5L5.8,0.2z"/>
+                            </svg>
+                        </button>
+                        <button class="slider-button js-slider-next">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M51.6,5.5L52,6l-0.4,0.5l-5.3,5.3l-0.9-0.9l4.3-4.3H0V5.4h49.6l-4.3-4.3l0.9-0.9L51.6,5.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="clients-side">
+                    <h2 class="h1">Более <span class="clients-title-label">75</span> довольных клиентов</h2>
+                    <a class="clients-link" href="#">
+                        <i class="header-link-icon"></i>Стать клиентом
+                    </a>
+                </div>
+             </section>
+
+            <div class="string">
+                <div class="string-item">
+                    <span class="string-label">У нас нет ни одного негативного отзыва.</span>
+                    <span class="string-label">У нас нет ни одного негативного отзыва.</span>
+                </div>
+                <div class="string-item">
+                    <span class="string-label">У нас нет ни одного негативного отзыва.</span>
+                    <span class="string-label">У нас нет ни одного негативного отзыва.</span>
+                </div>
+            </div>
+
+            <section class="services">
+                <div class="services-panel">
+                    <div class="services-panel-block">
+                        <h2 class="services-title h1">Услуги</h2>
+                        <div class="services-info">В Экспансии разрабатывают сложные веб- и мобильные продукты. Мы верим в дизайн, основанный на данных, аналитике и юзабилити.</div>
+                    </div>
+                </div>
+
+                <ol class="services-list">
+                    <li class="services-list-item">
+                        <div class="services-block">
+                            <div class="row">
+                                <div class="services-main col-md-6 col-lg-7">
+                                    <span class="services-number">01</span>
+                                    <span class="services-name">Разработка продающих сайтов для вашего бизнеса на&nbsp;1С-Битрикс</span>
+                                </div>
+                                <div class="services-detail col-md-6 col-lg-5">
+                                    <ul class="services-links">
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">eCommerce</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">Landing Page</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">Services</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">B2B</a>
+                                        </li>
+                                    </ul>
+                                    <div class="services-description">Возьмем на себя весь цикл реализации проекта от создания концепции дизайна до полного запуска и дальнейшей поддержки.</div>
+                                    <ul class="services-actions">
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Подробне</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Портфолио</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-list-item">
+                        <div class="services-block">
+                            <div class="row">
+                                <div class="services-main col-md-6 col-lg-7">
+                                    <span class="services-number">02</span>
+                                    <span class="services-name">Комплексное продвижение в поисковых системах Яндекс и Google</span>
+                                </div>
+                                <div class="services-detail col-md-6 col-lg-5">
+                                    <ul class="services-links">
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">SEO</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">Аудит</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">Контекстная реклама</a>
+                                        </li>
+                                    </ul>
+                                    <div class="services-description">Увеличим целевой трафик из поисковых систем. Разработаем индивидуальную SEO-стратегию основанную на Data-driven подходе.</div>
+                                    <ul class="services-actions">
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Подробне</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Кейсы</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-list-item">
+                        <div class="services-block">
+                            <div class="row">
+                                <div class="services-main col-md-6 col-lg-7">
+                                    <span class="services-number">03</span>
+                                    <span class="services-name">Техническая поддержка сайтов на&nbsp;1С-Битрикс</span>
+                                </div>
+                                <div class="services-detail col-md-6 col-lg-5">
+                                    <ul class="services-links">
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">eCommerce</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">Landing Page</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">Services</a>
+                                        </li>
+                                        <li class="services-links-item">
+                                            <a class="services-links-label" href="#">B2B</a>
+                                        </li>
+                                    </ul>
+                                    <div class="services-description">Организуем техническую поддержку и доработки вашего сайта. Поможет с поиском оптимальных решений. Работаем без абонентской платы.</div>
+                                    <ul class="services-actions">
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Подробне</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-list-item">
+                        <div class="services-block">
+                            <div class="row">
+                                <div class="services-main col-md-6 col-lg-7">
+                                    <span class="services-number">04</span>
+                                    <span class="services-name">Продвижение YouTube&#8209;каналов</span>
+                                </div>
+                                <div class="services-detail col-md-6 col-lg-5">
+                                    <div class="services-description">Оптимизируем ваш YouTuBe канал и видео-контент. Поможем увеличить охват и привлечь дополнительную целевую аудиторию.</div>
+                                    <ul class="services-actions">
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Подробне</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Кейсы</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-list-item">
+                        <div class="services-block">
+                            <div class="row">
+                                <div class="services-main col-md-6 col-lg-7">
+                                    <span class="services-number">05</span>
+                                    <span class="services-name">Готовые веб&#8209;решения и дополнения</span>
+                                </div>
+                                <div class="services-detail col-md-6 col-lg-5">
+                                    <div class="services-description">Предоставляем готовые решения собственной разработки для быстрого запуска проектов. Создаем дополнения для расширения фукнциональных возможностей вашего сайта.</div>
+                                    <ul class="services-actions">
+                                        <li class="services-actions-item">
+                                            <a class="more-link" href="#">
+                                                <span class="more-link-label">Подробне</span>
+                                                <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="blog js-slider-blog">
+                <h2 class="blog-title h1">Блог</h2>
+                <div class="blog-list js-slider-list">
+                    <div class="blog-list-item js-slider-item">
+                        <a class="blog-link" href="#">
+                            <img class="blog-img" src="./images/blog/blog-img-1.jpg" alt="" />
+                            <span class="blog-list-label">
+                                <i class="blog-list-label-icon las la-long-arrow-alt-right"></i>Подробнее
+                            </span>
+                        </a>
+                        <ul class="tags">
+                            <li class="tags-item">
+                                <a class="tags-link" href="#"># Поисковое продвижение</a>
+                            </li>
+                            <li class="tags-item">
+                                <a class="tags-link" href="#"># B2C</a>
+                            </li>
+                        </ul>
+                        <a class="blog-name" href="#">Как бороться с агрегаторами на поисковой выдаче</a>
+                    </div>
+                    <div class="blog-list-item js-slider-item">
+                        <a class="blog-link" href="#">
+                            <img class="blog-img" src="./images/blog/blog-img-2.jpg" alt="" />
+                            <span class="blog-list-label">
+                                <i class="blog-list-label-icon las la-long-arrow-alt-right"></i>Подробнее
+                            </span>
+                        </a>
+                        <ul class="tags">
+                            <li class="tags-item">
+                                <a class="tags-link" href="#"># Поисковое продвижение</a>
+                            </li>
+                            <li class="tags-item">
+                                <a class="tags-link" href="#"># B2C</a>
+                            </li>
+                        </ul>
+                        <a class="blog-name" href="#">Как бороться с агрегаторами на поисковой выдаче</a>
+                    </div>
+                    <div class="blog-list-item js-slider-item">
+                        <a class="blog-link" href="#">
+                            <img class="blog-img" src="./images/blog/blog-img-3.jpg" alt="" />
+                            <span class="blog-list-label">
+                                <i class="blog-list-label-icon las la-long-arrow-alt-right"></i>Подробнее
+                            </span>
+                        </a>
+                        <ul class="tags">
+                            <li class="tags-item">
+                                <a class="tags-link" href="#"># Поисковое продвижение</a>
+                            </li>
+                            <li class="tags-item">
+                                <a class="tags-link" href="#"># B2C</a>
+                            </li>
+                        </ul>
+                        <a class="blog-name" href="#">Как бороться с агрегаторами на поисковой выдаче</a>
+                    </div>
+                </div>
+                <div class="slider-nav js-slider-buttons">
+                    <button class="slider-button js-slider-prev">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M5.8,0.2l0.9,0.9L2.4,5.4H52v1.3H2.4l4.3,4.3l-0.9,0.9L0.4,6.5L0,6l0.4-0.5L5.8,0.2z"/>
+                            </svg>
+                    </button>
+                    <button class="slider-button js-slider-next">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M51.6,5.5L52,6l-0.4,0.5l-5.3,5.3l-0.9-0.9l4.3-4.3H0V5.4h49.6l-4.3-4.3l0.9-0.9L51.6,5.5z"/>
+                            </svg>
+                    </button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="contacts js-animate-contacts">
+                <div class="contacts-container">
+                    <div class="contacts-main">
+                        <span class="contacts-title h1">Мы хотим стать надежным партнером<span class="contacts-label">!</span></span>
+                        <div class="contacts-info">Помочь вам в развитии продукта компании с&nbsp;помощью digital инструментов</div>
+                        <a class="more-link js-popup-feedback" href="javascript:;" data-src="./ajax/feedback.html">
+                            <span class="more-link-label">Отправить заявку</span>
+                            <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    <div class="contacts-side">
+                        <ul class="contacts-list">
+                            <li class="contacts-list-item">
+                                <span class="contacts-list-name">E-mail</span>
+                                <div class="contacts-list-info">
+                                    <a href="mailto:sales@ewp.ru">sales@ewp.ru</a>
+                                </div>
+                            </li>
+                            <li class="contacts-list-item">
+                                <span class="contacts-list-name">телефон</span>
+                                <div class="contacts-list-info">
+                                    <a href="tel:+78003504228">8 (800) 350-42-28</a>
+                                </div>
+                            </li>
+                            <li class="contacts-list-item">
+                                <span class="contacts-list-name">связаться в месенджер</span>
+                                <div class="contacts-list-info">
+                                    <div class="contacts-messengers">
+                                        <ul class="messengers">
+                                            <li class="messengers-item">
+                                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-vk"></i></a>
+                                            </li>
+                                            <li class="messengers-item">
+                                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-facebook-messenger"></i></a>
+                                            </li>
+                                            <li class="messengers-item">
+                                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-whatsapp"></i></a>
+                                            </li>
+                                            <li class="messengers-item">
+                                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-telegram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-block">
+                <div class="footer-container">
+                    <a class="footer-logo" href="/">
+                        <svg class="footer-logo-element"><use xlink:href="#logo-light"></use></svg>
+                    </a>
+                    <nav class="footer-nav">
+                        <a class="footer-nav-link" href="#">О компании</a>
+                        <a class="footer-nav-link" href="#">Услуги</a>
+                        <a class="footer-nav-link" href="#">Кейсы</a>
+                        <a class="footer-nav-link" href="#">Блог</a>
+                        <a class="footer-nav-link" href="#">Работа в EWP</a>
+                        <a class="footer-nav-link" href="#">Контакты</a>
+                    </nav>
+                    <div class="footer-copyright">© 2021 Экспансия. Пенза, Проезд Володарского, 6.</div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="decor-popup"></div>
+
+        <div class="form-popup-container js-form-popup"></div>
+
+        <div class="preloader g-hidden js-preloader">
+            <div class="preloader-container"></div>
+        </div>
+
+        <div class="svg-box">
+            <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 210 36" style="enable-background:new 0 0 210 36;" xml:space="preserve">
+                                    <path d="M39.4,34.6l-3.7-5.7c-0.7-1.1-1.3-1.8-1.8-2.2c-0.5-0.4-1.3-0.6-2.3-0.6H30v8.5h-5.5V13H30v7.9h1.3
+                                        c1,0,1.7-0.2,2.2-0.6c0.5-0.4,1.1-1.1,1.8-2.2l3.4-5.1h6.1l-4.8,7.3C39,22,37.9,23.1,37,23.5c1,0.3,2.1,1.4,3.3,3.2l5.2,7.9H39.4z"
+                                    />
+                <path d="M57.2,12.8c3.5,0,6.3,1.3,8.5,4l-3.3,3.5c-1.6-1.5-3.3-2.2-5.2-2.2c-1.5,0-2.8,0.5-3.9,1.6
+                                        c-1.1,1.1-1.6,2.4-1.6,4.1c0,1.7,0.5,3.1,1.6,4.1c1.1,1.1,2.4,1.6,3.9,1.6c1.9,0,3.6-0.7,5.2-2.2l3.3,3.5c-2.2,2.6-5.1,4-8.5,4
+                                        c-3.1,0-5.7-1.1-7.8-3.2c-2.1-2.2-3.2-4.8-3.2-7.8c0-3.1,1.1-5.7,3.2-7.8C51.5,13.9,54.1,12.8,57.2,12.8z"/>
+                <path d="M89.8,34.6h-5.5V18.4h-9.4v16.3h-5.5V13h20.4V34.6z"/>
+                <path d="M139.7,34.6h-5.5v-8.2h-9.4v8.2h-5.5V13h5.5v8.1h9.4V13h5.5V34.6z"/>
+                <path d="M154.1,12.8c3.5,0,6.3,1.3,8.5,4l-3.3,3.5c-1.6-1.5-3.3-2.2-5.2-2.2c-1.5,0-2.8,0.5-3.9,1.6
+                                        c-1.1,1.1-1.6,2.4-1.6,4.1c0,1.7,0.5,3.1,1.6,4.1c1.1,1.1,2.4,1.6,3.9,1.6c1.9,0,3.6-0.7,5.2-2.2l3.3,3.5c-2.2,2.6-5.1,4-8.5,4
+                                        c-3.1,0-5.7-1.1-7.8-3.2c-2.1-2.2-3.2-4.8-3.2-7.8c0-3.1,1.1-5.7,3.2-7.8C148.4,13.9,151,12.8,154.1,12.8z"/>
+                <path d="M185.9,34.6h-5.5V21.9l-11.1,12.7h-3.5V13h5.5v12.7L182.3,13h3.5V34.6z"/>
+                <path d="M209,34.6h-5.5v-6.3h-2.2c-0.9,0-1.5,0.2-2,0.6c-0.5,0.4-1.1,1.1-1.8,2.1l-2.4,3.5h-6l2.8-4.1
+                                        c1-1.5,1.8-2.5,2.3-2.9c-1.4-0.4-2.6-1.3-3.5-2.5c-0.9-1.3-1.3-2.6-1.3-4c0-1,0.2-1.9,0.5-2.8c0.3-0.9,0.8-1.7,1.5-2.5
+                                        c0.7-0.8,1.7-1.5,3-1.9c1.3-0.5,2.8-0.7,4.6-0.7H209V34.6z M203.5,18.4h-5.3c-2.2,0-3.4,0.9-3.4,2.7c0,1.8,1.1,2.7,3.4,2.7h5.3
+                                        V18.4z"/>
+                <path d="M109.7,13v1.3c-1.6-1-3.6-1.5-5.6-1.5c-6.1,0-11.1,4.9-11.1,11.1c0,6.1,4.9,11.1,11.1,11.1
+                                        c2.1,0,4-0.6,5.6-1.5v1.3h5.5V13H109.7z M104.1,29.7c-3.3,0-5.9-2.6-5.9-5.9s2.6-5.9,5.9-5.9c3.3,0,5.9,2.6,5.9,5.9
+                                        C109.9,27.1,107.3,29.7,104.1,29.7z"/>
+                <polygon class="header-logo-decor" points="25.5,1.1 25.7,4.1 27.4,6.5 24.4,6.7 22,8.4 21.8,5.4 20.1,3 23.1,2.8 	"/>
+                <path d="M16.6,21.3l4.4-11.1l-4.3,5.4c-1.9-1.7-4.5-2.8-7.3-2.8c-3.4,0-6.5,1.5-8.5,4l3.6,3.8C5.6,19,7.4,18,9.5,18
+                                        c1.6,0,3,0.6,4.1,1.6l-4,5l5.8,0c-0.4,2.9-2.8,5.1-5.8,5.1c-2.1,0-3.9-1.1-4.9-2.7L1,30.9c2,2.4,5.1,4,8.5,4c6.1,0,11-4.9,11-11
+                                        c0-1.9-0.5-3.7-1.3-5.2L16.6,21.3z"/>
+            </svg>
+            <svg version="1.1" id="logo-light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 210 36" style="enable-background:new 0 0 210 36;" xml:space="preserve">
+                                    <path d="M39.4,34.6l-3.7-5.7c-0.7-1.1-1.3-1.8-1.8-2.2c-0.5-0.4-1.3-0.6-2.3-0.6H30v8.5h-5.5V13H30v7.9h1.3
+                                        c1,0,1.7-0.2,2.2-0.6c0.5-0.4,1.1-1.1,1.8-2.2l3.4-5.1h6.1l-4.8,7.3C39,22,37.9,23.1,37,23.5c1,0.3,2.1,1.4,3.3,3.2l5.2,7.9H39.4z"
+                                    />
+                <path d="M57.2,12.8c3.5,0,6.3,1.3,8.5,4l-3.3,3.5c-1.6-1.5-3.3-2.2-5.2-2.2c-1.5,0-2.8,0.5-3.9,1.6
+                                        c-1.1,1.1-1.6,2.4-1.6,4.1c0,1.7,0.5,3.1,1.6,4.1c1.1,1.1,2.4,1.6,3.9,1.6c1.9,0,3.6-0.7,5.2-2.2l3.3,3.5c-2.2,2.6-5.1,4-8.5,4
+                                        c-3.1,0-5.7-1.1-7.8-3.2c-2.1-2.2-3.2-4.8-3.2-7.8c0-3.1,1.1-5.7,3.2-7.8C51.5,13.9,54.1,12.8,57.2,12.8z"/>
+                <path d="M89.8,34.6h-5.5V18.4h-9.4v16.3h-5.5V13h20.4V34.6z"/>
+                <path d="M139.7,34.6h-5.5v-8.2h-9.4v8.2h-5.5V13h5.5v8.1h9.4V13h5.5V34.6z"/>
+                <path d="M154.1,12.8c3.5,0,6.3,1.3,8.5,4l-3.3,3.5c-1.6-1.5-3.3-2.2-5.2-2.2c-1.5,0-2.8,0.5-3.9,1.6
+                                        c-1.1,1.1-1.6,2.4-1.6,4.1c0,1.7,0.5,3.1,1.6,4.1c1.1,1.1,2.4,1.6,3.9,1.6c1.9,0,3.6-0.7,5.2-2.2l3.3,3.5c-2.2,2.6-5.1,4-8.5,4
+                                        c-3.1,0-5.7-1.1-7.8-3.2c-2.1-2.2-3.2-4.8-3.2-7.8c0-3.1,1.1-5.7,3.2-7.8C148.4,13.9,151,12.8,154.1,12.8z"/>
+                <path d="M185.9,34.6h-5.5V21.9l-11.1,12.7h-3.5V13h5.5v12.7L182.3,13h3.5V34.6z"/>
+                <path d="M209,34.6h-5.5v-6.3h-2.2c-0.9,0-1.5,0.2-2,0.6c-0.5,0.4-1.1,1.1-1.8,2.1l-2.4,3.5h-6l2.8-4.1
+                                        c1-1.5,1.8-2.5,2.3-2.9c-1.4-0.4-2.6-1.3-3.5-2.5c-0.9-1.3-1.3-2.6-1.3-4c0-1,0.2-1.9,0.5-2.8c0.3-0.9,0.8-1.7,1.5-2.5
+                                        c0.7-0.8,1.7-1.5,3-1.9c1.3-0.5,2.8-0.7,4.6-0.7H209V34.6z M203.5,18.4h-5.3c-2.2,0-3.4,0.9-3.4,2.7c0,1.8,1.1,2.7,3.4,2.7h5.3
+                                        V18.4z"/>
+                <path d="M109.7,13v1.3c-1.6-1-3.6-1.5-5.6-1.5c-6.1,0-11.1,4.9-11.1,11.1c0,6.1,4.9,11.1,11.1,11.1
+                                        c2.1,0,4-0.6,5.6-1.5v1.3h5.5V13H109.7z M104.1,29.7c-3.3,0-5.9-2.6-5.9-5.9s2.6-5.9,5.9-5.9c3.3,0,5.9,2.6,5.9,5.9
+                                        C109.9,27.1,107.3,29.7,104.1,29.7z"/>
+                <polygon class="header-logo-decor" points="25.5,1.1 25.7,4.1 27.4,6.5 24.4,6.7 22,8.4 21.8,5.4 20.1,3 23.1,2.8 	"/>
+                <path d="M16.6,21.3l4.4-11.1l-4.3,5.4c-1.9-1.7-4.5-2.8-7.3-2.8c-3.4,0-6.5,1.5-8.5,4l3.6,3.8C5.6,19,7.4,18,9.5,18
+                                        c1.6,0,3,0.6,4.1,1.6l-4,5l5.8,0c-0.4,2.9-2.8,5.1-5.8,5.1c-2.1,0-3.9-1.1-4.9-2.7L1,30.9c2,2.4,5.1,4,8.5,4c6.1,0,11-4.9,11-11
+                                        c0-1.9-0.5-3.7-1.3-5.2L16.6,21.3z"/>
+            </svg>
+        </div>
+
+    </div>
+
+    <script>
+        var GLOBAL = GLOBAL || {};
+        GLOBAL.FORMERROR = GLOBAL.FORMERROR || {};
+        GLOBAL.FORMERROR.REQUIRED = 'Заполните это поле';
+        GLOBAL.FORMERROR.EMAIL = '';
+    </script>
+
+    <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./libs/validate/jquery.validate.min.js"></script>
+    <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script src="./libs/wow/wow.min.js"></script>
+    <script src="./libs/mask/jquery.mask.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/JSC.Dropdown.js"></script>
+    <script src="./js/JSC.MobileMenu.js"></script>
+    <script src="./js/JSC.Fix.js"></script>
+    <script src="./js/JSC.FieldText.js"></script>
+    <script src="./js/JSC.Columns.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
