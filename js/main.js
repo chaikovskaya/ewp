@@ -189,7 +189,6 @@ function initSliderClients() {
                 },
                 992: {
                     items: 4,
-                    slideBy: 4,
                 },
             },
         }));
@@ -461,7 +460,7 @@ function initExpand() {
             local = GLOBAL.parseData(jQuery(this).data('expand')),
             classActive = local.classActive || 'active',
             classShow = local.classShow || 'show',
-            heightParent = parseInt($block.css('min-height'),10) || 38,
+            heightParent = parseInt($block.css('min-height'),10) || 39,
             heightChild = $block.height();
 
         if (heightChild > heightParent) {

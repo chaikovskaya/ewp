@@ -18,7 +18,8 @@
         margin-bottom: 13px;
     }
     &-logo-element {
-        max-width: 117px;
+        min-width: 117px;
+        width: 117px;
         max-height: 23px;
         fill:#FFFFFF;
     }

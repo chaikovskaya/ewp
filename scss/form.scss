@@ -145,6 +145,8 @@ label.form-error {
     white-space: nowrap;
     background-color: $color1;
     border-width: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
     &:hover {
         background-color: $color2;
         color: #fff;

@@ -569,20 +569,21 @@ blockquote {
 /* pager */
 .pager {
 	list-style-type: none;
-	display: flex;
-	align-items: baseline;
-	justify-content: center;
+	text-align: center;
 	&-item {
-		margin-right: 16px;
-		font-size: 15px; }
+		display: inline-block;
+		margin-right: 12px;
+		font-size: 15px;
+	}
 	&-item:last-child {
-		margin-right: 0; }
+		margin-right: 0;
+	}
 	&-item_first {
-		margin-right: auto;
+		float: left;
 		padding-right: 16px;
 	}
 	&-item_last {
-		margin-left: auto;
+		float: right;
 	}
 	&-link {
 		display: inline-block;
@@ -614,7 +615,6 @@ blockquote {
 		fill: $color;
 	}
 	&-item_side {
-		align-self: flex-end;
 	}
 	&-item_side &-link {
 		margin-top: 13px;
@@ -622,7 +622,6 @@ blockquote {
 		padding-left: 0;
 	}
 	&-item_side &-icon {
-
 	}
 }
 /* /pager */

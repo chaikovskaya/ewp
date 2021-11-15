@@ -94,11 +94,11 @@
     }
     &-banner-img {
         position: relative;
-        display: inline-block;
+        display: block;
         width: 125px;
-        margin-top: -17px;
         margin-bottom: -17px;
         margin-left: 157px;
+        top: -17px;
         left: 50%;
         transition: transform 0.2s ease-in-out;
     }
@@ -250,6 +250,7 @@ and (max-width: $mobile){
             text-align: center;
         }
         &-banner-img {
+            display: inline-block;
             left: 0;
             margin-left: 0;
             width: 205px;

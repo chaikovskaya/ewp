@@ -66,7 +66,7 @@
         display: flex;
     }
     &-title {
-        width: 586px;
+        min-width: 586px;
         margin-right: 70px;
         padding-right: 60px;
         border-right: 1px solid $color7;
@@ -109,7 +109,7 @@ and (max-width: $tablet){
             &:after {
                 content: '';
                 position: absolute;
-                top: 0;
+                top: -2px;
                 left: 0;
                 width: 100%;
                 height: 100%;
@@ -132,7 +132,7 @@ and (max-width: $tablet){
         padding-top: 70px;
         padding-bottom: 70px;
         &-title {
-            width: 348px;
+            min-width: 348px;
             margin-bottom: 0;
             padding-right: 20px;
             margin-right: 14px;
@@ -199,7 +199,7 @@ and (max-width: $mobile){
             flex-direction: column;
         }
         &-title {
-            width: auto;
+            min-width: auto;
             padding-right: 0;
             margin-right: 0;
             border-right-width: 0;

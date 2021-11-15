@@ -30,8 +30,9 @@
         margin-right: 83px;
     }
     &-logo-element {
-        max-width: 210px;
-        max-height: 36px;
+        min-width: 210px;
+        width: 210px;
+        height: 36px;
         fill:#FFFFFF;
     }
     &-logo-decor {
@@ -181,6 +182,7 @@
         @include container();
         position: relative;
         z-index: 1;
+        width: 100%;
         max-width: 950px;
         margin-top: auto;
         margin-bottom: auto;
@@ -363,23 +365,23 @@
     &-decor {
         position: absolute;
         left: 50%;
-        top:50%;
+        top:0;
         width: 650px;
         height: 100%;
         margin-top: -10px;
-        transform: translate(-50%, -50%);
+        margin-left: -325px;
         animation: wave 150s linear infinite;
     }
     &-decor-1 {
         height: 100%;
         background: url("../images/header/decor-bgr.png") no-repeat center center;
-        background-size: 100% auto;
+        background-size: contain;
         animation: wave1 15s linear infinite;
     }
 
     @keyframes wave {
         100% {
-            transform: rotate(360deg) translate(-50%, -50%);
+            transform: rotate(360deg);
         }
     }
 
@@ -479,8 +481,9 @@
         padding-top: 45px;
         padding-bottom: 70px;
         background-color: #fff;
-        transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-        transform: translateX(calc(100% + 69px));
+        transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), margin-right 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateX(100%);
+        margin-right: -69px;
     }
     &-decor {
         display: none;
@@ -496,6 +499,7 @@
     }
     &-block.open {
         transform: translateX(0%);
+        margin-right: 0;
     }
 
     &-container {
@@ -781,6 +785,10 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
 
     .mob-is-levels { }
     &-block.mob-is-levels &-nav {
+        height: 0;
+        overflow: hidden;
+    }
+    &-block.mob-is-levels &-info {
         height: 0;
         overflow: hidden;
     }
@@ -1161,6 +1169,7 @@ and (max-width: 1600px){
         }
         &-top-block_fix &-logo-element {
             width: 153px;
+            min-width: 153px;
             fill: #212221;
         }
         &-top-block_fix &-phone-label {
@@ -1202,6 +1211,7 @@ and (max-width: $desktop) {
     .header {
         &-decor {
             width: 450px;
+            margin-left: -225px;
         }
     }
 }
@@ -1225,7 +1235,8 @@ and (max-width: $tablet){
 and (max-width: $mobile){
     .header {
         &-logo-element {
-            max-width: 160px;
+            min-width: 160px;
+            width: 160px;
         }
         &-phone {
             display: none;
@@ -1233,6 +1244,7 @@ and (max-width: $mobile){
         &-decor {
             width: 250px;
             margin-top: -30px;
+            margin-left: -125px;
         }
 
         &-title {
@@ -1266,6 +1278,7 @@ and (max-width: $mobile){
             height: 50px;
         }
         &-top-block_fix &-logo-element {
+            min-width: 126px;
             width: 126px;
         }
     }
