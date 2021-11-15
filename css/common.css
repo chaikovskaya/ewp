@@ -2684,14 +2684,23 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     display: flex;
     margin-bottom: 75px; }
   .about-img {
-    width: 33.3%; }
+    width: 33.7%;
+    min-height: 100%; }
   .about-img-block {
-    width: 80%;
+    display: flex;
+    width: 75%;
     height: 100%;
     padding-right: 20px;
     border-right: 1px solid #ebebeb; }
+    .about-img-block img {
+      margin-top: auto;
+      margin-bottom: auto; }
   .about-description {
-    width: 66.7%; }
+    width: 66.3%;
+    display: flex; }
+  .about-wrapper {
+    margin-top: auto;
+    margin-bottom: auto; }
   .about-title {
     margin-bottom: 0; }
   .about-info {
@@ -2748,6 +2757,12 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       line-height: 30px; }
     .about-list-count {
       font-size: 30px; }
+    .about-img-block img {
+      min-width: 150px;
+      width: 150px;
+      margin-top: 0; }
+    .about-wrapper {
+      margin-top: 0; }
     .about-list-description {
       margin-top: -13px;
       font-size: 30px;
@@ -2786,6 +2801,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     margin-bottom: 75px; }
     .about-head {
       flex-direction: column;
+      align-items: center;
       margin-bottom: 43px; }
     .about-img {
       width: auto;
