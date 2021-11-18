@@ -535,31 +535,35 @@
                 </div>
 
                 <div class="portfolio-actions">
-                    <div class="portfolio-menu-wrapper js-expand" data-expand="{
-                    'classActive': 'portfolio-menu-wrapper_active',
-                    'classShow': 'portfolio-menu-wrapper_show'
-                    }">
-                        <ul class="portfolio-menu js-expand-block">
-                            <li class="portfolio-menu-item">
+                    <div class="portfolio-menu-wrapper">
+                        <ul class="portfolio-menu js-adaptivemenu JS-Dropdown" data-dropdown="{'classActive': 'portfolio-menu_active', 'backgroundDisabled': 'true'}">
+                            <li class="portfolio-menu-item js-adaptivemenu-item">
                                 <a class="portfolio-menu-link" href="#">Все</a>
                             </li>
-                            <li class="portfolio-menu-item">
+                            <li class="portfolio-menu-item js-adaptivemenu-item">
                                 <a class="portfolio-menu-link" href="#">Разработка</a>
                             </li>
-                            <li class="portfolio-menu-item">
+                            <li class="portfolio-menu-item js-adaptivemenu-item">
                                 <a class="portfolio-menu-link" href="#">SEO</a>
                             </li>
-                            <li class="portfolio-menu-item portfolio-menu-item_active">
+                            <li class="portfolio-menu-item portfolio-menu-item_active js-adaptivemenu-item">
                                 <a class="portfolio-menu-link" href="#">Контекстная реклама</a>
                             </li>
-                            <li class="portfolio-menu-item">
+                            <li class="portfolio-menu-item js-adaptivemenu-item">
                                 <a class="portfolio-menu-link" href="#">YouTube</a>
                             </li>
-                            <li class="portfolio-menu-item">
+                            <li class="portfolio-menu-item js-adaptivemenu-item">
                                 <a class="portfolio-menu-link" href="#">Техподдержка</a>
                             </li>
-                            <li class="portfolio-menu-item portfolio-menu-item_more">
-                                <a class="portfolio-menu-link js-expand-link" href="javascript:;">
+                            <li class="portfolio-menu-item portfolio-menu-item_more js-adaptivemenu-more">
+                                <ul class="portfolio-menu-target js-adaptivemenu-target">
+                                    <li class="portfolio-menu-item">
+                                        <a class="portfolio-menu-close JS-Dropdown-Close" href="javascript:;">
+                                            <i class="portfolio-menu-icon fa fa-angle-up" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="portfolio-menu-switcher JS-Dropdown-Switcher" href="javascript:;">
                                     <i class="portfolio-menu-icon fa fa-angle-down" aria-hidden="true"></i>
                                 </a>
                             </li>

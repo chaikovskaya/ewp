@@ -18,6 +18,9 @@
 .about-detail {
     &-head {
         margin-bottom: 80px;
+        .about-img-block img {
+            margin-top: 0;
+        }
     }
     &-clients {
         margin-bottom: 60px;
@@ -28,7 +31,7 @@
     position: relative;
     margin-bottom: 80px;
     &-container {
-        margin-left: 34%;
+        margin-left: 34.3%;
         padding: 57px 0 37px 109px;
         background-color: $color1;
         &:after {
@@ -412,6 +415,9 @@ and (max-width: $tablet){
         &-head {
             margin-bottom: 40px;
         }
+        &-clients {
+            margin-bottom: 57px;
+        }
     }
     .about-detail-service {
         margin-bottom: 50px;
@@ -492,8 +498,20 @@ and (max-width: $tablet){
         }
     }
     .rating {
+        &-table {
+            margin-bottom: 34px;
+        }
         &-table ~ &-table {
             display: none;
+        }
+        &-table-row:nth-child(5) ~ &-table-row {
+            display: none;
+        }
+        &-table-col_name {
+            width: 77%;
+        }
+        &-table-col_city {
+            width: 23%;
         }
         &-title {
             padding-top: 47px;
@@ -506,6 +524,9 @@ and (max-width: $tablet){
             display: none;
         }
         &_active &-table {
+            display: block;
+        }
+        &_active &-table-row:nth-child(5) ~ &-table-row {
             display: block;
         }
     }
@@ -665,10 +686,13 @@ and (max-width: $mobile){
             padding-top: 0;
             border-top-width: 0;
         }
+        &-table {
+            margin-bottom: 26px;
+        }
         &-table-container {
             flex-direction: column;
-            padding-top: 12px;
-            padding-bottom: 12px;
+            padding-top: 14px;
+            padding-bottom: 14px;
         }
         &-table-col {
             text-align: center;
@@ -677,10 +701,16 @@ and (max-width: $mobile){
         &-table-col_name {
             display: block;
             width: 100%;
-            margin-bottom: 7px;
+            margin-bottom: 4px;
         }
         &-table-col_city {
             width: 100%;
+        }
+        &-table-row:nth-child(3) ~ &-table-row {
+            display: none;
+        }
+        &_active &-table-row:nth-child(3) ~ &-table-row {
+            display: block;
         }
         &-year {
             font-size: 15px;

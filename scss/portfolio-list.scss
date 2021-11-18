@@ -1,6 +1,6 @@
 
 .portfolio-list {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     padding-bottom: 24px;
     border-bottom: 1px solid $color7;
     &-container {
@@ -186,24 +186,31 @@ and (min-width: $desktop){
                 margin-bottom: 0;
             }
         }
+        &-col {
+            &:nth-child(1) {
+                margin-bottom: 85px;
+            }
+        }
     }
 }
 
 @media screen
 and (max-width: $tablet){
     .portfolio-list {
-        margin-bottom: 45px;
-        padding-bottom: 42px;
+        margin-bottom: 60px;
+        padding-bottom: 75px;
         &-col {
             &:nth-child(2) {
                 margin-top: 0;
             }
         }
+        &-item {
+            &:last-child {
+                margin-bottom: 45px;
+            }
+        }
         &-link:hover &-label {
             display: none;
-        }
-        &-more {
-            top: -32px;
         }
         &-content {
             visibility: hidden;
@@ -213,16 +220,24 @@ and (max-width: $tablet){
         &-main {
             display: block;
         }
+        &-more {
+            top: 0;
+        }
     }
 }
 
 @media screen
 and (max-width: $mobile){
     .portfolio-list {
+        margin-bottom: 45px;
+        padding-bottom: 42px;
         &-item {
             display: flex;
             flex-direction: column;
             margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 40px;
+            }
         }
         &-name {
             margin-bottom: 9px;
@@ -254,9 +269,6 @@ and (max-width: $mobile){
         &-informer-label {
             font-size: 12px;
             line-height: 15px;
-        }
-        &-more {
-            top: -15px;
         }
         &-informer-label {
             max-width: 64px;

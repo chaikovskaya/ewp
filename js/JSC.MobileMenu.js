@@ -86,6 +86,8 @@
   };
 
   MobileMenu.prototype._close = function _close() {
+    this.$document.off('mouseup.JS-MobileMenu');
+
     this.$dropdown.removeClass(this.classActive);
     this.$document.removeClass(this.classShow);
     this.$element.removeClass(this.classElementActive);

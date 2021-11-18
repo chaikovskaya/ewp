@@ -447,6 +447,7 @@ blockquote {
 	text-decoration: none;
 	font-weight: 700;
 	line-height: 49px;
+	white-space: nowrap;
 	&:after {
 		content: '';
 		position: absolute;
@@ -533,7 +534,7 @@ blockquote {
 }
 
 .load-more {
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	padding-bottom: 55px;
 	text-align: center;
 	border-bottom: 1px solid $color7;
@@ -572,7 +573,8 @@ blockquote {
 	text-align: center;
 	&-item {
 		display: inline-block;
-		margin-right: 12px;
+		margin-left: 6px;
+		margin-right: 6px;
 		font-size: 15px;
 	}
 	&-item:last-child {
@@ -580,10 +582,11 @@ blockquote {
 	}
 	&-item_first {
 		float: left;
-		padding-right: 16px;
+		padding-right: 5px;
 	}
 	&-item_last {
 		float: right;
+		padding-left: 5px;
 	}
 	&-link {
 		display: inline-block;
@@ -615,6 +618,8 @@ blockquote {
 		fill: $color;
 	}
 	&-item_side {
+		margin-left: 0;
+		margin-right: 0;
 	}
 	&-item_side &-link {
 		margin-top: 13px;

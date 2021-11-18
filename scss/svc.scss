@@ -4,6 +4,9 @@
         padding-bottom: 60px;
         margin-bottom: 55px;
         border-bottom: 1px solid $color7;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &-panel {
         display: flex;
@@ -24,19 +27,19 @@
     &-number {
         @include number();
         display: inline-block;
-        margin-top: -3px;
-        margin-right: 20px;
+        margin-top: -2px;
+        margin-right: 26px;
     }
     &-title {
         margin-bottom: 0;
     }
     &-detail {
         position: relative;
-        min-height: 213px;
+        min-height: 202px;
     }
     &-info {
-        width: 34%;
-        margin-left: 105px;
+        width: 33%;
+        margin-left: 107px;
         font-size: 28px;
         font-weight: 300;
         line-height: 38px;
@@ -44,7 +47,7 @@
     &-slider {
         position: absolute;
         top: 0;
-        left: 45%;
+        left: 51.5%;
         width: 100%;
         background-color: #fff;
         transition: left 0.9s ease-in-out;
@@ -240,18 +243,50 @@
 
 
 @media screen
+and (max-width: $desktop) {
+  .svc {
+      &-slider-block {
+          display: block;
+          padding-right: 20px;
+          padding-left: 20px;
+          padding-bottom: 52px;
+      }
+      &-detail {
+          min-height: 340px;
+      }
+      &-slider-icon {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+      }
+      &-slider-name {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      &-slider-info {
+          text-align: center;
+          font-size: 14px;
+          line-height: 22px;
+      }
+  }
+}
+
+@media screen
 and (max-width: $tablet) {
     .svc {
         &-panel {
             margin-bottom: 5px;
         }
         &-number {
-            margin-top: 0;
+            margin-top: 3px;
+            margin-right: 21px;
         }
         &-info {
             margin-left: 60px;
             width: auto;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
             font-size: 20px;
             line-height: 30px;
         }
@@ -262,29 +297,10 @@ and (max-width: $tablet) {
             display: none;
         }
         &-slider-block {
-            display: block;
-            padding-right: 20px;
-            padding-left: 20px;
-            padding-bottom: 52px;
+            padding-top: 27px;
             &:before {
                 display: none;
             }
-        }
-        &-slider-icon {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-        }
-        &-slider-name {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &-slider-info {
-            text-align: center;
-            font-size: 14px;
-            line-height: 22px;
         }
         &-item_active &-close {
             display: none;
@@ -295,8 +311,12 @@ and (max-width: $tablet) {
 @media screen
 and (max-width: $mobile){
     .svc {
+        &-item {
+            padding-bottom: 55px;
+        }
         &-panel {
             display: block;
+            margin-top: -5px;
             text-align: center;
         }
         &-number {
@@ -308,10 +328,13 @@ and (max-width: $mobile){
         }
         &-info {
             margin-left: 0;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             text-align: center;
             font-size: 18px;
             line-height: 24px;
+        }
+        &-slider-block {
+            padding-bottom: 48px;
         }
         &-slider-list {
             display: block;

@@ -1,13 +1,12 @@
 
 .about {
-    margin-bottom: 75px;
     &-head {
         @include container();
         display: flex;
-        margin-bottom: 75px;
+        margin-bottom: 25px;
     }
     &-img {
-        width: 33.7%;
+        width: 34%;
         min-height: 100%;
     }
     &-img-block {
@@ -22,7 +21,7 @@
         }
     }
     &-description {
-        width: 66.3%;
+        width: 66%;
         display: flex;
     }
     &-wrapper {
@@ -31,6 +30,9 @@
     }
     &-title {
         margin-bottom: 0;
+    }
+    &-title-label {
+        white-space: nowrap;
     }
     &-info {
         margin-top: 20px;
@@ -43,6 +45,8 @@
         padding-left: $gutter;
     }
     &-list {
+        padding-top: 50px;
+        padding-bottom: 75px;
     }
     &-list-item {
     }
@@ -68,7 +72,7 @@
 }
 
 .company {
-    padding-top: 80px;
+    padding-top: 75px;
     padding-bottom: 274px;
     background-color: $color11;
     &-container {
@@ -78,6 +82,7 @@
     &-title {
         min-width: 586px;
         margin-right: 70px;
+        margin-bottom: 0;
         padding-right: 60px;
         border-right: 1px solid $color7;
     }
@@ -98,10 +103,13 @@ and (max-width: $desktop){
 @media screen
 and (max-width: $tablet){
     .about {
-        margin-bottom: 60px;
         &-info {
             font-size: 20px;
             line-height: 30px;
+        }
+        &-list {
+            padding-top: 40px;
+            padding-bottom: 60px;
         }
         &-list-count {
             font-size: 30px;
@@ -168,11 +176,9 @@ and (max-width: $tablet){
 @media screen
 and (max-width: $mobile){
     .about {
-        margin-bottom: 75px;
         &-head {
             flex-direction: column;
             align-items: center;
-            margin-bottom: 43px;
         }
         &-img {
             width: auto;
@@ -197,6 +203,9 @@ and (max-width: $mobile){
         }
         &-title {
             text-align: center;
+        }
+        &-list {
+            padding-top: 0;
         }
         &-list-wrapper {
             margin-right: 40px;

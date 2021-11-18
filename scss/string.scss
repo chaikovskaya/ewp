@@ -5,19 +5,19 @@
     margin-bottom: 68px;
     &-item {
         display: inline-block;
-        background: url("../images/string/string-bg-1.png") repeat 0 0;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         animation: scroll 30s infinite linear;
     }
     &-label {
         display: inline-block;
         margin-right: 40px;
+        padding-left: 3px;
         font-size: 120px;
         line-height: 120px;
         font-weight: 900;
         font-family: 'Helvetica';
         white-space: nowrap;
+        background: url("../images/string/string-text.png") no-repeat 0 18px;
+        color: transparent;
     }
 }
 
@@ -40,6 +40,8 @@ and (max-width: $tablet){
         &-label {
             font-size: 70px;
             line-height: 70px;
+            background-image: url("../images/string/string-text-tablet.png");
+            background-position: 0 10px;
         }
     }
 }
@@ -51,6 +53,8 @@ and (max-width: $mobile){
         &-label {
             font-size: 50px;
             line-height: 50px;
+            background-image: url("../images/string/string-text-mob.png");
+            background-position: 0 4px;
         }
     }
 }

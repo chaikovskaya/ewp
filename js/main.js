@@ -250,10 +250,13 @@ function initSliderBlog() {
 
 function initSliderAbout() {
     var swiper = new Swiper(".js-slider-about", {
-        loop: true,
+        loop: false,
         slidesPerView: 5,
         spaceBetween: 30,
-        mousewheel: true,
+        mousewheel: {
+            invert: true,
+            releaseOnEdges: true,
+        },
         pagination: false,
         breakpoints: {
             0: {
@@ -305,42 +308,6 @@ function initScrollUp() {
             $('body').removeClass('main-content-animate');
         }
     });
-}
-
-function initAnimateContacts() {
-    var $element = document.querySelector('.js-animate-contacts'),
-        speed = 56,
-        positionTopElem = $($element).offset().top;
-
-    var animate = function(type, name, obj){
-        var obj = obj || window;
-        var running = false;
-        var func = function(){
-            if (running){ return; }
-            running = true;
-            requestAnimationFrame(function(){
-                obj.dispatchEvent(new CustomEvent(name));
-                running = false;
-            });
-        };
-        obj.addEventListener(type, func);
-    };
-
-    animate("scroll", "optimizedScroll");
-
-    var i = 0.6;
-
-    window.addEventListener("optimizedScroll", function(){
-        console.log((window.pageYOffset + 350) + ' ' + positionTopElem);
-        if ((window.pageYOffset + 350) > positionTopElem) {
-            i = i + 0.15;
-            $element.style.transform = "scale(" + i + ")";
-        } else {
-            i = Math.abs(i - 0.15);
-            $element.style.transform = "scale(" + i + ")";
-        }
-        //$element.style.transform = "scale(" + ( window.pageYOffset/(speed +3) ) / speed + ")";
-    })
 }
 
 function initFieldText() {
@@ -513,7 +480,7 @@ function initAjaxMorePortfolio() {
 
     var common = {
         success: function () {
-            initColumns();
+            setTimeout(initColumns, 200);
         }
     };
 
@@ -579,6 +546,36 @@ function initPopupImg() {
     });
 }
 
+function setHeightWindow() {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', '' + vh + 'px');
+}
+
+function initAdaptiveMenu() {
+    $('.js-adaptivemenu').each(function() {
+        var $navItemMore = $(this).find('.js-adaptivemenu-more'),
+            $navItems = $(this).find('.js-adaptivemenu-item'),
+            targetClass = '.js-adaptivemenu-target',
+            navItemWidthMore = $navItemMore.width(),
+            windowWidth = $(this).width(),
+            navItemWidth = 0;
+
+        $navItemMore.before($(targetClass + ' > .js-adaptivemenu-item'));
+
+        $navItems.each(function () {
+            navItemWidth += $(this).outerWidth();
+        });
+
+        navItemWidth > windowWidth ? $navItemMore.show() : $navItemMore.hide();
+
+        while (navItemWidth > windowWidth) {
+            navItemWidth -= $navItems.last().width();
+            $navItems.last().prependTo(targetClass);
+            $navItems.splice(-1, 1);
+        }
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -587,14 +584,15 @@ function initResizeWindow() {
         GLOBAL.widthWindow = 'isTablet';
     } else {
         GLOBAL.widthWindow = '';
-        //initAnimateContacts();
     }
 }
 
 $(document).ready(function () {
     initResizeWindow();
+    setHeightWindow();
     $(window).resize(function(){
         initResizeWindow();
+        initAdaptiveMenu();
     });
 
     initDropdown();
@@ -624,4 +622,5 @@ $(document).ready(function () {
     initColumns();
     initForm();
     initPopupImg();
+    initAdaptiveMenu();
 });

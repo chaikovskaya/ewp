@@ -24,13 +24,13 @@
         line-height: 38px;
     }
     &-main {
-        width: 70%;
+        width: 71.5%;
         margin-right: auto;
         padding-right: 75px;
         border-right: 1px solid #e5e5e5;
     }
     &-side {
-        width: 19%;
+        width: 20%;
         padding-top: 30px;
     }
     &-list {}
@@ -58,6 +58,9 @@
             color: $color6;
             text-decoration: none;
         }
+    }
+    &-messengers {
+        margin-top: 15px;
     }
 }
 
