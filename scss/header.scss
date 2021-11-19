@@ -504,7 +504,7 @@
 
     &-container {
         padding-right: 20px;
-        padding-left: 90px;
+        padding-left: 86px;
     }
     &-content {
         height: 100vh;
@@ -516,12 +516,17 @@
         flex-direction: column;
         flex-wrap: wrap;
         height: 780px;
-        padding-top: 8px;
         padding-right: 60px;
     }
     &-list-item {
         width: 50%;
-        margin-bottom: 56px;
+        padding-top: 8px;
+        padding-right: 15px;
+        margin-bottom: 48px;
+    }
+    &-list-block {
+    }
+    &-list-panel {
     }
     &-list-item_link {
         display: none;
@@ -534,7 +539,8 @@
         font-family: 'Helvetica';
         color: $color6;
         &:hover {
-            color: $color6;
+            text-decoration: none;
+            color: $color1;
         }
     }
     &-list-point {

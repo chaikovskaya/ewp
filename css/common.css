@@ -112,9 +112,6 @@
   padding: 0;
   outline: none; }
 
-html {
-  scroll-behavior: smooth; }
-
 html, body {
   min-height: 100vh;
   height: 100%;
@@ -1720,7 +1717,7 @@ label.form-error {
 
 .menu-container {
   padding-right: 20px;
-  padding-left: 90px; }
+  padding-left: 86px; }
 
 .menu-content {
   height: 100vh;
@@ -1732,12 +1729,13 @@ label.form-error {
   flex-direction: column;
   flex-wrap: wrap;
   height: 780px;
-  padding-top: 8px;
   padding-right: 60px; }
 
 .menu-list-item {
   width: 50%;
-  margin-bottom: 56px; }
+  padding-top: 8px;
+  padding-right: 15px;
+  margin-bottom: 48px; }
 
 .menu-list-item_link {
   display: none; }
@@ -1750,7 +1748,8 @@ label.form-error {
   font-family: 'Helvetica';
   color: #222; }
   .menu-list-link:hover {
-    color: #222; }
+    text-decoration: none;
+    color: #db352a; }
 
 .menu-list-point {
   color: #db352a; }
@@ -2513,6 +2512,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   .portfolio-list-img {
     display: block;
     width: 100%;
+    min-height: 80px;
     transition: transform  0.4s ease-in-out; }
   .portfolio-list-link:hover .portfolio-list-img {
     transform: scale(1.1); }
@@ -3502,6 +3502,9 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .contacts-list-info a {
       color: #222;
       text-decoration: none; }
+      .contacts-list-info a:hover {
+        color: #222;
+        text-decoration: underline; }
   .contacts-messengers {
     margin-top: 15px; }
 

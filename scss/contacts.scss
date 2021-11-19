@@ -57,6 +57,10 @@
         a {
             color: $color6;
             text-decoration: none;
+            &:hover {
+                color: $color6;
+                text-decoration: underline;
+            }
         }
     }
     &-messengers {

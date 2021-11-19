@@ -576,6 +576,17 @@ function initAdaptiveMenu() {
     });
 }
 
+function initAnchorScroll() {
+    var $page = $('html, body');
+
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -623,4 +634,5 @@ $(document).ready(function () {
     initForm();
     initPopupImg();
     initAdaptiveMenu();
+    initAnchorScroll();
 });
