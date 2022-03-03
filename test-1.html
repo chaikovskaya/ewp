@@ -542,6 +542,11 @@
                 <!-- particles.js container -->
                 <div id="particles-js" style="position:absolute; left: 50%;top:50%; transform:translate(-50%,-50%);margin-top: -20px;width: 580px;height: 580px;"></div>
 
+                <!-- stats - count particles -->
+                <div class="count-particles">
+                    <span class="js-count-particles">--</span>
+                </div>
+
             </div>
         </header>
 
@@ -1433,79 +1438,79 @@
     <script>
         particlesJS("particles-js", {
         "particles": {
-            "number": {
-                "value": 380,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#e9281b"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#e9281b"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                },
-                "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
-                }
-            },
-            "opacity": {
-                "value": 1,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 4,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 2,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#e9281b",
-                "opacity": 1,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 1,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
+        "number": {
+        "value": 380,
+        "density": {
+        "enable": true,
+        "value_area": 800
+        }
+        },
+        "color": {
+        "value": "#e9281b"
+        },
+        "shape": {
+        "type": "circle",
+        "stroke": {
+        "width": 0,
+        "color": "#e9281b"
+        },
+        "polygon": {
+        "nb_sides": 5
+        },
+        "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+        }
+        },
+        "opacity": {
+        "value": 1,
+        "random": false,
+        "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 1,
+        "sync": false
+        }
+        },
+        "size": {
+        "value": 4,
+        "random": true,
+        "anim": {
+        "enable": false,
+        "speed": 2,
+        "size_min": 0.1,
+        "sync": false
+        }
+        },
+        "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#e9281b",
+        "opacity": 1,
+        "width": 1
+        },
+        "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+        }
+        }
         },
         "interactivity": {
         "detect_on": "canvas",
         "events": {
         "onhover": {
-            "enable": true,
-            "mode": "grab"
+        "enable": true,
+        "mode": "grab"
         },
         "onclick": {
         "enable": true,
