@@ -512,16 +512,18 @@ blockquote {
 
 .head-panel {
   display: flex;
+  align-items: baseline;
   flex-wrap: wrap;
-  align-items: center;
   margin-bottom: 32px; }
 
 .main-title {
+  max-width: 70%;
   margin-bottom: 0; }
 
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 35px;
   margin-left: auto; }
   .breadcrumbs-item {
     margin-right: 10px;
@@ -660,6 +662,8 @@ blockquote {
     padding-top: 25px; }
   .main-page .main-content {
     padding-top: 50px; }
+  .main-title {
+    max-width: none; }
   .head-panel {
     flex-direction: column; }
   .breadcrumbs {
@@ -4741,3 +4745,15 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     height: 100%;
     padding-left: 0;
     padding-right: 0; } }
+
+.svс-detail-main {
+  display: flex; }
+
+.svс-detail-main-info {
+  width: 50%;
+  font-size: 28px;
+  color: #979797;
+  line-height: 38px;
+  font-weight: 300; }
+  .svс-detail-main-info p {
+    margin-bottom: 38px; }

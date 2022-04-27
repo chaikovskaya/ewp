@@ -491,18 +491,20 @@ blockquote {
 
 .head-panel {
 	display: flex;
+	align-items: baseline;
 	flex-wrap: wrap;
-	align-items: center;
 	margin-bottom: 32px;
 }
 
 .main-title {
+	max-width: 70%;
 	margin-bottom: 0;
 }
 
 .breadcrumbs {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 35px;
 	margin-left: auto;
 	&-item {
 		margin-right: 10px;
@@ -694,6 +696,9 @@ and (max-width: $mobile){
 	}
 	.main-page .main-content {
 		padding-top: 50px;
+	}
+	.main-title {
+		max-width: none;
 	}
 	.head-panel {
 		flex-direction: column;
