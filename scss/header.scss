@@ -1074,6 +1074,9 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     }
     &-link {
         text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
     }
     &-link:hover &-icon {
         color: $color1;
