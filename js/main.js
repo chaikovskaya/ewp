@@ -587,14 +587,61 @@ function initAnchorScroll() {
     });
 }
 
+function initSliderProcess() {
+    $(".js-slider-process").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $prev = $element.find('.js-slider-prev'),
+            $next = $element.find('.js-slider-next'),
+            $item = $list.find('.js-slider-item');
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: false,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            margin: 0,
+            items: 1,
+            responsive: {
+                0: {
+                },
+                720: {
+                    mouseDrag: true,
+                },
+                992: {
+                },
+            },
+        }));
+        if (!isStart) {
+            $buttons.remove();
+        }
+        $prev.click(function(){
+            $list.trigger("prev.owl.carousel");
+        });
+        $next.click(function(){
+            $list.trigger("next.owl.carousel");
+        });
+    });
+}
+function reInitSliderProcess() {
+    $(".js-slider-process .js-slider-list").trigger('destroy.owl.carousel');
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
         GLOBAL.widthWindow = 'isMobile';
+        initSliderProcess();
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
+        reInitSliderProcess();
     } else {
         GLOBAL.widthWindow = '';
+        reInitSliderProcess();
     }
 }
 
@@ -635,4 +682,5 @@ $(document).ready(function () {
     initPopupImg();
     initAdaptiveMenu();
     initAnchorScroll();
+    initSliderProcess();
 });
