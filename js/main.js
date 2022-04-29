@@ -682,5 +682,4 @@ $(document).ready(function () {
     initPopupImg();
     initAdaptiveMenu();
     initAnchorScroll();
-    initSliderProcess();
 });

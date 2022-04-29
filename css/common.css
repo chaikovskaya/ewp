@@ -4795,7 +4795,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     width: 123px;
     height: 22px;
     margin-left: -5px;
-    background: url(../images/svс-detail/showreel-name.png) no-repeat 0 0;
+    background: url(../images/svc-detail/showreel-name.png) no-repeat 0 0;
     transform: translateX(-50%);
     background-size: 100% auto; }
   .svс-detail-showreel-img:after {
@@ -4817,7 +4817,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
 .svс-detail-showreel-decor {
   width: 40px;
   height: 225px;
-  background: url(../images/svс-detail/showreel-title.png) no-repeat 0 0;
+  background: url(../images/svc-detail/showreel-title.png) no-repeat 0 0;
   background-size: 100% auto; }
 
 .svс-detail-options {
@@ -4915,7 +4915,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     left: 79.2%;
     width: 157px;
     height: 228px;
-    background: url(../images/svс-detail/process-decor-1.png) no-repeat 0 0;
+    background: url(../images/svc-detail/process-decor-1.png) no-repeat 0 0;
     background-size: 100% auto; }
 
 .svс-detail-process-list {
@@ -4929,7 +4929,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     left: 66.6%;
     width: 228px;
     height: 228px;
-    background: url(../images/svс-detail/process-decor.png) no-repeat 0 0;
+    background: url(../images/svc-detail/process-decor.png) no-repeat 0 0;
     background-size: 100% auto; }
 
 .svс-detail-process-list-item {
