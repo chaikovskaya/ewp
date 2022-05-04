@@ -297,7 +297,7 @@ blockquote {
 
 .main-content {
 	margin-bottom: 80px;
-	padding-top: 45px;
+	padding-top: 46px;
 }
 .main-page .main-content {
 	padding-top: 80px;
@@ -674,10 +674,18 @@ and (max-width: $tablet){
 	}
 	.main-content {
 		margin-bottom: 55px;
-		padding-top: 40px;
+		padding-top: 22px;
+	}
+	.main-title {
+		max-width: 50%;
 	}
 	.head-panel {
 		margin-bottom: 25px;
+	}
+	.breadcrumbs {
+		max-width: 50%;
+		position: relative;
+		top: -8px;
 	}
 }
 
@@ -692,21 +700,12 @@ and (max-width: $mobile){
 	}
 	.main-content {
 		margin-bottom: 60px;
-		padding-top: 25px;
 	}
 	.main-page .main-content {
 		padding-top: 50px;
 	}
-	.main-title {
-		max-width: none;
-	}
 	.head-panel {
 		flex-direction: column;
-	}
-	.breadcrumbs {
-		order: -1;
-		margin-left: 0;
-		margin-bottom: 20px;
 	}
 	blockquote {
 		font-size: 15px;
@@ -715,5 +714,10 @@ and (max-width: $mobile){
 			font-size: 40px;
 			line-height: 40px;
 		}
+	}
+	.breadcrumbs {
+		order: -1;
+		margin-left: 0;
+		margin-bottom: 20px;
 	}
 }
