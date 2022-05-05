@@ -599,7 +599,7 @@ function initSliderProcess() {
         var isStart = $item.length > 1 ? true : false;
 
         $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
-            loop: false,
+            loop: isStart,
             mouseDrag: isStart,
             touchDrag: isStart,
             autoHeight: false,
@@ -630,6 +630,38 @@ function initSliderProcess() {
 function reInitSliderProcess() {
     $(".js-slider-process .js-slider-list").trigger('destroy.owl.carousel');
 }
+
+/*
+var  sticky_1;
+function initFixSticky1() {
+    sticky_1 = new Sticky('.js-fix-sticky-1', {
+    });
+}
+var sticky_2;
+function initFixSticky2() {
+    sticky_2 = new Sticky('.js-fix-sticky-2', {
+    });
+}
+*/
+
+/*
+var sticky_1;
+sticky_1 = new Sticksy('.js-fix-sticky-1', {
+    topSpacing: 100,
+    listen: true,
+});
+function initFixSticky1() {
+
+}
+var sticky_2;
+sticky_2 = new Sticksy('.js-fix-sticky-2', {
+    topSpacing: 100,
+    listen: true,
+});
+function initFixSticky2() {
+}
+*/
+
 
 function initResizeWindow() {
     var width = $(window).width();
@@ -682,4 +714,6 @@ $(document).ready(function () {
     initPopupImg();
     initAdaptiveMenu();
     initAnchorScroll();
+    //initFixSticky1();
+    //initFixSticky2();
 });

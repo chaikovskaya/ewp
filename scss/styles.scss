@@ -706,6 +706,7 @@ and (max-width: $mobile){
 	}
 	.head-panel {
 		flex-direction: column;
+		margin-bottom: 20px;
 	}
 	blockquote {
 		font-size: 15px;
@@ -717,7 +718,15 @@ and (max-width: $mobile){
 	}
 	.breadcrumbs {
 		order: -1;
+		top: 0;
+		width: 100%;
+		max-width: none;
+		justify-content: center;
+		margin-top: 0;
 		margin-left: 0;
-		margin-bottom: 20px;
+		margin-bottom: 23px;
+	}
+	.main-title {
+		max-width: none;
 	}
 }
