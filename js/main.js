@@ -631,37 +631,21 @@ function reInitSliderProcess() {
     $(".js-slider-process .js-slider-list").trigger('destroy.owl.carousel');
 }
 
-/*
-var  sticky_1;
-function initFixSticky1() {
-    sticky_1 = new Sticky('.js-fix-sticky-1', {
+function initSticky() {
+    if (typeof(Sticky) === 'undefined' || !jQuery.isFunction(Sticky)) {
+        return false;
+    }
+
+    var common = {
+        update: function (){
+        }
+    };
+
+    $('.JS-Sticky').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('sticky'));
+        new Sticky(this, jQuery.extend({}, common, local));
     });
 }
-var sticky_2;
-function initFixSticky2() {
-    sticky_2 = new Sticky('.js-fix-sticky-2', {
-    });
-}
-*/
-
-/*
-var sticky_1;
-sticky_1 = new Sticksy('.js-fix-sticky-1', {
-    topSpacing: 100,
-    listen: true,
-});
-function initFixSticky1() {
-
-}
-var sticky_2;
-sticky_2 = new Sticksy('.js-fix-sticky-2', {
-    topSpacing: 100,
-    listen: true,
-});
-function initFixSticky2() {
-}
-*/
-
 
 function initResizeWindow() {
     var width = $(window).width();
@@ -683,6 +667,7 @@ $(document).ready(function () {
     $(window).resize(function(){
         initResizeWindow();
         initAdaptiveMenu();
+        initSticky();
     });
 
     initDropdown();
@@ -714,6 +699,5 @@ $(document).ready(function () {
     initPopupImg();
     initAdaptiveMenu();
     initAnchorScroll();
-    //initFixSticky1();
-    //initFixSticky2();
+    initSticky();
 });

@@ -502,9 +502,10 @@ blockquote {
 }
 
 .breadcrumbs {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 35px;
+	top: -14px;
 	margin-left: auto;
 	&-item {
 		margin-right: 10px;
@@ -677,14 +678,13 @@ and (max-width: $tablet){
 		padding-top: 22px;
 	}
 	.main-title {
-		max-width: 50%;
+		max-width: 49%;
 	}
 	.head-panel {
 		margin-bottom: 25px;
 	}
 	.breadcrumbs {
 		max-width: 50%;
-		position: relative;
 		top: -8px;
 	}
 }

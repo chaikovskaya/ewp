@@ -21,7 +21,6 @@
 
 <body>
 <div class="wrapper">
-    <div style="display:none;position: absolute;top:0;left: 50%;transform: translateX(-50%);margin-left:0;opacity:0.6;max-width: none;z-index:1000;"><img style="max-width: none;" src="./main.jpg" alt="" /></div>
     <header class="header">
         <div class="header-container">
             <div class="header-top JS-Fix" data-fix="{'classActive': 'header-top-block_fix'}">
@@ -527,7 +526,7 @@
     <main id="main-content" class="main-content js-main-content">
         <div class="container">
             <div class="head-panel">
-                <h1 class="main-title">Разработка и интеграция веб-проектов</h1>
+                <h1 class="main-title">Разработка и&nbsp;интеграция веб-проектов</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная</a><i class="breadcrumbs-icon">&#47;</i></li>
                     <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Услуги</a><i class="breadcrumbs-icon">&#47;</i></li>
@@ -923,6 +922,49 @@
                         <i class="load-more-icon las la-redo-alt"></i>
                     </a>
                 </div>
+                <ul class="g-hidden pager JS-AjaxMore-Pager">
+                    <li class="pager-item pager-item_side pager-item_first">
+                        <a class="pager-link" href="#">
+                            <i class="pager-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                        <path d="M5.8,0.2l0.9,0.9L2.4,5.4H52v1.3H2.4l4.3,4.3l-0.9,0.9L0.4,6.5L0,6l0.4-0.5L5.8,0.2z"/>
+                                    </svg>
+                            </i>
+                        </a>
+                    </li>
+                    <!-- Добавить класс pager-item_default, если страницы пролистаны
+                    <li class="pager-item pager-item_side pager-item_first pager-item_default">
+                        <i class="pager-icon">
+                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M5.8,0.2l0.9,0.9L2.4,5.4H52v1.3H2.4l4.3,4.3l-0.9,0.9L0.4,6.5L0,6l0.4-0.5L5.8,0.2z"/>
+                            </svg>
+                        </i>
+                    </li>
+                    <!-- //Добавить класс pager-item_default, если страницы пролистаны -->
+                    <li class="pager-item"><a class="pager-link" href="#">1</a></li>
+                    <li class="pager-item pager-item_active"><a class="pager-link" href="#">2</a></li>
+                    <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                    <li class="pager-item"><a class="pager-link" href="#">...</a></li>
+                    <li class="pager-item"><a class="pager-link" href="#">48</a></li>
+                    <li class="pager-item pager-item_side pager-item_last">
+                        <a class="pager-link pager-link_last JS-AjaxMore-Next" href="#?PAGEN_2=2">
+                            <i class="pager-icon">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                        <path d="M51.6,5.5L52,6l-0.4,0.5l-5.3,5.3l-0.9-0.9l4.3-4.3H0V5.4h49.6l-4.3-4.3l0.9-0.9L51.6,5.5z"/>
+                                    </svg>
+                            </i>
+                        </a>
+                    </li>
+                    <!-- Добавить класс pager-item_default, если страницы пролистаны
+                    <li class="pager-item pager-item_side pager-item_last pager-item_default">
+                        <i class="pager-icon">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M51.6,5.5L52,6l-0.4,0.5l-5.3,5.3l-0.9-0.9l4.3-4.3H0V5.4h49.6l-4.3-4.3l0.9-0.9L51.6,5.5z"/>
+                            </svg>
+                        </i>
+                    </li>
+                    <!-- //Добавить класс pager-item_default, если страницы пролистаны -->
+                </ul>
             </div>
         </div>
 
@@ -980,13 +1022,12 @@
                             <div class="svс-detail-process-info content">Осуществляем перенос и запуск проекта в боевом режиме на сервере клиента</div>
                         </div>
                     </div>
-                    <div class="svс-detail-process-layer" data-sticky-container>
+                    <div class="svс-detail-process-layer JS-Sticky" data-sticky="{
+                        'classActive': 'svс-detail-process-layer_fix',
+                        'classBottom': 'svс-detail-process-layer_bottom'
+                    }">
                         <div class="svс-detail-process-layer-1"></div>
-                        <div class="svс-detail-process-layer-2 js-fix-sticky-1" data-margin-top="100"></div>
-                    </div>
-                    <div class="svс-detail-process-layer-mob" data-sticky-container>
-                        <div class="svс-detail-process-layer-1-mob"></div>
-                        <div class="svс-detail-process-layer-2-mob js-fix-sticky-2" data-margin-top="100"></div>
+                        <div class="svс-detail-process-layer-2 JS-Sticky-Item"></div>
                     </div>
                 </div>
             </div>
@@ -1350,10 +1391,10 @@
 <script src="./libs/wow/wow.min.js"></script>
 <script src="./libs/mask/jquery.mask.min.js"></script>
 <script src="./libs/swiper/swiper.min.js"></script>
-<script src="./libs/sticky/sticky.min.js"></script>
 <script src="./js/JSC.Dropdown.js"></script>
 <script src="./js/JSC.MobileMenu.js"></script>
 <script src="./js/JSC.Fix.js"></script>
+<script src="./js/JSC.Sticky.js"></script>
 <script src="./js/JSC.FieldText.js"></script>
 <script src="./js/JSC.AjaxMore.js"></script>
 <script src="./js/JSC.Columns.js"></script>
