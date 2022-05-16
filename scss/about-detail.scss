@@ -554,7 +554,7 @@ and (max-width: $mobile){
             display: flex;
             justify-content: center;
             margin-left: 0;
-            padding: 51px 0 28px;
+            padding: 51px $gutter 28px;
             &:after {
                 display: none;
             }
