@@ -481,7 +481,8 @@ function initAjaxMorePortfolio() {
     var common = {
         success: function () {
             setTimeout(initColumns, 200);
-        }
+        },
+        isPushState: true
     };
 
     $('.JS-AjaxMore-Portfolio').not('.JS-AjaxMore-ready').each(function(){

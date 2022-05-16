@@ -8,6 +8,7 @@
     this.onInit = this.params.onInit || null;
     this.classLoad = this.params.classLoad || 'ajaxmore-load';
     this.success = this.params.success || {};
+    this.isPushState = this.params.isPushState || false;
 
     this.__construct();
   };
@@ -48,7 +49,9 @@
     this.$content.append($itemNew);
     this.$pager.html($pagerNew);
 
-    history.pushState(null, null, $url);
+    if( this.isPushState != true ){
+      history.pushState(null, null, $url);
+    }
 
     var $url = this._getUrl();
     if ($url == undefined) {
