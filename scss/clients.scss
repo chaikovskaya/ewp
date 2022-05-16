@@ -82,6 +82,20 @@
     .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active &-list-box {
         border-right-width: 0;
     }
+    &-info {
+        margin-bottom: 25px;
+        font-size: 28px;
+        font-family: "OpenSans", sans-serif;
+        color: rgb( 151, 151, 151 );
+        line-height: 38px;
+        font-weight: 300;
+        p {
+            margin-bottom: 38px;
+        }
+        b {
+            color: #222;
+        }
+    }
 }
 
 

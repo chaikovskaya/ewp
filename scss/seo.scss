@@ -97,7 +97,7 @@
 
 .seo-problems {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 63px;
     &-container {
         margin-left: 34.3%;
         padding: 57px 0 37px 109px;
@@ -311,3 +311,52 @@ and (max-width: $mobile){
         }
     }
 }
+
+
+.seo-portfolio {
+    margin-bottom: 67px;
+    border-bottom: 1px solid #ebebeb;
+    .pager {
+        display: none;
+    }
+    .load-more {
+        border-bottom-width: 0;
+    }
+}
+
+.seo-clients {
+    margin-bottom: 75px;
+    border-bottom: 1px solid #ebebeb;
+    .clients {
+        margin-bottom: 75px;
+    }
+}
+
+.seo-instruments {
+    display: flex;
+    margin-bottom: 84px;
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        border-right: 1px dotted #d6d6d6;
+        text-align: center;
+        &:last-child {
+            border-right-width: 0;
+        }
+    }
+    &-img {
+    }
+}
+
+.seo-stages {
+    &-item {
+        display: flex;
+        width: 50%;
+    }
+    &-img {
+        margin-right: 30px;
+    }
+}
+
