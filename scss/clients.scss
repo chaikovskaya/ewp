@@ -156,6 +156,13 @@ and (max-width: $tablet){
         .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active &-list-box {
             border-right-width: 1px;
         }
+        &-info {
+            font-size: 20px;
+            line-height: 30px;
+            p {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -165,6 +172,11 @@ and (max-width: $mobile){
         margin-bottom: 26px;
         &-side {
             margin-bottom: 22px;
+        }
+        &-info {
+            margin-bottom: 22px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 }

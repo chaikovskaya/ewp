@@ -3,7 +3,7 @@
     display: flex;
     margin-bottom: 77px;
     &-info {
-        width: 66%;
+        width: 65%;
         max-width: 725px;
         padding-right: 30px;
     }
@@ -15,7 +15,7 @@
         font-weight: 300;
     }
     &-img {
-        width: 34%;
+        width: 35%;
         margin-left: auto;
         margin-right: -14px;
         display: flex;
@@ -29,7 +29,17 @@
 .seo-rating {
     display: flex;
     margin-bottom: 80px;
+    &-list {
+        margin-right: -$gutter;
+        margin-left: -$gutter;
+    }
     &-list-item {
+        width: 25%;
+        padding-right: $gutter;
+        padding-left: $gutter;
+    }
+    &-list-block {
+        height: 100%;
         padding: 20px;
         text-align: center;
         box-shadow: 0 0 40px 0 rgba( 1, 1, 1, 0.06 );
@@ -92,6 +102,10 @@
     }
     &-location {
         display: block;
+        font-size: 14px;
+    }
+    &-icon {
+        font-size: 15px;
     }
 }
 
@@ -193,7 +207,7 @@
         top: 384px;
     }
     &-item:nth-child(6):hover ~ &-title {
-        top: 467px;
+        top: 405px;
     }
     &-item:nth-child(7):hover ~ &-title {
         top: 550px;
@@ -214,60 +228,127 @@ and (max-width: $desktop) {
 
 @media screen
 and (max-width: $tablet) {
+    .seo-main {
+        margin-top: -10px;
+        margin-bottom: 60px;
+        &-content {
+            margin-bottom: 36px;
+            font-size: 20px;
+            line-height: 30px;
+            p {
+                margin-bottom: 30px;
+            }
+        }
+        &-img {
+            margin-right: 0;
+        }
+    }
+    .seo-rating {
+        flex-direction: column;
+        margin-bottom: 55px;
+        &-info {
+            order: -1;
+            max-width: none;
+            text-align: left;
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 35px;
+        }
+    }
     .seo-problems {
-        margin-bottom: 50px;
+        margin-bottom: 48px;
         &-container {
             padding-top: 47px;
             padding-left: 60px;
             padding-bottom: 24px;
         }
         &-item {
-            padding-bottom: 26px;
+            padding-bottom: 24px;
             &:before {
-                top: 27px;
+                top: 13px;
                 left: -60px;
                 width: 30px;
             }
             &:after {
-                top: 27px;
+                top: 13px;
                 left: -90px;
                 width: 30px;
             }
         }
         &-link {
-            font-size: 28px;
-            line-height: 35px;
+            font-size: 20px;
+            line-height: 30px;
         }
         &-icon {
             font-size: 20px;
         }
         &-title {
-            top: 45px;
-            width: 190px;
+            top: 37px;
+            width: 202px;
         }
         &-item:nth-child(2):hover ~ &-title {
-            top: 104px;
+            top: 120px;
         }
         &-item:nth-child(3):hover ~ &-title {
-            top: 166px;
+            top: 201px;
         }
         &-item:nth-child(4):hover ~ &-title {
-            top: 226px;
+            top: 257px;
         }
         &-item:nth-child(5):hover ~ &-title {
-            top: 287px;
+            top: 342px;
         }
         &-item:nth-child(6):hover ~ &-title {
-            top: 348px;
+            top: 393px;
         }
         &-item:nth-child(7):hover ~ &-title {
-            top: 405px;
+            top: 430px;
         }
     }
 }
 
 @media screen
 and (max-width: $mobile){
+    .seo-main {
+        flex-direction: column;
+        margin-bottom: 42px;
+        &-info {
+            width: 100%;
+            max-width: none;
+            padding-right: 0;
+            margin-bottom: 35px;
+        }
+        &-img {
+            width: 100%;
+            margin-left: 0;
+        }
+        &-content {
+            margin-bottom: 33px;
+            font-size: 18px;
+            line-height: 24px;
+            p {
+                margin-bottom: 22px;
+            }
+        }
+    }
+    .seo-rating {
+        margin-bottom: 20px;
+        &-list {
+            margin-right: -5px;
+            margin-left: -5px;
+        }
+        &-list-item {
+            width: 50%;
+            margin-bottom: 30px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        &-info {
+            font-size: 28px;
+            line-height: 35px;
+            text-align: center;
+        }
+    }
     .seo-problems {
         margin-left: -$gutter;
         margin-right: -$gutter;
@@ -333,30 +414,503 @@ and (max-width: $mobile){
 }
 
 .seo-instruments {
-    display: flex;
     margin-bottom: 84px;
+    &-list {
+    }
     &-item {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        width: 20%;
+        padding-left: 10px;
+        padding-right: 10px;
         border-right: 1px dotted #d6d6d6;
         text-align: center;
-        &:last-child {
-            border-right-width: 0;
+    }
+    .owl-item:last-child &-item {
+        border-right-width: 0;
+    }
+    .owl-item:not(.active) {
+        position: relative;
+        overflow: hidden;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - 2px);
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
         }
     }
     &-img {
     }
+    .owl-stage {
+        display: flex;
+    }
+}
+
+.seo-about {
 }
 
 .seo-stages {
+    margin-bottom: 100px;
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -$gutter;
+        margin-right: -$gutter;
+    }
     &-item {
         display: flex;
+        align-items: center;
         width: 50%;
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+    &-item:nth-child(2n) {
+        margin-top: -80px;
+        margin-left: auto;
+    }
+    &-pic {
+        min-width: 215px;
+        padding-right: 30px;
     }
     &-img {
-        margin-right: 30px;
+    }
+    &-info {
+    }
+    &-name {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-family: "Helvetica", sans-serif;
+        color: rgb( 34, 34, 34 );
+        font-weight: 700;
+        line-height: 35px;
+        @include point();
+    }
+    &-description {
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .owl-stage {
+        display: flex;
     }
 }
 
+.seo-advantages {
+    margin-bottom: 68px;
+    padding-top: 66px;
+    padding-bottom: 80px;
+    background-color: #f8f8f8;
+    &-title {
+        margin-bottom: 57px;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -$gutter;
+        margin-right: -$gutter;
+    }
+    &-list-item {
+        width: 25%;
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+    &-block {
+        height: 100%;
+        padding: 36px 15px 50px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06);
+    }
+    &-name {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: "Helvetica", sans-serif;
+        color: rgb( 34, 34, 34 );
+        font-weight: 700;
+        line-height: 27px;
+        @include point();
+    }
+    &-img {
+        display: block;
+        margin-bottom: 18px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-info {
+    }
+}
+
+.seo-price {
+    &-menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    &-menu-item {
+        margin-right: 41px;
+        margin-bottom: 20px;
+    }
+    &-menu-link {
+        font-size: 17px;
+        font-family: "Helvetica", sans-serif;
+        color: rgb( 34, 34, 34 );
+        &:hover {
+            color: #df2c31;
+            text-decoration: none;
+        }
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -$gutter;
+        margin-right: -$gutter;
+    }
+    &-list-item {
+        width: 50%;
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+    &-list-block {
+        padding: 35px 30px 45px;
+        background: #fff url(../images/seo/seo-price/seo-price-decor.png) no-repeat right 44px;
+        box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06);
+    }
+    &-panel {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    &-name {
+        min-width: 175px;
+        width: 175px;
+        padding-right: 15px;
+        margin-right: 22px;
+        border-right: 1px solid #ebebeb;
+    }
+    &-info {
+        max-width: 310px;
+    }
+    &-name-main {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 35px;
+        font-family: "Helvetica", sans-serif;
+        color: rgb( 34, 34, 34 );
+        font-weight: 700;
+        line-height: 27px;
+        @include point();
+    }
+    &-name-label {
+        display: block;
+        font-size: 18px;
+        font-family: "Helvetica", sans-serif;
+        color: rgb( 34, 34, 34 );
+        font-weight: 700;
+        line-height: 27px;
+    }
+    &-content {
+        display: flex;
+        margin-bottom: 17px;
+    }
+    &-description {
+        flex-grow: 1;
+        max-width: 400px;
+        padding-right: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+    &-sum {
+        margin-left: auto;
+    }
+    &-sum-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 136px;
+        width: 136px;
+        height: 129px;
+        background: url(../images/seo/seo-price/seo-price-bgr.png) no-repeat 0 0;
+    }
+    &-sum-value {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 23px;
+    }
+    &-sum-label {
+        display: block;
+        font-size: 15px;
+        color: rgb( 255, 184, 178 );
+        line-height: 23px;
+    }
+    &-actions {
+    }
+    &-link {
+        margin-right: 25px;
+    }
+}
+
+
+@media screen
+and (max-width: $tablet) {
+    .seo-portfolio {
+        margin-bottom: 0;
+        border-bottom-width: 0;
+        .h1 {
+            text-align: center;
+        }
+        .load-more {
+            margin-bottom: 0;
+            padding-bottom: 41px;
+        }
+    }
+    .seo-clients {
+        margin-bottom: 55px;
+        .h1 {
+            margin-bottom: 8px;
+        }
+        .clients {
+            margin-bottom: 58px;
+        }
+    }
+    .seo-instruments {
+        margin-bottom: 47px;
+        &-item {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .seo-stages {
+        &-list {
+            display: block;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        &-item {
+            display: block;
+            width: auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &-pic {
+            margin-bottom: 4px;
+            padding-right: 0;
+        }
+        &-name {
+            margin-bottom: 13px;
+            font-size: 20px;
+            font-family: "Helvetica", sans-serif;
+            color: rgb( 34, 34, 34 );
+            font-weight: 700;
+            line-height: 30px;
+        }
+        .owl-item:not(.active) {
+            position: relative;
+            overflow: hidden;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(100% - 2px);
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+    .seo-advantages {
+        margin-bottom: 50px;
+        padding-top: 45px;
+        padding-bottom: 20px;
+        &-title {
+            margin-bottom: 28px;
+        }
+        &-list-item {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    .seo-price {
+        &-panel {
+            flex-direction: column;
+        }
+        &-content {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        &-list-block {
+            padding-bottom: 35px;
+        }
+        &-name {
+            min-width: auto;
+            width: auto;
+            padding-right: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+            border-right-width: 0;
+            text-align: center;
+        }
+        &-name-main {
+            font-size: 25px;
+        }
+        &-info {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &-sum {
+            order: -1;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        &-description {
+            padding-right: 0;
+            text-align: center;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &-actions {
+            text-align: center;
+        }
+        &-link {
+            margin-bottom: 13px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-link_more {
+            padding-left: 0;
+            padding-right: 0;
+            line-height: 20px;
+            text-decoration: underline;
+            &:after {
+                display: none;
+            }
+        }
+        &-link-label {
+            text-transform: none;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        &-link-icon {
+            display: none;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .seo-problems {
+        margin-bottom: 43px;
+        &-container {
+            padding-top: 45px;
+            padding-bottom: 18px;
+        }
+        &-title {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+        &-item {
+            padding-bottom: 26px;
+        }
+        &-link {
+            text-align: center;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    .seo-portfolio {
+         .h1 {
+           margin-bottom: 22px;
+        }
+    }
+    .seo-clients {
+        margin-bottom: 48px;
+    }
+    .seo-about {
+        .about-head {
+            margin-bottom: 30px;
+        }
+    }
+    .seo-instruments {
+        &-list {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+    .seo-stages {
+        margin-bottom: 45px;
+        &-list {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        &-pic {
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        &-name {
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &-description {
+            text-align: center;
+        }
+    }
+    .seo-advantages {
+        margin-bottom: 45px;
+        padding-bottom: 50px;
+        &-list {
+            display: block;
+            flex-wrap: wrap;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        &-list-item {
+            width: 100%;
+            height: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 0;
+        }
+        &-block {
+            padding: 32px 10px 25px;
+        }
+        &-img {
+            margin-bottom: 16px;
+        }
+        &-name {
+            margin-bottom: 8px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        .owl-stage {
+            display: flex;
+        }
+        .owl-item:not(.active) {
+            position: relative;
+            overflow: hidden;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(100% - 2px);
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}
