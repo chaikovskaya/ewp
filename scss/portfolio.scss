@@ -1,5 +1,8 @@
 
 .portfolio {
+    &-title {
+        margin-bottom: 40px;
+    }
     &-actions {
         display: flex;
         padding-bottom: 23px;
@@ -234,6 +237,9 @@
 @media screen
 and (max-width: $tablet) {
     .portfolio {
+        &-title {
+            margin-bottom: 27px;
+        }
         &-banner-link {
             background-position: -114px 0, calc(50% + 35px) 0;
         }

@@ -25,6 +25,10 @@ $colorPlaceholder: $color;
     &-label-required {
         color: $color1;
     }
+
+    &_simple {
+        margin-bottom: 18px;
+    }
 }
 
 .input {
@@ -265,7 +269,8 @@ label.form-error {
     display: flex;
     position: relative;
     &-field {
-        margin-bottom: 50px;
+        margin-top: 55px;
+        margin-bottom: 52px;
     }
     &-decor {
         display: inline-block;
@@ -321,14 +326,44 @@ label.form-error {
 and (max-width: $tablet){
     .field {
         margin-bottom: 25px;
+        &_simple {
+            margin-bottom: 16px;
+        }
     }
     .switch {
         &-field {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+        }
+        &-decor {
+            margin-right: 9px;
+        }
+    }
+    .button {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 23px;
+        padding-right: 23px;
+        font-size: 12px;
+        &-icon {
+            position: relative;
+            top: -1px;
+            font-size: 16px;
         }
     }
 }
 
 @media screen
 and (max-width: $mobile){
+    .field {
+        &_simple {
+            margin-bottom: 17px;
+        }
+    }
+    .switch {
+        align-items: center;
+        &-field {
+            margin-top: 44px;
+            margin-bottom: 40px;
+        }
+    }
 }

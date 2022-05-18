@@ -343,7 +343,17 @@ function initValidate($element) {
 }
 
 function initMask() {
-    $('.js-phone').mask('+7 (999) 999-99-99');
+    $('.js-phone').inputmask({
+        mask: '+7 (999) 999-99-99',
+        "tabThrough": true,
+        "showMaskOnHover": false,
+    });
+
+    $('.js-mask-email').inputmask({
+        alias: "email",
+        "tabThrough": true,
+        "showMaskOnHover": false,
+    });
 }
 
 function initTextareaSize() {
@@ -748,6 +758,68 @@ function reInitSliderSeoAdvantages() {
     $(".js-slider-seo-advantages .js-slider-list").trigger('destroy.owl.carousel');
 }
 
+function initSliderSeoPrice() {
+    $(".js-slider-seo-price").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $item = $list.find('.js-slider-item'),
+            itemLength = $item.length;
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: false,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 10,
+                    mouseDrag: itemLength > 1 ? true : false,
+                },
+                720: {
+                },
+            },
+        }));
+    });
+}
+function reInitSliderSeoPrice() {
+    $(".js-slider-seo-price .js-slider-list").trigger('destroy.owl.carousel');
+}
+
+function initSliderSeoServices() {
+    $(".js-slider-seo-services").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $item = $list.find('.js-slider-item'),
+            itemLength = $item.length;
+
+        var isStart = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: false,
+            mouseDrag: isStart,
+            touchDrag: isStart,
+            autoHeight: false,
+            smartSpeed: 500,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 10,
+                    mouseDrag: itemLength > 1 ? true : false,
+                },
+                720: {
+                },
+            },
+        }));
+    });
+}
+function reInitSliderSeoServices() {
+    $(".js-slider-seo-services .js-slider-list").trigger('destroy.owl.carousel');
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -755,16 +827,22 @@ function initResizeWindow() {
         initSliderProcess();
         initSliderSeoStages();
         initSliderSeoAdvantages();
+        initSliderSeoPrice();
+        initSliderSeoServices();
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         reInitSliderProcess();
         initSliderSeoStages();
         reInitSliderSeoAdvantages();
+        reInitSliderSeoPrice();
+        reInitSliderSeoServices();
     } else {
         GLOBAL.widthWindow = '';
         reInitSliderProcess();
         reInitSliderSeoStages();
         reInitSliderSeoAdvantages();
+        reInitSliderSeoPrice();
+        reInitSliderSeoServices();
     }
 }
 

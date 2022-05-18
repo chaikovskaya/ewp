@@ -1,7 +1,8 @@
 
 .seo-main {
     display: flex;
-    margin-bottom: 77px;
+    margin-top: -4px;
+    margin-bottom: 63px;
     &-info {
         width: 65%;
         max-width: 725px;
@@ -13,6 +14,9 @@
         color: #979797;
         line-height: 38px;
         font-weight: 300;
+        p {
+            margin-bottom: 38px;
+        }
     }
     &-img {
         width: 35%;
@@ -28,7 +32,7 @@
 
 .seo-rating {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     &-list {
         margin-right: -$gutter;
         margin-left: -$gutter;
@@ -60,7 +64,7 @@
     }
     &-digit {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         padding-bottom: 15px;
         font-size: 30px;
         font-family: "Helvetica", sans-serif;
@@ -89,6 +93,7 @@
         line-height: 21px;
     }
     &-info {
+        margin-top: -4px;
         max-width: 424px;
         text-align: right;
         font-size: 55px;
@@ -114,7 +119,7 @@
     margin-bottom: 63px;
     &-container {
         margin-left: 34.3%;
-        padding: 57px 0 37px 109px;
+        padding: 70px 0 48px 109px;
         background-color: $color1;
         &:after {
             content: '';
@@ -134,7 +139,7 @@
         float: left;
         clear: both;
         position: relative;
-        padding-bottom: 23px;
+        padding-bottom: 25px;
         &:before {
             display: none;
             content: '';
@@ -187,7 +192,7 @@
     }
     &-title {
         position: absolute;
-        top: 52px;
+        top: 55px;
         left: 0;
         width: 332px;
         transition: top 0.2s ease-in-out;
@@ -256,7 +261,7 @@ and (max-width: $tablet) {
         }
     }
     .seo-problems {
-        margin-bottom: 48px;
+        margin-bottom: 43px;
         &-container {
             padding-top: 47px;
             padding-left: 60px;
@@ -406,15 +411,18 @@ and (max-width: $mobile){
 }
 
 .seo-clients {
-    margin-bottom: 75px;
+    margin-bottom: 70px;
     border-bottom: 1px solid #ebebeb;
     .clients {
         margin-bottom: 75px;
     }
+    .h1 {
+        margin-bottom: 14px;
+    }
 }
 
 .seo-instruments {
-    margin-bottom: 84px;
+    margin-bottom: 78px;
     &-list {
     }
     &-item {
@@ -451,10 +459,44 @@ and (max-width: $mobile){
 }
 
 .seo-about {
+    @include container();
+    display: flex;
+    margin-bottom: 59px;
+    &-img {
+        width: 36.5%;
+        min-height: 100%;
+    }
+    &-img-block {
+        display: flex;
+        width: 77%;
+        height: 100%;
+        padding-right: 20px;
+        border-right: 1px solid $color7;
+        img {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 32px;
+        }
+    }
+    &-description {
+        width: 63.5%;
+        display: flex;
+    }
+    &-wrapper {
+        margin-top: 12px;
+    }
+    &-title {
+        margin-bottom: 34px;
+    }
+    &-info {
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 38px;
+    }
 }
 
 .seo-stages {
-    margin-bottom: 100px;
+    margin-bottom: 103px;
     &-list {
         display: flex;
         flex-wrap: wrap;
@@ -470,8 +512,14 @@ and (max-width: $mobile){
         padding-right: $gutter;
     }
     &-item:nth-child(2n) {
-        margin-top: -80px;
+        margin-top: -85px;
         margin-left: auto;
+    }
+    &-item:nth-child(6) {
+        margin-top: -53px;
+    }
+    &-item:nth-child(8) {
+        margin-top: -49px;
     }
     &-pic {
         min-width: 215px;
@@ -480,6 +528,7 @@ and (max-width: $mobile){
     &-img {
     }
     &-info {
+        margin-top: -5px;
     }
     &-name {
         display: block;
@@ -502,9 +551,9 @@ and (max-width: $mobile){
 }
 
 .seo-advantages {
-    margin-bottom: 68px;
+    margin-bottom: 67px;
     padding-top: 66px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     background-color: #f8f8f8;
     &-title {
         margin-bottom: 57px;
@@ -517,6 +566,7 @@ and (max-width: $mobile){
     }
     &-list-item {
         width: 25%;
+        margin-bottom: 30px;
         padding-left: $gutter;
         padding-right: $gutter;
     }
@@ -529,7 +579,7 @@ and (max-width: $mobile){
     }
     &-name {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         font-size: 20px;
         font-family: "Helvetica", sans-serif;
         color: rgb( 34, 34, 34 );
@@ -539,7 +589,7 @@ and (max-width: $mobile){
     }
     &-img {
         display: block;
-        margin-bottom: 18px;
+        margin-bottom: 16px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -548,6 +598,8 @@ and (max-width: $mobile){
 }
 
 .seo-price {
+    margin-bottom: 41px;
+    &-title {}
     &-menu {
         display: flex;
         flex-wrap: wrap;
@@ -574,13 +626,26 @@ and (max-width: $mobile){
     }
     &-list-item {
         width: 50%;
+        margin-bottom: 30px;
         padding-left: $gutter;
         padding-right: $gutter;
     }
     &-list-block {
-        padding: 35px 30px 45px;
-        background: #fff url(../images/seo/seo-price/seo-price-decor.png) no-repeat right 44px;
+        position: relative;
+        height: 100%;
+        padding: 46px 30px 45px;
+        background: #fff;
         box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06);
+        &:after {
+            content: '';
+            position: absolute;
+            top: 44px;
+            right: 0;
+            width: 75px;
+            height: 54px;
+            background: url(../images/seo/seo-price/seo-price-decor.png) no-repeat right top;
+            background-size: 100% auto;
+        }
     }
     &-panel {
         display: flex;
@@ -617,7 +682,7 @@ and (max-width: $mobile){
     }
     &-content {
         display: flex;
-        margin-bottom: 17px;
+        margin-bottom: 24px;
     }
     &-description {
         flex-grow: 1;
@@ -657,10 +722,143 @@ and (max-width: $mobile){
     &-actions {
     }
     &-link {
-        margin-right: 25px;
+        margin-right: 22px;
     }
 }
 
+.seo-feedback {
+    margin-bottom: 70px;
+    padding-top: 75px;
+    padding-bottom: 77px;
+    background-color: #f8f8f8;
+    &-info {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 300;
+    }
+    &-content {
+        display: flex;
+    }
+    &-form {
+        width: 62%;
+        padding-right: 42px;
+    }
+    &-img {
+        width: 38%;
+        margin-right: 10px;
+        margin-top: 104px;
+    }
+    &-switch-field {}
+    &-buttons {}
+    &-button {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+.seo-services {
+    margin-bottom: 65px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ebebeb;
+    &-title {
+        margin-bottom: 48px;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -$gutter;
+        margin-right: -$gutter;
+    }
+    &-list-item {
+        width: 50%;
+        margin-bottom: 30px;
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+    &-list-block {
+        position: relative;
+        height: 100%;
+        padding: 35px 30px 45px;
+        background: #fff;
+        box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06);
+        &:after {
+            content: '';
+            position: absolute;
+            top: 39px;
+            right: 0;
+            width: 75px;
+            height: 38px;
+            background: url(../images/seo/seo-price/seo-price-decor.png) no-repeat right top;
+            background-size: 100% auto;
+        }
+    }
+    &-name {
+        margin-bottom: 30px;
+    }
+    &-content {
+        display: flex;
+        align-items: flex-start;
+    }
+    &-description {
+        flex-grow: 1;
+        max-width: 400px;
+        margin-bottom: 25px;
+        padding-right: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+    &-sum {
+        margin-left: auto;
+    }
+    &-sum-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 136px;
+        width: 136px;
+        height: 129px;
+        background: url(../images/seo/seo-services/seo-services-bgr.png) no-repeat 0 0;
+    }
+    &-sum-value {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 23px;
+    }
+    &-sum-label {
+        display: block;
+        font-size: 15px;
+        color: rgb( 255, 184, 178 );
+        line-height: 23px;
+    }
+    &-actions {
+        margin-top: -12px;
+    }
+}
+
+@media screen
+and (max-width: $desktop) {
+    .seo-price {
+        &-list-block {
+            &:after {
+                width: 63px;
+            }
+        }
+    }
+    .seo-services {
+        &-list-block {
+            &:after {
+                top: 44px;
+                width: 63px;
+            }
+        }
+    }
+}
 
 @media screen
 and (max-width: $tablet) {
@@ -684,14 +882,50 @@ and (max-width: $tablet) {
             margin-bottom: 58px;
         }
     }
+    .seo-about {
+        margin-bottom: 41px;
+        &-title {
+            margin-top: -10px;
+            margin-bottom: 21px;
+        }
+        &-info {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-list {
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+        &-list-count {
+            font-size: 30px;
+        }
+        &-img {
+            width: 35%;
+        }
+        &-description {
+            width: 65%;
+        }
+        &-img-block {
+            img {
+                min-width: 150px;
+                width: 150px;
+                margin-top: 0;
+                margin-left: 0;
+            }
+        }
+        &-wrapper {
+            margin-top: 0;
+        }
+    }
     .seo-instruments {
-        margin-bottom: 47px;
+        margin-bottom: 40px;
         &-item {
             padding-left: 5px;
             padding-right: 5px;
         }
     }
     .seo-stages {
+        margin-bottom: 19px;
         &-list {
             display: block;
             margin-left: 60px;
@@ -703,8 +937,14 @@ and (max-width: $tablet) {
             padding-left: 0;
             padding-right: 0;
         }
+        &-item:nth-child(6) {
+            margin-top: 0;
+        }
+        &-item:nth-child(8) {
+            margin-top: 0;
+        }
         &-pic {
-            margin-bottom: 4px;
+            margin-bottom: 15px;
             padding-right: 0;
         }
         &-name {
@@ -738,19 +978,28 @@ and (max-width: $tablet) {
         }
         &-list-item {
             width: 50%;
-            margin-bottom: 30px;
         }
     }
     .seo-price {
+        margin-bottom: 25px;
+        &-title {
+            margin-bottom: 17px;
+        }
+        &-menu-item {
+            margin-bottom: 13px;
+        }
         &-panel {
             flex-direction: column;
+            margin-bottom: 22px;
         }
         &-content {
             flex-direction: column;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         &-list-block {
-            padding-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            padding: 35px 20px 38px;
         }
         &-name {
             min-width: auto;
@@ -782,9 +1031,10 @@ and (max-width: $tablet) {
         }
         &-actions {
             text-align: center;
+            margin-top: auto;
         }
         &-link {
-            margin-bottom: 13px;
+            margin-bottom: 12px;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -797,14 +1047,85 @@ and (max-width: $tablet) {
             &:after {
                 display: none;
             }
+            &:hover {
+                text-decoration: none;
+            }
         }
         &-link-label {
             text-transform: none;
             font-size: 14px;
             font-weight: normal;
         }
+        &-link_more:hover &-link-label {
+            color: #222222;
+        }
         &-link-icon {
             display: none;
+        }
+    }
+    .seo-feedback {
+        margin-bottom: 45px;
+        padding-top: 45px;
+        padding-bottom: 56px;
+        &-content {
+            align-items: center;
+        }
+        &-form {
+            padding-right: 30px;
+        }
+        &-title {
+            margin-bottom: 12px;
+        }
+        &-info {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-switch-field {
+            margin-right: -6px;
+        }
+        &-img {
+            margin-top: 99px;
+        }
+    }
+    .seo-services {
+        margin-bottom: 17px;
+        padding-bottom: 0;
+        border-bottom-width: 0;
+        &-title {
+            margin-bottom: 35px;
+        }
+        &-content {
+            flex-direction: column;
+        }
+        &-list-block {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px 50px;
+            &:after {
+                height: 42px;
+            }
+        }
+        &-name {
+            margin-bottom: 28px;
+            text-align: center;
+            min-height: 60px;
+        }
+        &-description {
+            max-width: none;
+            padding-right: 0;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+        }
+        &-sum {
+            order: -1;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        &-actions {
+            margin-top: auto;
+            text-align: center;
         }
     }
 }
@@ -839,8 +1160,35 @@ and (max-width: $mobile){
         margin-bottom: 48px;
     }
     .seo-about {
-        .about-head {
-            margin-bottom: 30px;
+        margin-bottom: 30px;
+        &-head {
+            flex-direction: column;
+            align-items: center;
+        }
+        &-title {
+            margin-top: 0;
+            text-align: center;
+        }
+        &-img {
+            width: auto;
+            margin-bottom: 32px;
+        }
+        &-img-block {
+            width: 100%;
+            padding-right: 0;
+            border-right-width: 0;
+            text-align: center;
+        }
+        &-img-block img {
+            max-width: 155px;
+        }
+        &-description {
+            width: auto;
+        }
+        &-info {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
         }
     }
     .seo-instruments {
@@ -870,7 +1218,7 @@ and (max-width: $mobile){
         }
     }
     .seo-advantages {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
         padding-bottom: 50px;
         &-list {
             display: block;
@@ -911,6 +1259,151 @@ and (max-width: $mobile){
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.6);
             }
+        }
+    }
+    .seo-price {
+        margin-bottom: 50px;
+        &-title {
+            margin-bottom: 22px;
+        }
+        &-panel {
+            margin-bottom: 19px;
+        }
+        &-menu {
+            margin-bottom: 20px;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-menu-item {
+            margin-right: 0;
+            margin-bottom: 17px;
+        }
+        &-list-block {
+            padding-top: 38px;
+            padding-bottom: 28px;
+            &:after {
+                display: none;
+            }
+        }
+        .owl-stage {
+            display: flex;
+        }
+        .owl-item:not(.active) {
+            position: relative;
+            overflow: hidden;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(100% - 2px);
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
+        &-list {
+            display: block;
+            margin-left: 0;
+            margin-right: 45px;
+        }
+        &-list-item {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &-name-main {
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        &-name-label {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        &-description {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-actions {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-link {
+            margin-right: 0;
+        }
+    }
+    .seo-feedback {
+        padding-top: 42px;
+        padding-bottom: 52px;
+        &-content {
+            flex-direction: column;
+        }
+        &-form {
+            width: 100%;
+            padding-right: 0;
+        }
+        &-img {
+            display: none;
+        }
+        &-title {
+            margin-bottom: 16px;
+        }
+        &-info {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &-buttons {
+            text-align: center;
+        }
+    }
+    .seo-services {
+        margin-bottom: 43px;
+        &-list {
+            display: block;
+            margin-left: 0;
+            margin-right: 45px;
+        }
+        &-list-item {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &-list-block {
+            padding-top: 38px;
+            padding-bottom: 43px;
+            &:after {
+                display: none;
+            }
+        }
+        .owl-stage {
+            display: flex;
+        }
+        .owl-item:not(.active) {
+            position: relative;
+            overflow: hidden;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(100% - 2px);
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
+        &-name {
+            margin-bottom: 18px;
+            min-height: 54px;
+            font-size: 20px;
+            line-height: 27px;
+        }
+        &-sum {
+            margin-bottom: 18px;
         }
     }
 }

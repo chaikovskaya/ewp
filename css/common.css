@@ -652,7 +652,8 @@ blockquote {
     display: none; }
   .main-content {
     margin-bottom: 55px;
-    padding-top: 22px; }
+    /*padding-top: 22px;*/
+    padding-top: 39px; }
   .main-title {
     max-width: 49%; }
   .head-panel {
@@ -1050,6 +1051,8 @@ body.form-popup-show .wrapper {
     text-align: center; }
   .field-label-required {
     color: #db352a; }
+  .field_simple {
+    margin-bottom: 18px; }
 
 .input {
   width: 100%;
@@ -1269,7 +1272,8 @@ label.form-error {
   display: flex;
   position: relative; }
   .switch-field {
-    margin-bottom: 50px; }
+    margin-top: 55px;
+    margin-bottom: 52px; }
   .switch-decor {
     display: inline-block;
     vertical-align: middle;
@@ -1314,8 +1318,31 @@ label.form-error {
 @media screen and (max-width: 992px) {
   .field {
     margin-bottom: 25px; }
+    .field_simple {
+      margin-bottom: 16px; }
   .switch-field {
-    margin-bottom: 40px; } }
+    margin-bottom: 50px; }
+  .switch-decor {
+    margin-right: 9px; }
+  .button {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 12px; }
+    .button-icon {
+      position: relative;
+      top: -1px;
+      font-size: 16px; } }
+
+@media screen and (max-width: 720px) {
+  .field_simple {
+    margin-bottom: 17px; }
+  .switch {
+    align-items: center; }
+    .switch-field {
+      margin-top: 44px;
+      margin-bottom: 40px; } }
 
 .header {
   position: relative;
@@ -3609,6 +3636,9 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       font-size: 18px;
       line-height: 24px; } }
 
+.portfolio-title {
+  margin-bottom: 40px; }
+
 .portfolio-actions {
   display: flex;
   padding-bottom: 23px;
@@ -3825,6 +3855,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   margin-bottom: 0; }
 
 @media screen and (max-width: 992px) {
+  .portfolio-title {
+    margin-bottom: 27px; }
   .portfolio-banner-link {
     background-position: -114px 0, calc(50% + 35px) 0; }
   .portfolio-banner-img {
@@ -5324,7 +5356,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
 
 .seo-main {
   display: flex;
-  margin-bottom: 77px; }
+  margin-top: -4px;
+  margin-bottom: 63px; }
   .seo-main-info {
     width: 65%;
     max-width: 725px;
@@ -5335,6 +5368,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     color: #979797;
     line-height: 38px;
     font-weight: 300; }
+    .seo-main-content p {
+      margin-bottom: 38px; }
   .seo-main-img {
     width: 35%;
     margin-left: auto;
@@ -5346,7 +5381,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
 
 .seo-rating {
   display: flex;
-  margin-bottom: 80px; }
+  margin-bottom: 85px; }
   .seo-rating-list {
     margin-right: -15px;
     margin-left: -15px; }
@@ -5373,7 +5408,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     text-transform: uppercase; }
   .seo-rating-digit {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-bottom: 15px;
     font-size: 30px;
     font-family: "Helvetica", sans-serif;
@@ -5399,6 +5434,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     color: #979797;
     line-height: 21px; }
   .seo-rating-info {
+    margin-top: -4px;
     max-width: 424px;
     text-align: right;
     font-size: 55px;
@@ -5419,7 +5455,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   margin-bottom: 63px; }
   .seo-problems-container {
     margin-left: 34.3%;
-    padding: 57px 0 37px 109px;
+    padding: 70px 0 48px 109px;
     background-color: #db352a; }
     .seo-problems-container:after {
       content: '';
@@ -5439,7 +5475,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     float: left;
     clear: both;
     position: relative;
-    padding-bottom: 23px; }
+    padding-bottom: 25px; }
     .seo-problems-item:before {
       display: none;
       content: '';
@@ -5480,7 +5516,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     font-size: 25px; }
   .seo-problems-title {
     position: absolute;
-    top: 52px;
+    top: 55px;
     left: 0;
     width: 332px;
     transition: top 0.2s ease-in-out; }
@@ -5525,7 +5561,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       line-height: 45px;
       margin-bottom: 35px; }
   .seo-problems {
-    margin-bottom: 48px; }
+    margin-bottom: 43px; }
     .seo-problems-container {
       padding-top: 47px;
       padding-left: 60px;
@@ -5633,13 +5669,15 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     border-bottom-width: 0; }
 
 .seo-clients {
-  margin-bottom: 75px;
+  margin-bottom: 70px;
   border-bottom: 1px solid #ebebeb; }
   .seo-clients .clients {
     margin-bottom: 75px; }
+  .seo-clients .h1 {
+    margin-bottom: 14px; }
 
 .seo-instruments {
-  margin-bottom: 84px; }
+  margin-bottom: 78px; }
   .seo-instruments-item {
     display: flex;
     flex-wrap: wrap;
@@ -5665,8 +5703,41 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   .seo-instruments .owl-stage {
     display: flex; }
 
+.seo-about {
+  min-width: 320px;
+  max-width: 1308px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  margin-bottom: 59px; }
+  .seo-about-img {
+    width: 36.5%;
+    min-height: 100%; }
+  .seo-about-img-block {
+    display: flex;
+    width: 77%;
+    height: 100%;
+    padding-right: 20px;
+    border-right: 1px solid #ebebeb; }
+    .seo-about-img-block img {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 32px; }
+  .seo-about-description {
+    width: 63.5%;
+    display: flex; }
+  .seo-about-wrapper {
+    margin-top: 12px; }
+  .seo-about-title {
+    margin-bottom: 34px; }
+  .seo-about-info {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 38px; }
+
 .seo-stages {
-  margin-bottom: 100px; }
+  margin-bottom: 103px; }
   .seo-stages-list {
     display: flex;
     flex-wrap: wrap;
@@ -5680,11 +5751,17 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     padding-left: 15px;
     padding-right: 15px; }
   .seo-stages-item:nth-child(2n) {
-    margin-top: -80px;
+    margin-top: -85px;
     margin-left: auto; }
+  .seo-stages-item:nth-child(6) {
+    margin-top: -53px; }
+  .seo-stages-item:nth-child(8) {
+    margin-top: -49px; }
   .seo-stages-pic {
     min-width: 215px;
     padding-right: 30px; }
+  .seo-stages-info {
+    margin-top: -5px; }
   .seo-stages-name {
     display: block;
     margin-bottom: 10px;
@@ -5703,9 +5780,9 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     display: flex; }
 
 .seo-advantages {
-  margin-bottom: 68px;
+  margin-bottom: 67px;
   padding-top: 66px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   background-color: #f8f8f8; }
   .seo-advantages-title {
     margin-bottom: 57px; }
@@ -5716,6 +5793,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     margin-right: -15px; }
   .seo-advantages-list-item {
     width: 25%;
+    margin-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px; }
   .seo-advantages-block {
@@ -5726,7 +5804,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06); }
   .seo-advantages-name {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 20px;
     font-family: "Helvetica", sans-serif;
     color: #222222;
@@ -5738,120 +5816,217 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       color: #db352a; }
   .seo-advantages-img {
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto; }
 
-.seo-price-menu {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px; }
+.seo-price {
+  margin-bottom: 41px; }
+  .seo-price-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+  .seo-price-menu-item {
+    margin-right: 41px;
+    margin-bottom: 20px; }
+  .seo-price-menu-link {
+    font-size: 17px;
+    font-family: "Helvetica", sans-serif;
+    color: #222222; }
+    .seo-price-menu-link:hover {
+      color: #df2c31;
+      text-decoration: none; }
+  .seo-price-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px; }
+  .seo-price-list-item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .seo-price-list-block {
+    position: relative;
+    height: 100%;
+    padding: 46px 30px 45px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06); }
+    .seo-price-list-block:after {
+      content: '';
+      position: absolute;
+      top: 44px;
+      right: 0;
+      width: 75px;
+      height: 54px;
+      background: url(../images/seo/seo-price/seo-price-decor.png) no-repeat right top;
+      background-size: 100% auto; }
+  .seo-price-panel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px; }
+  .seo-price-name {
+    min-width: 175px;
+    width: 175px;
+    padding-right: 15px;
+    margin-right: 22px;
+    border-right: 1px solid #ebebeb; }
+  .seo-price-info {
+    max-width: 310px; }
+  .seo-price-name-main {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 35px;
+    font-family: "Helvetica", sans-serif;
+    color: #222222;
+    font-weight: 700;
+    line-height: 27px; }
+    .seo-price-name-main:after {
+      content: '.';
+      margin-left: 1px;
+      color: #db352a; }
+  .seo-price-name-label {
+    display: block;
+    font-size: 18px;
+    font-family: "Helvetica", sans-serif;
+    color: #222222;
+    font-weight: 700;
+    line-height: 27px; }
+  .seo-price-content {
+    display: flex;
+    margin-bottom: 24px; }
+  .seo-price-description {
+    flex-grow: 1;
+    max-width: 400px;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300; }
+  .seo-price-sum {
+    margin-left: auto; }
+  .seo-price-sum-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 136px;
+    width: 136px;
+    height: 129px;
+    background: url(../images/seo/seo-price/seo-price-bgr.png) no-repeat 0 0; }
+  .seo-price-sum-value {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 23px; }
+  .seo-price-sum-label {
+    display: block;
+    font-size: 15px;
+    color: #ffb8b2;
+    line-height: 23px; }
+  .seo-price-link {
+    margin-right: 22px; }
 
-.seo-price-menu-item {
-  margin-right: 41px;
-  margin-bottom: 20px; }
+.seo-feedback {
+  margin-bottom: 70px;
+  padding-top: 75px;
+  padding-bottom: 77px;
+  background-color: #f8f8f8; }
+  .seo-feedback-info {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 300; }
+  .seo-feedback-content {
+    display: flex; }
+  .seo-feedback-form {
+    width: 62%;
+    padding-right: 42px; }
+  .seo-feedback-img {
+    width: 38%;
+    margin-right: 10px;
+    margin-top: 104px; }
+  .seo-feedback-button {
+    padding-right: 25px;
+    padding-left: 25px; }
 
-.seo-price-menu-link {
-  font-size: 17px;
-  font-family: "Helvetica", sans-serif;
-  color: #222222; }
-  .seo-price-menu-link:hover {
-    color: #df2c31;
-    text-decoration: none; }
+.seo-services {
+  margin-bottom: 65px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ebebeb; }
+  .seo-services-title {
+    margin-bottom: 48px; }
+  .seo-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px; }
+  .seo-services-list-item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .seo-services-list-block {
+    position: relative;
+    height: 100%;
+    padding: 35px 30px 45px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06); }
+    .seo-services-list-block:after {
+      content: '';
+      position: absolute;
+      top: 39px;
+      right: 0;
+      width: 75px;
+      height: 38px;
+      background: url(../images/seo/seo-price/seo-price-decor.png) no-repeat right top;
+      background-size: 100% auto; }
+  .seo-services-name {
+    margin-bottom: 30px; }
+  .seo-services-content {
+    display: flex;
+    align-items: flex-start; }
+  .seo-services-description {
+    flex-grow: 1;
+    max-width: 400px;
+    margin-bottom: 25px;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300; }
+  .seo-services-sum {
+    margin-left: auto; }
+  .seo-services-sum-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 136px;
+    width: 136px;
+    height: 129px;
+    background: url(../images/seo/seo-services/seo-services-bgr.png) no-repeat 0 0; }
+  .seo-services-sum-value {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 23px; }
+  .seo-services-sum-label {
+    display: block;
+    font-size: 15px;
+    color: #ffb8b2;
+    line-height: 23px; }
+  .seo-services-actions {
+    margin-top: -12px; }
 
-.seo-price-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px; }
-
-.seo-price-list-item {
-  width: 50%;
-  padding-left: 15px;
-  padding-right: 15px; }
-
-.seo-price-list-block {
-  padding: 35px 30px 45px;
-  background: #fff url(../images/seo/seo-price/seo-price-decor.png) no-repeat right 44px;
-  box-shadow: 0px 0px 40px 0px rgba(1, 1, 1, 0.06); }
-
-.seo-price-panel {
-  display: flex;
-  align-items: center;
-  margin-bottom: 35px; }
-
-.seo-price-name {
-  min-width: 175px;
-  width: 175px;
-  padding-right: 15px;
-  margin-right: 22px;
-  border-right: 1px solid #ebebeb; }
-
-.seo-price-info {
-  max-width: 310px; }
-
-.seo-price-name-main {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 35px;
-  font-family: "Helvetica", sans-serif;
-  color: #222222;
-  font-weight: 700;
-  line-height: 27px; }
-  .seo-price-name-main:after {
-    content: '.';
-    margin-left: 1px;
-    color: #db352a; }
-
-.seo-price-name-label {
-  display: block;
-  font-size: 18px;
-  font-family: "Helvetica", sans-serif;
-  color: #222222;
-  font-weight: 700;
-  line-height: 27px; }
-
-.seo-price-content {
-  display: flex;
-  margin-bottom: 17px; }
-
-.seo-price-description {
-  flex-grow: 1;
-  max-width: 400px;
-  padding-right: 30px;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 300; }
-
-.seo-price-sum {
-  margin-left: auto; }
-
-.seo-price-sum-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 136px;
-  width: 136px;
-  height: 129px;
-  background: url(../images/seo/seo-price/seo-price-bgr.png) no-repeat 0 0; }
-
-.seo-price-sum-value {
-  margin-top: 7px;
-  margin-bottom: 7px;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 23px; }
-
-.seo-price-sum-label {
-  display: block;
-  font-size: 15px;
-  color: #ffb8b2;
-  line-height: 23px; }
-
-.seo-price-link {
-  margin-right: 25px; }
+@media screen and (max-width: 1308px) {
+  .seo-price-list-block:after {
+    width: 63px; }
+  .seo-services-list-block:after {
+    top: 44px;
+    width: 63px; } }
 
 @media screen and (max-width: 992px) {
   .seo-portfolio {
@@ -5868,41 +6043,71 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       margin-bottom: 8px; }
     .seo-clients .clients {
       margin-bottom: 58px; }
+  .seo-about {
+    margin-bottom: 41px; }
+    .seo-about-title {
+      margin-top: -10px;
+      margin-bottom: 21px; }
+    .seo-about-info {
+      font-size: 20px;
+      line-height: 30px; }
+    .seo-about-list {
+      padding-top: 40px;
+      padding-bottom: 60px; }
+    .seo-about-list-count {
+      font-size: 30px; }
+    .seo-about-img {
+      width: 35%; }
+    .seo-about-description {
+      width: 65%; }
+    .seo-about-img-block img {
+      min-width: 150px;
+      width: 150px;
+      margin-top: 0;
+      margin-left: 0; }
+    .seo-about-wrapper {
+      margin-top: 0; }
   .seo-instruments {
-    margin-bottom: 47px; }
+    margin-bottom: 40px; }
     .seo-instruments-item {
       padding-left: 5px;
       padding-right: 5px; }
-  .seo-stages-list {
-    display: block;
-    margin-left: 60px;
-    margin-right: 60px; }
-  .seo-stages-item {
-    display: block;
-    width: auto;
-    padding-left: 0;
-    padding-right: 0; }
-  .seo-stages-pic {
-    margin-bottom: 4px;
-    padding-right: 0; }
-  .seo-stages-name {
-    margin-bottom: 13px;
-    font-size: 20px;
-    font-family: "Helvetica", sans-serif;
-    color: #222222;
-    font-weight: 700;
-    line-height: 30px; }
-  .seo-stages .owl-item:not(.active) {
-    position: relative;
-    overflow: hidden; }
-    .seo-stages .owl-item:not(.active):after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: calc(100% - 2px);
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.6); }
+  .seo-stages {
+    margin-bottom: 19px; }
+    .seo-stages-list {
+      display: block;
+      margin-left: 60px;
+      margin-right: 60px; }
+    .seo-stages-item {
+      display: block;
+      width: auto;
+      padding-left: 0;
+      padding-right: 0; }
+    .seo-stages-item:nth-child(6) {
+      margin-top: 0; }
+    .seo-stages-item:nth-child(8) {
+      margin-top: 0; }
+    .seo-stages-pic {
+      margin-bottom: 15px;
+      padding-right: 0; }
+    .seo-stages-name {
+      margin-bottom: 13px;
+      font-size: 20px;
+      font-family: "Helvetica", sans-serif;
+      color: #222222;
+      font-weight: 700;
+      line-height: 30px; }
+    .seo-stages .owl-item:not(.active) {
+      position: relative;
+      overflow: hidden; }
+      .seo-stages .owl-item:not(.active):after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 2px);
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6); }
   .seo-advantages {
     margin-bottom: 50px;
     padding-top: 45px;
@@ -5910,57 +6115,119 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .seo-advantages-title {
       margin-bottom: 28px; }
     .seo-advantages-list-item {
-      width: 50%;
-      margin-bottom: 30px; }
-  .seo-price-panel {
-    flex-direction: column; }
-  .seo-price-content {
-    flex-direction: column;
-    margin-bottom: 20px; }
-  .seo-price-list-block {
-    padding-bottom: 35px; }
-  .seo-price-name {
-    min-width: auto;
-    width: auto;
-    padding-right: 0;
-    margin-right: 0;
-    margin-bottom: 10px;
-    border-right-width: 0;
-    text-align: center; }
-  .seo-price-name-main {
-    font-size: 25px; }
-  .seo-price-info {
-    text-align: center;
-    font-size: 14px;
-    line-height: 22px; }
-  .seo-price-sum {
-    order: -1;
-    margin-right: auto;
-    margin-bottom: 20px; }
-  .seo-price-description {
-    padding-right: 0;
-    text-align: center;
-    font-size: 18px;
-    line-height: 28px; }
-  .seo-price-actions {
-    text-align: center; }
-  .seo-price-link {
-    margin-bottom: 13px; }
-    .seo-price-link:last-child {
-      margin-bottom: 0; }
-  .seo-price-link_more {
-    padding-left: 0;
-    padding-right: 0;
-    line-height: 20px;
-    text-decoration: underline; }
-    .seo-price-link_more:after {
+      width: 50%; }
+  .seo-price {
+    margin-bottom: 25px; }
+    .seo-price-title {
+      margin-bottom: 17px; }
+    .seo-price-menu-item {
+      margin-bottom: 13px; }
+    .seo-price-panel {
+      flex-direction: column;
+      margin-bottom: 22px; }
+    .seo-price-content {
+      flex-direction: column;
+      margin-bottom: 25px; }
+    .seo-price-list-block {
+      display: flex;
+      flex-direction: column;
+      padding: 35px 20px 38px; }
+    .seo-price-name {
+      min-width: auto;
+      width: auto;
+      padding-right: 0;
+      margin-right: 0;
+      margin-bottom: 10px;
+      border-right-width: 0;
+      text-align: center; }
+    .seo-price-name-main {
+      font-size: 25px; }
+    .seo-price-info {
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px; }
+    .seo-price-sum {
+      order: -1;
+      margin-right: auto;
+      margin-bottom: 20px; }
+    .seo-price-description {
+      padding-right: 0;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px; }
+    .seo-price-actions {
+      text-align: center;
+      margin-top: auto; }
+    .seo-price-link {
+      margin-bottom: 12px; }
+      .seo-price-link:last-child {
+        margin-bottom: 0; }
+    .seo-price-link_more {
+      padding-left: 0;
+      padding-right: 0;
+      line-height: 20px;
+      text-decoration: underline; }
+      .seo-price-link_more:after {
+        display: none; }
+      .seo-price-link_more:hover {
+        text-decoration: none; }
+    .seo-price-link-label {
+      text-transform: none;
+      font-size: 14px;
+      font-weight: normal; }
+    .seo-price-link_more:hover .seo-price-link-label {
+      color: #222222; }
+    .seo-price-link-icon {
       display: none; }
-  .seo-price-link-label {
-    text-transform: none;
-    font-size: 14px;
-    font-weight: normal; }
-  .seo-price-link-icon {
-    display: none; } }
+  .seo-feedback {
+    margin-bottom: 45px;
+    padding-top: 45px;
+    padding-bottom: 56px; }
+    .seo-feedback-content {
+      align-items: center; }
+    .seo-feedback-form {
+      padding-right: 30px; }
+    .seo-feedback-title {
+      margin-bottom: 12px; }
+    .seo-feedback-info {
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 30px; }
+    .seo-feedback-switch-field {
+      margin-right: -6px; }
+    .seo-feedback-img {
+      margin-top: 99px; }
+  .seo-services {
+    margin-bottom: 17px;
+    padding-bottom: 0;
+    border-bottom-width: 0; }
+    .seo-services-title {
+      margin-bottom: 35px; }
+    .seo-services-content {
+      flex-direction: column; }
+    .seo-services-list-block {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px 50px; }
+      .seo-services-list-block:after {
+        height: 42px; }
+    .seo-services-name {
+      margin-bottom: 28px;
+      text-align: center;
+      min-height: 60px; }
+    .seo-services-description {
+      max-width: none;
+      padding-right: 0;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center; }
+    .seo-services-sum {
+      order: -1;
+      margin-right: auto;
+      margin-bottom: 20px; }
+    .seo-services-actions {
+      margin-top: auto;
+      text-align: center; } }
 
 @media screen and (max-width: 720px) {
   .seo-problems {
@@ -5981,8 +6248,30 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     margin-bottom: 22px; }
   .seo-clients {
     margin-bottom: 48px; }
-  .seo-about .about-head {
+  .seo-about {
     margin-bottom: 30px; }
+    .seo-about-head {
+      flex-direction: column;
+      align-items: center; }
+    .seo-about-title {
+      margin-top: 0;
+      text-align: center; }
+    .seo-about-img {
+      width: auto;
+      margin-bottom: 32px; }
+    .seo-about-img-block {
+      width: 100%;
+      padding-right: 0;
+      border-right-width: 0;
+      text-align: center; }
+    .seo-about-img-block img {
+      max-width: 155px; }
+    .seo-about-description {
+      width: auto; }
+    .seo-about-info {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center; }
   .seo-instruments-list {
     margin-left: 40px;
     margin-right: 40px; }
@@ -6002,7 +6291,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .seo-stages-description {
       text-align: center; }
   .seo-advantages {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     padding-bottom: 50px; }
     .seo-advantages-list {
       display: block;
@@ -6035,4 +6324,115 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
         left: 0;
         width: calc(100% - 2px);
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.6); } }
+        background-color: rgba(255, 255, 255, 0.6); }
+  .seo-price {
+    margin-bottom: 50px; }
+    .seo-price-title {
+      margin-bottom: 22px; }
+    .seo-price-panel {
+      margin-bottom: 19px; }
+    .seo-price-menu {
+      margin-bottom: 20px;
+      align-items: center;
+      flex-direction: column; }
+    .seo-price-menu-item {
+      margin-right: 0;
+      margin-bottom: 17px; }
+    .seo-price-list-block {
+      padding-top: 38px;
+      padding-bottom: 28px; }
+      .seo-price-list-block:after {
+        display: none; }
+    .seo-price .owl-stage {
+      display: flex; }
+    .seo-price .owl-item:not(.active) {
+      position: relative;
+      overflow: hidden; }
+      .seo-price .owl-item:not(.active):after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 2px);
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6); }
+    .seo-price-list {
+      display: block;
+      margin-left: 0;
+      margin-right: 45px; }
+    .seo-price-list-item {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0; }
+    .seo-price-name-main {
+      margin-bottom: 0;
+      font-size: 20px; }
+    .seo-price-name-label {
+      font-size: 15px;
+      line-height: 22px; }
+    .seo-price-description {
+      margin-left: auto;
+      margin-right: auto; }
+    .seo-price-actions {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+    .seo-price-link {
+      margin-right: 0; }
+  .seo-feedback {
+    padding-top: 42px;
+    padding-bottom: 52px; }
+    .seo-feedback-content {
+      flex-direction: column; }
+    .seo-feedback-form {
+      width: 100%;
+      padding-right: 0; }
+    .seo-feedback-img {
+      display: none; }
+    .seo-feedback-title {
+      margin-bottom: 16px; }
+    .seo-feedback-info {
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px; }
+    .seo-feedback-buttons {
+      text-align: center; }
+  .seo-services {
+    margin-bottom: 43px; }
+    .seo-services-list {
+      display: block;
+      margin-left: 0;
+      margin-right: 45px; }
+    .seo-services-list-item {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0; }
+    .seo-services-list-block {
+      padding-top: 38px;
+      padding-bottom: 43px; }
+      .seo-services-list-block:after {
+        display: none; }
+    .seo-services .owl-stage {
+      display: flex; }
+    .seo-services .owl-item:not(.active) {
+      position: relative;
+      overflow: hidden; }
+      .seo-services .owl-item:not(.active):after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 2px);
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6); }
+    .seo-services-name {
+      margin-bottom: 18px;
+      min-height: 54px;
+      font-size: 20px;
+      line-height: 27px; }
+    .seo-services-sum {
+      margin-bottom: 18px; } }

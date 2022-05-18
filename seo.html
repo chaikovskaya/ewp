@@ -634,7 +634,7 @@
 
         <div class="seo-portfolio">
             <div class="container">
-                <h2 class="h1">Кейсы</h2>
+                <h2 class="portfolio-title h1">Кейсы</h2>
                 <div class="portfolio-content JS-AjaxMore-Portfolio" data-ajaxmore="{'classLoad':'load-more_active'}">
                     <div class="portfolio-content-block JS-Columns" data-columns="{'number': 2}">
                         <div class="portfolio-list-content row">
@@ -1025,21 +1025,19 @@
             </section>
         </div>
 
-        <div class="seo-about">
-            <div class="about-detail-head about-head">
-                <div class="about-img">
-                    <div class="about-img-block">
-                        <img class="about-img-element" src="./images/about/company-logo.png" alt="" />
-                    </div>
-                </div>
-                <div class="about-description">
-                    <div class="about-wrapper">
-                        <h2 class="about-title h1">Как мы достигаем результата</h2>
-                        <div class="about-info">Используем Data-Driven подход к поисковому продвижению. Опираемся на аналитику и цифры, а не на интуицию и удачу!</div>
-                    </div>
+        <section class="seo-about">
+            <div class="seo-about-img">
+                <div class="seo-about-img-block">
+                    <img class="seo-about-img-element" src="./images/about/company-logo.png" alt="" />
                 </div>
             </div>
-        </div>
+            <div class="seo-about-description">
+                <div class="seo-about-wrapper">
+                    <h2 class="seo-about-title h1">Как мы достигаем результата</h2>
+                    <div class="seo-about-info">Используем Data-Driven подход к поисковому продвижению. Опираемся на аналитику и цифры, а не на интуицию и удачу!</div>
+                </div>
+            </div>
+        </section>
 
         <div class="container">
             <div class="seo-instruments js-slider-seo-instruments">
@@ -1201,8 +1199,8 @@
         </div>
 
         <div class="container">
-            <div class="seo-price">
-                <h2 class="h1">Стоимость продвижения</h2>
+            <div class="seo-price js-slider-seo-price">
+                <h2 class="seo-price-title h1">Стоимость продвижения</h2>
                 <ul class="seo-price-menu">
                     <li class="seo-price-menu-item">
                         <a class="seo-price-menu-link" href="#">Базовые тарифы</a>
@@ -1212,8 +1210,8 @@
                     </li>
                 </ul>
 
-                <div class="seo-price-list">
-                    <div class="seo-price-list-item">
+                <div class="seo-price-list js-slider-list">
+                    <div class="seo-price-list-item js-slider-item">
                         <div class="seo-price-list-block">
                             <div class="seo-price-panel">
                                 <div class="seo-price-name">
@@ -1238,13 +1236,13 @@
                                     <i class="more-link-icon las la-long-arrow-alt-right"></i>
                                 </a>
                                 <a class="seo-price-link seo-price-link_more more-link" href="#">
-                                    <span class="seo-price-link-label more-link-label">Подробне</span>
+                                    <span class="seo-price-link-label more-link-label">Подробнее</span>
                                     <i class="seo-price-link-icon more-link-icon las la-long-arrow-alt-right"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="seo-price-list-item">
+                    <div class="seo-price-list-item js-slider-item">
                         <div class="seo-price-list-block">
                             <div class="seo-price-panel">
                                 <div class="seo-price-name">
@@ -1269,7 +1267,7 @@
                                     <i class="more-link-icon las la-long-arrow-alt-right"></i>
                                 </a>
                                 <a class="seo-price-link seo-price-link_more more-link" href="#">
-                                    <span class="seo-price-link-label more-link-label">Подробне</span>
+                                    <span class="seo-price-link-label more-link-label">Подробнее</span>
                                     <i class="seo-price-link-icon more-link-icon las la-long-arrow-alt-right"></i>
                                 </a>
                             </div>
@@ -1278,6 +1276,183 @@
                 </div>
             </div>
         </div>
+
+        <div class="seo-feedback">
+            <div class="container">
+                <div class="seo-feedback-content">
+                    <div class="seo-feedback-form">
+                        <h2 class="seo-feedback-title h1">Обсудить продвижение</h2>
+                        <div class="seo-feedback-info">Отправьте заявку и получите стратегию продвижения и&nbsp;базовый аудит сайта</div>
+                        <form class="js-form-validate" action="/">
+                            <div class="field field_simple js-form-validate-field">
+                                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                    <label class="field-label JS-FieldText-Label" for="name">Имя <span class="field-label-required">*</span></label>
+                                    <input class="input JS-FieldText-Input" type="text" placeholder="" id="name" name="name" required />
+                                </span>
+                            </div>
+                            <div class="field field_simple js-form-validate-field">
+                                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                    <label class="field-label JS-FieldText-Label" for="phone">Телефон <span class="field-label-required">*</span></label>
+                                    <input class="input JS-FieldText-Input js-phone" type="text" placeholder="" id="phone" name="phone" required />
+                                </span>
+                            </div>
+                            <div class="field field_simple js-form-validate-field">
+                                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                    <label class="field-label JS-FieldText-Label" for="email">E-mail</label>
+                                    <input class="input JS-FieldText-Input js-mask-email" type="text" placeholder="" id="email" name="email" />
+                                </span>
+                            </div>
+                            <div class="field field_simple js-form-validate-field">
+                                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                    <label class="field-label JS-FieldText-Label" for="site">Адрес сайта <span class="field-label-required">*</span></label>
+                                    <input class="input JS-FieldText-Input" type="text" placeholder="" id="site" name="site" required />
+                                </span>
+                            </div>
+                            <div class="field field_simple js-form-validate-field">
+                                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                    <label class="field-label JS-FieldText-Label" for="message">Комментарий</label>
+                                    <textarea class="input_textarea js-textarea-size JS-FieldText-Input" id="message" name="message"></textarea>
+                                </span>
+                            </div>
+                            <div class="seo-feedback-switch-field switch-field">
+                                <label class="switch">
+                                    <input class="switch-checkbox" type="checkbox" name="agreement" checked="checked" />
+                                    <span class="switch-decor">
+                                        <span class="switch-icon"></span>
+                                    </span>
+                                    <span class="switch-label">Я согласен на <a href="#">обработку персональных данных</a></span>
+                                </label>
+                            </div>
+                            <div class="seo-feedback-buttons">
+                                <button class="seo-feedback-button button">Отправить заявку<i class="button-icon las la-long-arrow-alt-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="seo-feedback-img">
+                        <img class="" src="./images/seo/seo-feedback/seo-feedback-img.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seo-services js-slider-seo-services">
+            <div class="container">
+                <h2 class="seo-services-title h1">Дополнительные услуги</h2>
+                <div class="seo-services-list js-slider-list">
+                    <div class="seo-services-list-item js-slider-item">
+                        <div class="seo-services-list-block">
+                            <div class="seo-services-name h2">SEO-аудит сайта</div>
+                            <div class="seo-services-content">
+                                <div class="seo-services-description content">Проверка сайта по ключевым параметрам технической и коммерческой оптимизации.</div>
+                                <div class="seo-services-sum">
+                                    <div class="seo-services-sum-block">
+                                        <span class="seo-services-sum-label">от</span>
+                                        <span class="seo-services-sum-value">15 000 <span class="currency">i</span></span>
+                                        <span class="seo-services-sum-label">от 7 дней</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seo-services-actions">
+                                <a class="more-link" href="#">
+                                    <span class="more-link-label">Подробнее</span>
+                                    <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seo-services-list-item js-slider-item">
+                        <div class="seo-services-list-block">
+                            <div class="seo-services-name h2">Разовая оптимизация сайта</div>
+                            <div class="seo-services-content">
+                                <div class="seo-services-description content">Комплекс работ по разовой оптимизации сайта для увеличения видимости в поисковых системах.</div>
+                                <div class="seo-services-sum">
+                                    <div class="seo-services-sum-block">
+                                        <span class="seo-services-sum-label">от</span>
+                                        <span class="seo-services-sum-value">70 000 <span class="currency">i</span></span>
+                                        <span class="seo-services-sum-label">от 1 месяца</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seo-services-actions">
+                                <a class="more-link" href="#">
+                                    <span class="more-link-label">Подробнее</span>
+                                    <i class="more-link-icon las la-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="blog js-slider-blog">
+            <h2 class="blog-title h1">Полезные материалы</h2>
+            <div class="blog-list js-slider-list">
+                <div class="blog-list-item js-slider-item">
+                    <a class="blog-link" href="#">
+                        <img class="blog-img" src="./images/blog/blog-img-1.jpg" alt="" />
+                        <span class="blog-list-label">
+                                <i class="blog-list-label-icon las la-long-arrow-alt-right"></i>Подробнее
+                            </span>
+                    </a>
+                    <ul class="tags">
+                        <li class="tags-item">
+                            <a class="tags-link" href="#"># Поисковое продвижение</a>
+                        </li>
+                        <li class="tags-item">
+                            <a class="tags-link" href="#"># B2C</a>
+                        </li>
+                    </ul>
+                    <a class="blog-name" href="#">Как бороться с агрегаторами на поисковой выдаче</a>
+                </div>
+                <div class="blog-list-item js-slider-item">
+                    <a class="blog-link" href="#">
+                        <img class="blog-img" src="./images/blog/blog-img-2.jpg" alt="" />
+                        <span class="blog-list-label">
+                                <i class="blog-list-label-icon las la-long-arrow-alt-right"></i>Подробнее
+                            </span>
+                    </a>
+                    <ul class="tags">
+                        <li class="tags-item">
+                            <a class="tags-link" href="#"># Поисковое продвижение</a>
+                        </li>
+                        <li class="tags-item">
+                            <a class="tags-link" href="#"># B2C</a>
+                        </li>
+                    </ul>
+                    <a class="blog-name" href="#">Как бороться с агрегаторами на поисковой выдаче</a>
+                </div>
+                <div class="blog-list-item js-slider-item">
+                    <a class="blog-link" href="#">
+                        <img class="blog-img" src="./images/blog/blog-img-3.jpg" alt="" />
+                        <span class="blog-list-label">
+                                <i class="blog-list-label-icon las la-long-arrow-alt-right"></i>Подробнее
+                            </span>
+                    </a>
+                    <ul class="tags">
+                        <li class="tags-item">
+                            <a class="tags-link" href="#"># Поисковое продвижение</a>
+                        </li>
+                        <li class="tags-item">
+                            <a class="tags-link" href="#"># B2C</a>
+                        </li>
+                    </ul>
+                    <a class="blog-name" href="#">Как бороться с агрегаторами на поисковой выдаче</a>
+                </div>
+            </div>
+            <div class="slider-nav js-slider-buttons">
+                <button class="slider-button js-slider-prev">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M5.8,0.2l0.9,0.9L2.4,5.4H52v1.3H2.4l4.3,4.3l-0.9,0.9L0.4,6.5L0,6l0.4-0.5L5.8,0.2z"/>
+                            </svg>
+                </button>
+                <button class="slider-button js-slider-next">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="12px" viewBox="0 0 52 12" style="enable-background:new 0 0 52 12;" xml:space="preserve">
+                                <path d="M51.6,5.5L52,6l-0.4,0.5l-5.3,5.3l-0.9-0.9l4.3-4.3H0V5.4h49.6l-4.3-4.3l0.9-0.9L51.6,5.5z"/>
+                            </svg>
+                </button>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -1428,7 +1603,7 @@
 <script src="./libs/validate/jquery.validate.min.js"></script>
 <script src="./libs/simplebar/simplebar.min.js"></script>
 <script src="./libs/wow/wow.min.js"></script>
-<script src="./libs/mask/jquery.mask.min.js"></script>
+<script src="./libs/inputmask/jquery.inputmask.min.js"></script>
 <script src="./libs/swiper/swiper.min.js"></script>
 <script src="./js/JSC.Dropdown.js"></script>
 <script src="./js/JSC.MobileMenu.js"></script>
