@@ -675,8 +675,7 @@ and (max-width: $tablet){
 	}
 	.main-content {
 		margin-bottom: 55px;
-		/*padding-top: 22px;*/
-		padding-top: 39px;
+		padding-top: 22px;
 	}
 	.main-title {
 		max-width: 49%;
@@ -726,6 +725,12 @@ and (max-width: $mobile){
 		margin-top: 0;
 		margin-left: 0;
 		margin-bottom: 23px;
+		&-item {
+			margin-right: 8px;
+		}
+		&-icon {
+			margin-left: 8px;
+		}
 	}
 	.main-title {
 		max-width: none;

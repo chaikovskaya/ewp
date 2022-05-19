@@ -126,6 +126,8 @@
     &-options-count {
         position: relative;
         margin-right: 10px;
+        margin-top: -4px;
+        padding-top: 4px;
         min-width: 80px;
         font-size: 60px;
         line-height: 46px;
@@ -139,7 +141,7 @@
             top: 50%;
             left: 0;
             width: 100%;
-            margin-top: 6px;
+            margin-top: 9px;
             height: 100%;
             background-color: #fff;
             line-height: 0;
@@ -401,6 +403,8 @@ and (max-width: $tablet) {
         &-options-count {
             line-height: 31px;
             min-width: 40px;
+            margin-top: 0;
+            padding-top: 0;
             font-size: 30px;
             &:after {
                 margin-top: 3px;

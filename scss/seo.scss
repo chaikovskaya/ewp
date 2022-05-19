@@ -32,13 +32,14 @@
 
 .seo-rating {
     display: flex;
-    margin-bottom: 85px;
+    margin-bottom: 55px;
     &-list {
         margin-right: -$gutter;
         margin-left: -$gutter;
     }
     &-list-item {
         width: 25%;
+        margin-bottom: 30px;
         padding-right: $gutter;
         padding-left: $gutter;
     }
@@ -164,7 +165,7 @@
     &-item:nth-child(2n) &-link {
         color: #fff;
     }
-    &-item_last &-link {
+    &-item:nth-last-child(-n+2) &-link {
         color: #fff;
         font-weight: 600;
     }
@@ -250,7 +251,7 @@ and (max-width: $tablet) {
     }
     .seo-rating {
         flex-direction: column;
-        margin-bottom: 55px;
+        margin-bottom: 25px;
         &-info {
             order: -1;
             max-width: none;
@@ -316,12 +317,14 @@ and (max-width: $tablet) {
 and (max-width: $mobile){
     .seo-main {
         flex-direction: column;
-        margin-bottom: 42px;
+        margin-bottom: 47px;
+        margin-top: -8px;
         &-info {
             width: 100%;
             max-width: none;
             padding-right: 0;
             margin-bottom: 35px;
+            text-align: center;
         }
         &-img {
             width: 100%;
@@ -332,7 +335,7 @@ and (max-width: $mobile){
             font-size: 18px;
             line-height: 24px;
             p {
-                margin-bottom: 22px;
+                margin-bottom: 25px;
             }
         }
     }
@@ -344,9 +347,11 @@ and (max-width: $mobile){
         }
         &-list-item {
             width: 50%;
-            margin-bottom: 30px;
             padding-right: 5px;
             padding-left: 5px;
+        }
+        &-list-block {
+            min-height: 230px;
         }
         &-info {
             font-size: 28px;
@@ -357,12 +362,12 @@ and (max-width: $mobile){
     .seo-problems {
         margin-left: -$gutter;
         margin-right: -$gutter;
-        margin-bottom: 0;
+        margin-bottom: 43px;
         &-container {
             display: flex;
             justify-content: center;
             margin-left: 0;
-            padding: 51px $gutter 28px;
+            padding: 42px $gutter 12px;
             &:after {
                 display: none;
             }
@@ -372,7 +377,7 @@ and (max-width: $mobile){
             flex-direction: column;
         }
         &-item {
-            padding-bottom: 21px;
+            padding-bottom: 26px;
         }
         &-item:hover {
             &:before {
@@ -383,13 +388,16 @@ and (max-width: $mobile){
             }
         }
         &-link {
-            font-size: 22px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 28px;
         }
         &-title {
             order: -1;
             position: static;
             width: auto;
-            text-align: left;
+            text-align: center;
+            margin-bottom: 22px;
             color: #fff;
             &:after {
                 color: #ffb8b2;
@@ -1132,25 +1140,6 @@ and (max-width: $tablet) {
 
 @media screen
 and (max-width: $mobile){
-    .seo-problems {
-        margin-bottom: 43px;
-        &-container {
-            padding-top: 45px;
-            padding-bottom: 18px;
-        }
-        &-title {
-            text-align: center;
-            margin-bottom: 22px;
-        }
-        &-item {
-            padding-bottom: 26px;
-        }
-        &-link {
-            text-align: center;
-            font-size: 18px;
-            line-height: 28px;
-        }
-    }
     .seo-portfolio {
          .h1 {
            margin-bottom: 22px;
@@ -1160,18 +1149,20 @@ and (max-width: $mobile){
         margin-bottom: 48px;
     }
     .seo-about {
-        margin-bottom: 30px;
+        flex-direction: column;
+        margin-bottom: 33px;
         &-head {
             flex-direction: column;
             align-items: center;
         }
         &-title {
             margin-top: 0;
+            margin-bottom: 13px;
             text-align: center;
         }
         &-img {
             width: auto;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
         }
         &-img-block {
             width: 100%;
@@ -1181,6 +1172,8 @@ and (max-width: $mobile){
         }
         &-img-block img {
             max-width: 155px;
+            margin-left: auto;
+            margin-right: auto;
         }
         &-description {
             width: auto;
@@ -1192,13 +1185,14 @@ and (max-width: $mobile){
         }
     }
     .seo-instruments {
+        margin-bottom: 55px;
         &-list {
             margin-left: 40px;
             margin-right: 40px;
         }
     }
     .seo-stages {
-        margin-bottom: 45px;
+        margin-bottom: 18px;
         &-list {
             margin-left: 30px;
             margin-right: 30px;
@@ -1237,7 +1231,7 @@ and (max-width: $mobile){
             padding: 32px 10px 25px;
         }
         &-img {
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
         &-name {
             margin-bottom: 8px;
@@ -1262,7 +1256,7 @@ and (max-width: $mobile){
         }
     }
     .seo-price {
-        margin-bottom: 50px;
+        margin-bottom: 52px;
         &-title {
             margin-bottom: 22px;
         }
@@ -1321,6 +1315,9 @@ and (max-width: $mobile){
             font-size: 15px;
             line-height: 22px;
         }
+        &-content {
+            margin-bottom: 0;
+        }
         &-description {
             margin-left: auto;
             margin-right: auto;
@@ -1332,6 +1329,9 @@ and (max-width: $mobile){
         }
         &-link {
             margin-right: 0;
+        }
+        &-name {
+            margin-bottom: 6px;
         }
     }
     .seo-feedback {
@@ -1348,7 +1348,7 @@ and (max-width: $mobile){
             display: none;
         }
         &-title {
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
         &-info {
             text-align: center;

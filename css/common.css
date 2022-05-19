@@ -652,8 +652,7 @@ blockquote {
     display: none; }
   .main-content {
     margin-bottom: 55px;
-    /*padding-top: 22px;*/
-    padding-top: 39px; }
+    padding-top: 22px; }
   .main-title {
     max-width: 49%; }
   .head-panel {
@@ -691,6 +690,10 @@ blockquote {
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 23px; }
+    .breadcrumbs-item {
+      margin-right: 8px; }
+    .breadcrumbs-icon {
+      margin-left: 8px; }
   .main-title {
     max-width: none;
     width: 100%; } }
@@ -4942,6 +4945,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
 .svс-detail-options-count {
   position: relative;
   margin-right: 10px;
+  margin-top: -4px;
+  padding-top: 4px;
   min-width: 80px;
   font-size: 60px;
   line-height: 46px;
@@ -4955,7 +4960,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     top: 50%;
     left: 0;
     width: 100%;
-    margin-top: 6px;
+    margin-top: 9px;
     height: 100%;
     background-color: #fff;
     line-height: 0; }
@@ -5177,6 +5182,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   .svс-detail-options-count {
     line-height: 31px;
     min-width: 40px;
+    margin-top: 0;
+    padding-top: 0;
     font-size: 30px; }
     .svс-detail-options-count:after {
       margin-top: 3px; }
@@ -5381,12 +5388,13 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
 
 .seo-rating {
   display: flex;
-  margin-bottom: 85px; }
+  margin-bottom: 55px; }
   .seo-rating-list {
     margin-right: -15px;
     margin-left: -15px; }
   .seo-rating-list-item {
     width: 25%;
+    margin-bottom: 30px;
     padding-right: 15px;
     padding-left: 15px; }
   .seo-rating-list-block {
@@ -5496,7 +5504,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       background-color: #db352a; }
   .seo-problems-item:nth-child(2n) .seo-problems-link {
     color: #fff; }
-  .seo-problems-item_last .seo-problems-link {
+  .seo-problems-item:nth-last-child(-n+2) .seo-problems-link {
     color: #fff;
     font-weight: 600; }
   .seo-problems-link {
@@ -5552,7 +5560,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       margin-right: 0; }
   .seo-rating {
     flex-direction: column;
-    margin-bottom: 55px; }
+    margin-bottom: 25px; }
     .seo-rating-info {
       order: -1;
       max-width: none;
@@ -5600,12 +5608,14 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
 @media screen and (max-width: 720px) {
   .seo-main {
     flex-direction: column;
-    margin-bottom: 42px; }
+    margin-bottom: 47px;
+    margin-top: -8px; }
     .seo-main-info {
       width: 100%;
       max-width: none;
       padding-right: 0;
-      margin-bottom: 35px; }
+      margin-bottom: 35px;
+      text-align: center; }
     .seo-main-img {
       width: 100%;
       margin-left: 0; }
@@ -5614,7 +5624,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       font-size: 18px;
       line-height: 24px; }
       .seo-main-content p {
-        margin-bottom: 22px; }
+        margin-bottom: 25px; }
   .seo-rating {
     margin-bottom: 20px; }
     .seo-rating-list {
@@ -5622,9 +5632,10 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       margin-left: -5px; }
     .seo-rating-list-item {
       width: 50%;
-      margin-bottom: 30px;
       padding-right: 5px;
       padding-left: 5px; }
+    .seo-rating-list-block {
+      min-height: 230px; }
     .seo-rating-info {
       font-size: 28px;
       line-height: 35px;
@@ -5632,30 +5643,33 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   .seo-problems {
     margin-left: -15px;
     margin-right: -15px;
-    margin-bottom: 0; }
+    margin-bottom: 43px; }
     .seo-problems-container {
       display: flex;
       justify-content: center;
       margin-left: 0;
-      padding: 51px 15px 28px; }
+      padding: 42px 15px 12px; }
       .seo-problems-container:after {
         display: none; }
     .seo-problems-block {
       display: flex;
       flex-direction: column; }
     .seo-problems-item {
-      padding-bottom: 21px; }
+      padding-bottom: 26px; }
     .seo-problems-item:hover:before {
       display: none; }
     .seo-problems-item:hover:after {
       display: none; }
     .seo-problems-link {
-      font-size: 22px; }
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px; }
     .seo-problems-title {
       order: -1;
       position: static;
       width: auto;
-      text-align: left;
+      text-align: center;
+      margin-bottom: 22px;
       color: #fff; }
       .seo-problems-title:after {
         color: #ffb8b2; } }
@@ -6230,53 +6244,45 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       text-align: center; } }
 
 @media screen and (max-width: 720px) {
-  .seo-problems {
-    margin-bottom: 43px; }
-    .seo-problems-container {
-      padding-top: 45px;
-      padding-bottom: 18px; }
-    .seo-problems-title {
-      text-align: center;
-      margin-bottom: 22px; }
-    .seo-problems-item {
-      padding-bottom: 26px; }
-    .seo-problems-link {
-      text-align: center;
-      font-size: 18px;
-      line-height: 28px; }
   .seo-portfolio .h1 {
     margin-bottom: 22px; }
   .seo-clients {
     margin-bottom: 48px; }
   .seo-about {
-    margin-bottom: 30px; }
+    flex-direction: column;
+    margin-bottom: 33px; }
     .seo-about-head {
       flex-direction: column;
       align-items: center; }
     .seo-about-title {
       margin-top: 0;
+      margin-bottom: 13px;
       text-align: center; }
     .seo-about-img {
       width: auto;
-      margin-bottom: 32px; }
+      margin-bottom: 40px; }
     .seo-about-img-block {
       width: 100%;
       padding-right: 0;
       border-right-width: 0;
       text-align: center; }
     .seo-about-img-block img {
-      max-width: 155px; }
+      max-width: 155px;
+      margin-left: auto;
+      margin-right: auto; }
     .seo-about-description {
       width: auto; }
     .seo-about-info {
       font-size: 18px;
       line-height: 24px;
       text-align: center; }
-  .seo-instruments-list {
-    margin-left: 40px;
-    margin-right: 40px; }
+  .seo-instruments {
+    margin-bottom: 55px; }
+    .seo-instruments-list {
+      margin-left: 40px;
+      margin-right: 40px; }
   .seo-stages {
-    margin-bottom: 45px; }
+    margin-bottom: 18px; }
     .seo-stages-list {
       margin-left: 30px;
       margin-right: 30px; }
@@ -6307,7 +6313,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .seo-advantages-block {
       padding: 32px 10px 25px; }
     .seo-advantages-img {
-      margin-bottom: 16px; }
+      margin-bottom: 20px; }
     .seo-advantages-name {
       margin-bottom: 8px;
       font-size: 18px;
@@ -6326,7 +6332,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
         height: 100%;
         background-color: rgba(255, 255, 255, 0.6); }
   .seo-price {
-    margin-bottom: 50px; }
+    margin-bottom: 52px; }
     .seo-price-title {
       margin-bottom: 22px; }
     .seo-price-panel {
@@ -6372,6 +6378,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .seo-price-name-label {
       font-size: 15px;
       line-height: 22px; }
+    .seo-price-content {
+      margin-bottom: 0; }
     .seo-price-description {
       margin-left: auto;
       margin-right: auto; }
@@ -6381,6 +6389,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       flex-direction: column; }
     .seo-price-link {
       margin-right: 0; }
+    .seo-price-name {
+      margin-bottom: 6px; }
   .seo-feedback {
     padding-top: 42px;
     padding-bottom: 52px; }
@@ -6392,7 +6402,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .seo-feedback-img {
       display: none; }
     .seo-feedback-title {
-      margin-bottom: 16px; }
+      margin-bottom: 18px; }
     .seo-feedback-info {
       text-align: center;
       font-size: 18px;
