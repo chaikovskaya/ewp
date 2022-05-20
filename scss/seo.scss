@@ -626,6 +626,10 @@ and (max-width: $mobile){
             text-decoration: none;
         }
     }
+    &-menu-item_active {}
+    &-menu-item_active &-menu-link {
+        color: #df2c31;
+    }
     &-list {
         display: flex;
         flex-wrap: wrap;
@@ -662,7 +666,7 @@ and (max-width: $mobile){
     }
     &-name {
         min-width: 175px;
-        width: 175px;
+        max-width: 250px;
         padding-right: 15px;
         margin-right: 22px;
         border-right: 1px solid #ebebeb;
@@ -672,12 +676,12 @@ and (max-width: $mobile){
     }
     &-name-main {
         display: block;
-        margin-bottom: 4px;
+        margin-bottom: 1px;
         font-size: 35px;
         font-family: "Helvetica", sans-serif;
         color: rgb( 34, 34, 34 );
         font-weight: 700;
-        line-height: 27px;
+        line-height: 32px;
         @include point();
     }
     &-name-label {
@@ -731,6 +735,12 @@ and (max-width: $mobile){
     }
     &-link {
         margin-right: 22px;
+    }
+    &-block {
+        display: none;
+    }
+    &-block_active {
+        display: block;
     }
 }
 
@@ -1011,7 +1021,7 @@ and (max-width: $tablet) {
         }
         &-name {
             min-width: auto;
-            width: auto;
+            max-width: none;
             padding-right: 0;
             margin-right: 0;
             margin-bottom: 10px;

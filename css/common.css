@@ -5850,6 +5850,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .seo-price-menu-link:hover {
       color: #df2c31;
       text-decoration: none; }
+  .seo-price-menu-item_active .seo-price-menu-link {
+    color: #df2c31; }
   .seo-price-list {
     display: flex;
     flex-wrap: wrap;
@@ -5881,7 +5883,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     margin-bottom: 35px; }
   .seo-price-name {
     min-width: 175px;
-    width: 175px;
+    max-width: 250px;
     padding-right: 15px;
     margin-right: 22px;
     border-right: 1px solid #ebebeb; }
@@ -5889,12 +5891,12 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     max-width: 310px; }
   .seo-price-name-main {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 1px;
     font-size: 35px;
     font-family: "Helvetica", sans-serif;
     color: #222222;
     font-weight: 700;
-    line-height: 27px; }
+    line-height: 32px; }
     .seo-price-name-main:after {
       content: '.';
       margin-left: 1px;
@@ -5941,6 +5943,10 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     line-height: 23px; }
   .seo-price-link {
     margin-right: 22px; }
+  .seo-price-block {
+    display: none; }
+  .seo-price-block_active {
+    display: block; }
 
 .seo-feedback {
   margin-bottom: 70px;
@@ -6148,7 +6154,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       padding: 35px 20px 38px; }
     .seo-price-name {
       min-width: auto;
-      width: auto;
+      max-width: none;
       padding-right: 0;
       margin-right: 0;
       margin-bottom: 10px;

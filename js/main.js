@@ -820,6 +820,19 @@ function reInitSliderSeoServices() {
     $(".js-slider-seo-services .js-slider-list").trigger('destroy.owl.carousel');
 }
 
+function initTab() {
+    if (typeof(Tab) === 'undefined' || !jQuery.isFunction(Tab)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-Tab').not('.JS-Tab-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('tab'));
+        new Tab(this, jQuery.extend({}, common, local));
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -886,4 +899,5 @@ $(document).ready(function () {
     initAnchorScroll();
     initSticky();
     initSliderSeoInstuments();
+    initTab();
 });
