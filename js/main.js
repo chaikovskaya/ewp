@@ -833,6 +833,25 @@ function initTab() {
     });
 }
 
+function openPopupSuccess(url) {
+    if (!url) {
+        return false;
+    }
+
+    $.fancybox.open({
+        src  : url,
+        type : 'ajax'
+    });
+}
+
+function initPopupSuccess() {
+    $(".js-popup-success").on('click', function() {
+        $.fancybox.close();
+        openPopupSuccess($(".js-popup-success").data('src'));
+    });
+}
+
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {

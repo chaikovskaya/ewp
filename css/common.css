@@ -2850,8 +2850,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   .about-list-count {
     font-size: 30px; }
   .about-img-block img {
-    min-width: 150px;
-    width: 150px;
+    min-width: 152px;
+    width: 152px;
     margin-top: 0; }
   .about-wrapper {
     margin-top: 0; }
@@ -2903,7 +2903,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     border-right-width: 0;
     text-align: center; }
   .about-img-block img {
-    max-width: 155px; }
+    max-width: 152px; }
   .about-description {
     width: auto; }
   .about-info {
@@ -5390,6 +5390,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
   display: flex;
   margin-bottom: 55px; }
   .seo-rating-list {
+    flex-grow: 1;
     margin-right: -15px;
     margin-left: -15px; }
   .seo-rating-list-item {
@@ -5443,6 +5444,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     line-height: 21px; }
   .seo-rating-info {
     margin-top: -4px;
+    margin-left: auto;
     max-width: 424px;
     text-align: right;
     font-size: 55px;
@@ -5567,7 +5569,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       text-align: left;
       font-size: 35px;
       line-height: 45px;
-      margin-bottom: 35px; }
+      margin-bottom: 35px;
+      margin-left: 0; }
   .seo-problems {
     margin-bottom: 43px; }
     .seo-problems-container {
@@ -5968,7 +5971,7 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     margin-right: 10px;
     margin-top: 104px; }
   .seo-feedback-button {
-    padding-right: 25px;
+    padding-right: 45px;
     padding-left: 25px; }
 
 .seo-services {
@@ -6081,8 +6084,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
     .seo-about-description {
       width: 65%; }
     .seo-about-img-block img {
-      min-width: 150px;
-      width: 150px;
+      min-width: 152px;
+      width: 152px;
       margin-top: 0;
       margin-left: 0; }
     .seo-about-wrapper {
@@ -6217,6 +6220,8 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       margin-right: -6px; }
     .seo-feedback-img {
       margin-top: 99px; }
+    .seo-feedback-button {
+      padding-right: 42px; }
   .seo-services {
     margin-bottom: 17px;
     padding-bottom: 0;
@@ -6271,9 +6276,10 @@ body.menu-show .header-socials-link:hover .header-socials-icon {
       width: 100%;
       padding-right: 0;
       border-right-width: 0;
-      text-align: center; }
+      text-align: center;
+      justify-content: center; }
     .seo-about-img-block img {
-      max-width: 155px;
+      max-width: 152px;
       margin-left: auto;
       margin-right: auto; }
     .seo-about-description {

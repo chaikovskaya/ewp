@@ -1,0 +1,48 @@
+
+.button-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.button-wrapper:after {
+  content: "\f30b";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  font-size: 15px;
+  color: #fff;
+}
+
+.popup-button_simple {
+  padding-right: 41px;
+}
+
+.filter-form-notifications {
+  display: none;
+}
+
+#wait_comp_bc2235446e5c448f3176319068035ef7 {
+  display: none;
+}
+
+.popup-success {
+  max-width: 400px;
+  margin-top: -80px;
+  padding: 40px 30px;
+}
+
+.popup-success-info {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  line-height: 32px;
+}
+
+.popup-success-label {
+  display: block;
+  font-size: 30px;
+}

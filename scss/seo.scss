@@ -34,6 +34,7 @@
     display: flex;
     margin-bottom: 55px;
     &-list {
+        flex-grow: 1;
         margin-right: -$gutter;
         margin-left: -$gutter;
     }
@@ -95,6 +96,7 @@
     }
     &-info {
         margin-top: -4px;
+        margin-left: auto;
         max-width: 424px;
         text-align: right;
         font-size: 55px;
@@ -259,6 +261,7 @@ and (max-width: $tablet) {
             font-size: 35px;
             line-height: 45px;
             margin-bottom: 35px;
+            margin-left: 0;
         }
     }
     .seo-problems {
@@ -770,7 +773,7 @@ and (max-width: $mobile){
     &-switch-field {}
     &-buttons {}
     &-button {
-        padding-right: 25px;
+        padding-right: 45px;
         padding-left: 25px;
     }
 }
@@ -925,8 +928,8 @@ and (max-width: $tablet) {
         }
         &-img-block {
             img {
-                min-width: 150px;
-                width: 150px;
+                min-width: 152px;
+                width: 152px;
                 margin-top: 0;
                 margin-left: 0;
             }
@@ -1105,6 +1108,9 @@ and (max-width: $tablet) {
         &-img {
             margin-top: 99px;
         }
+        &-button {
+            padding-right: 42px;
+        }
     }
     .seo-services {
         margin-bottom: 17px;
@@ -1179,9 +1185,10 @@ and (max-width: $mobile){
             padding-right: 0;
             border-right-width: 0;
             text-align: center;
+            justify-content: center;
         }
         &-img-block img {
-            max-width: 155px;
+            max-width: 152px;
             margin-left: auto;
             margin-right: auto;
         }
