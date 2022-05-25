@@ -852,6 +852,55 @@ function initPopupSuccess() {
 }
 
 
+function initSwimming() {
+    var scrollPosition,
+        scrollDuration = 250;
+    $(window).scroll(function(e) {
+        var $element = jQuery('.js-main-content'),
+            windowPosition = $(window).scrollTop(),
+            positionElementStart = $element.offset().top,
+            blockHeader = jQuery('.header').height(),
+            positionTop1 = (20*blockHeader)/100, //(20%*height)/100%
+            positionTop2 = (70*blockHeader)/100,
+            positionBottom1 = positionElementStart - 80,
+            positionBottom2 = (71*blockHeader)/100;
+
+        if (windowPosition > scrollPosition){
+            //down
+            if ((positionTop2 > windowPosition) && (windowPosition > positionTop1)) {
+                    $('html').animate({
+                    scrollTop: positionElementStart
+                }, {
+                    duration: scrollDuration,
+                    easing: "linear", //swing
+                    always: function() {
+                        $('html').stop();
+                        if (!($('body').hasClass('main-content-animate'))) {
+                            $('body').addClass('main-content-animate');
+                        }
+                    }
+                });
+            }
+        } else {
+            //up
+            if ((positionBottom1 > windowPosition) && (windowPosition > positionBottom2)) {
+                $('html').animate({
+                    scrollTop: 0
+                }, {
+                    duration: scrollDuration,
+                    easing: "linear",
+                    always: function() {
+                        $('html').stop();
+                        $('body').removeClass('main-content-animate');
+                    }
+                });
+             }
+        }
+        scrollPosition = windowPosition;
+    });
+}
+
+
 function initResizeWindow() {
     var width = $(window).width();
     if (width <= GLOBAL.mobile) {
@@ -900,7 +949,7 @@ $(document).ready(function () {
     initSliderBlog();
     initSliderAbout();
     initAnimateSection();
-    initScrollUp();
+    //initScrollUp();
     initFieldText();
     initValidate();
     initMask();
@@ -919,4 +968,5 @@ $(document).ready(function () {
     initSticky();
     initSliderSeoInstuments();
     initTab();
+    initSwimming();
 });
