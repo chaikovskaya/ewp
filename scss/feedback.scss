@@ -1,0 +1,288 @@
+
+.feedback {
+    display: flex;
+    position: relative;
+    padding-top: 39px;
+    margin-right: 273px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: -19px;
+        left: -71px;
+        z-index: -1;
+        width: 1464px;
+        height: 687px;
+        background: url("../images/feedback/feedback-map-bgr.png") no-repeat 0 0;
+    }
+    &-page {}
+    &-page .header {
+        background: none;
+        border-bottom: 1px solid #ebebeb;
+    }
+    &-page .contacts {
+        display: none;
+    }
+    &-page .main-content {
+        margin-bottom: 130px;
+    }
+
+    &-form {
+        width: 60%;
+        padding-right: 75px;
+        margin-top: 11px;
+    }
+    &-img {
+        width: 40%;
+    }
+    &-pic {
+        width: 357px;
+    }
+    &-field-button {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &-button {
+        margin-right: 40px;
+    }
+
+    &-info-box {
+        color: #fff;
+    }
+    &-info-box a {
+        color: #92c0fb;
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &-info {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+        width: 50%;
+        height: calc(100% - 75px);
+        padding: 123px 0 80px 30px;
+        margin-left: 436px;
+        background-color: #124375;
+        background-image: url("../images/feedback/stars-bgr-1.png"),
+        url("../images/header/header-bgr.png"), url("../images/feedback/feedback-bgr.png");
+        background-repeat: repeat-x, repeat, no-repeat;
+        background-size: auto, auto, auto 100%;
+    }
+    &-info-list {
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    &-info-item {
+        display: flex;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-info-label {
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    &-info-title {
+        @include point();
+        display: block;
+        color: #fff;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    &-info-icon {
+        margin-top: 4px;
+        margin-right: 6px;
+        font-size: 13px;
+        color: #db352a;
+    }
+    &-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-links-item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &-links-label {
+        font-weight: 700;
+        text-decoration: underline!important;
+    }
+    &-info-location {
+        display: inline-block;
+        width: 55px;
+    }
+    &-founder {
+        display: flex;
+    }
+    &-founder-img {
+        padding-right: 18px;
+        margin-right: 23px;
+        border-right: 1px solid #206ecf;
+    }
+    &-founder-block {
+        margin-right: 20px;
+    }
+    &-founder-pic {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        background-color: #206dce;
+        overflow: hidden;
+    }
+    &-info .messengers-icon {
+        color: #92c0fb;
+        &:hover {
+            color: #92c0fb;
+        }
+    }
+    &-info .messengers-item {
+        border-color: #206ecf;
+    }
+    &-founder-name {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &-founder-label {
+        display: block;
+        margin-bottom: 16px;
+        color: #92c0fb;
+    }
+    &-founder-list {
+        margin-bottom: 25px;
+    }
+    &-founder-list-item {
+        display: flex;
+        margin-bottom: 5px;
+        font-size: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-page .head-panel {
+        margin-right: 330px;
+    }
+}
+
+@media screen
+and (max-width: $l-desktop) {
+    .feedback {
+        &-info {
+            left: 100%;
+            width: 300px;
+            margin-left: -300px;
+        }
+    }
+}
+
+@media screen
+and (max-width: $desktop) {
+    .feedback {
+        &-info-label {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        &-info-box a {
+            font-size: 14px;
+        }
+        &-founder-pic {
+            width: 42px;
+            height: 42px;
+        }
+        &-founder-img {
+            padding-right: 15px;
+            margin-right: 18px;
+        }
+        &-form {
+            padding-right: 30px;
+        }
+    }
+}
+
+@media screen
+and (max-width: $tablet) {
+    .feedback {
+        &-form {
+            width: 100%;
+            padding-right: 0;
+        }
+        &-img {
+            display: none;
+        }
+        &-button {
+            margin-bottom: 28px;
+        }
+        &-page .main-title {
+            max-width: none;
+        }
+        &-page .head-panel {
+            flex-direction: column;
+        }
+        &-page .breadcrumbs {
+            order: -1;
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen
+and (min-width: $mobile){
+    .feedback {
+        &-page .header-logo-element {
+            fill: #222;
+        }
+        &-page .header-link {
+            color: #222222;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .feedback {
+        margin-right: 0;
+        &-info {
+            position: static;
+            margin-top: -263px;
+            left: 0;
+            width: auto;
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-top: 264px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &-page .main-title {
+            color: #fff;
+        }
+        &-page .head-panel {
+            margin-right: 0;
+        }
+        &-form {
+            width: 100%;
+            padding-right: 0;
+        }
+        &-page .header {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        &-page .breadcrumbs-link {
+            color: #fff;
+        }
+        &-page .breadcrumbs-item {
+            color: #92c0fb;
+        }
+        &-page .breadcrumbs-icon {
+            color: #fff;
+        }
+    }
+}
