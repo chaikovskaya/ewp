@@ -528,7 +528,7 @@
         <div class="container">
 
             <div class="head-panel">
-                <h1 class="main-title">Здесь находят надежного digital - партнера</h1>
+                <h1 class="main-title">Здесь находят надежного digital-партнера</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная</a><i class="breadcrumbs-icon">&#47;</i></li>
                     <li class="breadcrumbs-item">Контакты</li>
@@ -601,13 +601,13 @@
                             <div class="feedback-founder-label">Основатель</div>
                             <ul class="feedback-founder-list">
                                 <li class="feedback-founder-list-item">
-                                    <i class="feedback-info-icon las la-envelope"></i>
+                                    <i class="feedback-founder-icon las la-envelope"></i>
                                     <div>
                                         <a href="mailto:dergunov@ewp.ru">dergunov@ewp.ru</a>
                                     </div>
                                 </li>
                                 <li class="feedback-founder-list-item">
-                                    <i class="feedback-info-icon las la-phone"></i>
+                                    <i class="feedback-founder-icon las la-phone"></i>
                                     <div>
                                         <a href="tel:+78003504228">8 (800) 350-42-28 (доб. 13)</a>
                                     </div>
@@ -637,53 +637,55 @@
 
             <div class="feedback">
                 <div class="feedback-form">
-                    <div class="field field_simple js-form-validate-field">
-                        <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
-                            <label class="field-label JS-FieldText-Label" for="phone">Email или телефон <span class="field-label-required">*</span></label>
-                            <input class="input JS-FieldText-Input" type="text" placeholder="" id="phone" name="phone" required />
-                        </span>
-                    </div>
-
-                    <div class="field field_simple js-form-validate-field">
-                        <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
-                            <label class="field-label JS-FieldText-Label" for="name">Имя</label>
-                            <input class="input JS-FieldText-Input" type="text" placeholder="" id="name" name="name" />
-                        </span>
-                    </div>
-
-                    <div class="field field_simple js-form-validate-field">
-                        <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
-                            <label class="field-label JS-FieldText-Label" for="message">Текст сообщения</label>
-                            <textarea class="input_textarea js-textarea-size JS-FieldText-Input" id="message" name="message"></textarea>
-                        </span>
-                    </div>
-
-                    <div class="switch-field">
-                        <label class="switch">
-                            <input class="switch-checkbox" type="checkbox" name="agreement" checked="checked" />
-                            <span class="switch-decor">
-                                <span class="switch-icon"></span>
+                    <form class="js-form-validate" action="/">
+                        <div class="field field_simple js-form-validate-field">
+                            <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                <label class="field-label JS-FieldText-Label" for="phone">Email или телефон <span class="field-label-required">*</span></label>
+                                <input class="input JS-FieldText-Input" type="text" placeholder="" id="phone" name="phone" required />
                             </span>
-                            <span class="switch-label">Я согласен на <a href="#">обработку персональных данных</a></span>
-                        </label>
-                    </div>
-                    <div class="feedback-field-button field-button">
-                        <button class="feedback-button button">Отправить заявку<i class="button-icon las la-long-arrow-alt-right"></i></button>
-                        <ul class="messengers">
-                            <li class="messengers-item">
-                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-vk"></i></a>
-                            </li>
-                            <li class="messengers-item">
-                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-facebook-messenger"></i></a>
-                            </li>
-                            <li class="messengers-item">
-                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-whatsapp"></i></a>
-                            </li>
-                            <li class="messengers-item">
-                                <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-telegram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                        </div>
+
+                        <div class="field field_simple js-form-validate-field">
+                            <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                <label class="field-label JS-FieldText-Label" for="name">Имя</label>
+                                <input class="input JS-FieldText-Input" type="text" placeholder="" id="name" name="name" />
+                            </span>
+                        </div>
+
+                        <div class="field field_simple js-form-validate-field">
+                            <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                                <label class="field-label JS-FieldText-Label" for="message">Текст сообщения</label>
+                                <textarea class="input_textarea js-textarea-size JS-FieldText-Input" id="message" name="message"></textarea>
+                            </span>
+                        </div>
+
+                        <div class="feedback-switch-field switch-field">
+                            <label class="switch">
+                                <input class="switch-checkbox" type="checkbox" name="agreement" checked="checked" />
+                                <span class="switch-decor">
+                                    <span class="switch-icon"></span>
+                                </span>
+                                <span class="switch-label">Я согласен на <a href="#">обработку персональных данных</a></span>
+                            </label>
+                        </div>
+                        <div class="feedback-field-button field-button">
+                            <button class="feedback-button button">Отправить заявку<i class="button-icon las la-long-arrow-alt-right"></i></button>
+                            <ul class="messengers">
+                                <li class="messengers-item">
+                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-vk"></i></a>
+                                </li>
+                                <li class="messengers-item">
+                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-facebook-messenger"></i></a>
+                                </li>
+                                <li class="messengers-item">
+                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-whatsapp"></i></a>
+                                </li>
+                                <li class="messengers-item">
+                                    <a class="messengers-link" href="#" rel="nofollow" target="_blank"><i class="messengers-icon lab la-telegram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
                 </div>
                 <div class="feedback-img">
                     <img class="feedback-pic" src="./images/seo/seo-feedback/seo-feedback-img.png" alt="" />

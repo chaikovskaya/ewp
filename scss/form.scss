@@ -267,6 +267,7 @@ label.form-error {
 
 .switch {
     display: flex;
+    align-items: center;
     position: relative;
     &-field {
         margin-top: 55px;
@@ -315,7 +316,7 @@ label.form-error {
         opacity: 0;
     }
     &-checkbox:checked + &-decor {
-        background-color: $color1;
+        background-color: #adacac;
     }
     &-checkbox:checked + &-decor &-icon {
         left: 20px;
