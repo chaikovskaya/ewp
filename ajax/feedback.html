@@ -1,0 +1,50 @@
+
+<div class="form-popup JS-PopupForm" data-popupform="{
+                'classActive': 'open',
+                'classShow': 'form-popup-show',
+                'classElementActive': 'form-popup_active'
+}">
+    <div class="form-popup-block JS-MobileMenu-Dropdown">
+        <form class="form-popup-element js-form-validate" action="/">
+            <div class="form-popup-close-panel">
+                <span class="form-popup-close-title">Отправить заявку</span>
+                <a href="javascript:;" class="form-popup-close JS-MobileMenu-Close"><i class="form-popup-close-icon las la-times"></i></a>
+            </div>
+            <div class="form-popup-content form-popup-content_simple js-custom-scroll">
+                <div class="form-popup-body">
+                    <div class="field js-form-validate-field">
+                        <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                            <label class="field-label JS-FieldText-Label" for="phone">Email или телефон <span class="field-label-required">*</span></label>
+                            <input class="input JS-FieldText-Input" type="text" placeholder="" id="phone" name="phone" required />
+                        </span>
+                    </div>
+                    <div class="field js-form-validate-field">
+                        <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                            <label class="field-label JS-FieldText-Label" for="name">Имя</label>
+                            <input class="input JS-FieldText-Input" type="text" placeholder="" id="name" name="name" />
+                        </span>
+                    </div>
+                    <div class="field js-form-validate-field">
+                        <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                            <label class="field-label JS-FieldText-Label" for="message">Текст сообщения</label>
+                            <textarea class="input_textarea js-textarea-size JS-FieldText-Input" id="message" name="message"></textarea>
+                        </span>
+                    </div>
+                    <div class="switch-field">
+                        <label class="switch">
+                            <input class="switch-checkbox" type="checkbox" name="agreement" checked="checked" />
+                            <span class="switch-decor">
+                                <span class="switch-icon"></span>
+                            </span>
+                            <span class="switch-label">Я согласен на <a href="#">обработку персональных данных</a></span>
+                        </label>
+                    </div>
+                    <div class="field-button">
+                        <button class="popup-button button">Отправить<i class="button-icon las la-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="form-popup-decor JS-MobileMenu-Close"></div>
+</div>
