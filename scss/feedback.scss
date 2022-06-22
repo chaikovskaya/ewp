@@ -34,9 +34,9 @@
     }
     &-img {
         width: 40%;
-    }
-    &-pic {
-        width: 357px;
+        img {
+            width: 357px;
+        }
     }
     &-field-button {
         display: flex;
@@ -183,7 +183,7 @@
         color: #fff;
     }
     &-page .head-panel {
-        padding-right: 238px;
+        padding-right: 253px;
         margin-bottom: 54px;
     }
     &-page .footer {
@@ -238,7 +238,7 @@ and (max-width: 1860px) {
             padding-right: 30px;
         }
         &-page .head-panel {
-            padding-right: 427px;
+            padding-right: 442px;
         }
     }
 }
@@ -251,7 +251,7 @@ and (max-width: $l-desktop) {
             margin-left: -430px;
         }
         &-page .head-panel {
-            padding-right: 440px;
+            padding-right: 455px;
         }
         &-page .header-phone {
             right: 240px;

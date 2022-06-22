@@ -900,6 +900,22 @@ function initSwimming() {
     });
 }
 
+function initStickyFix() {
+    if (typeof(StickyFix) === 'undefined' || !jQuery.isFunction(StickyFix)) {
+        return false;
+    }
+
+    var common = {
+        update: function (){
+        }
+    };
+
+    $('.JS-StickyFix').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('sticky-fix'));
+        new StickyFix(this, jQuery.extend({}, common, local));
+    });
+}
+
 
 function initResizeWindow() {
     var width = $(window).width();
@@ -969,4 +985,5 @@ $(document).ready(function () {
     initSliderSeoInstuments();
     initTab();
     initSwimming();
+    initStickyFix();
 });

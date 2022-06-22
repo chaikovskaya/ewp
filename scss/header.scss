@@ -275,6 +275,12 @@
         border: solid #ebebeb;
         border-width: 0 0 0 1px;
         background-color: #fff;
+        transition: top 0.2s linear, bottom 0.2s linear;
+    }
+    &-actions_bottom {
+        top: auto;
+        bottom: 75px;
+        height: calc(100% - 75px);
     }
     &-actions-item {
         display: block;

@@ -295,6 +295,9 @@ blockquote {
     min-height: 100vh;
 	overflow: hidden;
 }
+.wrapper-inner {
+	position: relative;
+}
 
 .main-content {
 	margin-bottom: 80px;
@@ -630,6 +633,12 @@ blockquote {
 	}
 }
 /* /pager */
+
+/* FOR AJAX MODE (hide preloader) */
+div[id^="wait_comp_"] {
+	display: none;
+}
+/* /FOR AJAX MODE (hide preloader) */
 
 
 @media screen
